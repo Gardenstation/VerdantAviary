@@ -10,7 +10,7 @@ If you want to host or create content for SS14, go to the [Space Station 14 repo
 ## Garden Station Links
 [Gardenstation Discord Server](https://discord.gg/GyYZHyt68b) | [Gardenstation Org Page](https://github.com/Gardenstation) | Gardenstation and Verdant Aviary Wiki (Soon) |
 
-
+## Omu Station Links
 [Omu Station Discord Server](https://discord.gg/J5uqYJsrAb) | Omu Station Wiki (Soon™) | Omu Station Forums (Soon™) | Omu Station Patreon (Soon™) | Omu Station Docs (Soon™)
 
 ## Documentation/Wiki
