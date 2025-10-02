@@ -14,7 +14,7 @@
     replacement:
     - "*incomprehensible*" # Never actually used.
 
-# Used by Robots.
+# Used by Robots. - GDS replace this with encoded audio language from 13 to keep with our previous lorebase
 # TODO: Replace this with much better languages. Yes, robots can have languages.
 - type: language
   id: RobotTalk

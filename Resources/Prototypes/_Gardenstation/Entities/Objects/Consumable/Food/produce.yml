@@ -1,0 +1,32 @@
+﻿#Thavens
+- type: entity
+  name: Eeckekyiish kelp pod
+  parent: FoodProduceBase
+  id: FoodKelpPod
+  description: A strange and smelly pod, valued by thaven and other aquatic species for its medicinal properties.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bungo
+    - medicine
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: KelpPodSlime
+          Quantity: 20
+        - ReagentId: Slime #mostly useless goo
+          Quantity: 20
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
+  - type: Produce
+    seedId: KelpPod
+  - type: Extractable
+    grindableSolutionName: food
+  - type: FoodSequenceElement
+    entries:
+      burger:
+        name: Kelp
+      taco:
+        name: Kelp

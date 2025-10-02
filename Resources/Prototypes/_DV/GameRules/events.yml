@@ -42,3 +42,17 @@
     prototype: CosmicMalignRift
     minAmount: 2
     maxAmount: 4
+
+- type: entity
+  id: ThavenMoodUpset # really janky prolly
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    earliestStart: 15
+    minimumPlayers: 15
+    weight: 4
+    duration: 30
+    eventType: Neutral
+  - type: GameRule
+    chaosScore: -20
+  - type: ThavenMoodUpsetRule

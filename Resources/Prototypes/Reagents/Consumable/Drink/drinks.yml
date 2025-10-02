@@ -602,7 +602,16 @@
         ratios: # DeltaV no duplicating O2 >:3
           CarbonDioxide: 0.5
           WaterVapor: -1.0
-
+# thaven changes
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Thaven
+      - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Thaven
+        factor: 0.1
 - type: reagent
   id: Ice
   name: reagent-name-ice

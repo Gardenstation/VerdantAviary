@@ -134,6 +134,12 @@
     - PlushieSpaceLizard
 
 - type: loadout
+  id: PlushieChoicesTadpole
+  storage:
+    back:
+    - PlushieChoicesTadpole
+
+- type: loadout
   id: ThreeCandles
   dummyEntity: LoadoutDummyCandles
   storage:

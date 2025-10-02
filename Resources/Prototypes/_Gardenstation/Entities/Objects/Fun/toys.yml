@@ -1,0 +1,29 @@
+﻿- type: entity
+  parent: BasePlushie
+  id: PlushieChoicesTadpole
+  name: Thaven tadpole plush
+  description: A marketable plushie of a thaven tadpole. It smells like the ocean.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Fun/toys.rsi
+    state: plushie_choicesbaby
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Gardenstation/Items/Toys/babusqueak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Gardenstation/Items/Toys/babuthrow.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Gardenstation/Items/Toys/babusqueak.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Gardenstation/Items/Toys/babusqueak.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Gardenstation/Items/Toys/babuthrow.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Gardenstation/Items/Toys/babusqueak.ogg
