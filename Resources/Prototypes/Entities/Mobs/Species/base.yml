@@ -378,20 +378,17 @@
     - KnockedDown
     - SlowedDown
     - Stutter
-    - SeeingRainbows
     - Electrocution
     - Drunk
     - SlurredSpeech
     - RatvarianLanguage
     - PressureImmunity
     - Muted
-    - ForcedSleep
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
     - Flashed
     - RadiationProtection
-    - Drowsiness
     - Vulgarity # Goobstation - add Profanol
     - Brainrotted # Goobstation - skibidi rizz ohio update
     - Adrenaline
@@ -505,6 +502,7 @@
   - type: ExaminableCharacter # WWDP
   - type: Sprinter # Goobstation
   - type: SprintingAffectedByScale # Goobstation: port EE height/width sliders
+  - type: MindControllable # Goobstation
 
 - type: entity
   save: false
@@ -580,6 +578,7 @@
   - type: BloodstreamAffectedByMass # Goobstation: port EE height/width sliders. Also, lol at the comment above.
     power: 0.6
   - type: FlightAffectedByScale # Goobstation: port EE height/width sliders.
+  - type: StunVisuals
 
 - type: entity
   save: false

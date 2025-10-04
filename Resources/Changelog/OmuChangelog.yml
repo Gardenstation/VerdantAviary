@@ -456,3 +456,174 @@ Entries:
       message: temporarly removed glacier from the  map rotation
   id: 53
   time: '2025-09-21T19:48:36.0000000+00:00'
+- author: NotActuallyMarty
+  changes:
+    - type: Add
+      message: Upstream was merged. Rejoice!
+  id: 54
+  time: '2025-09-24T01:26:27.0000000+00:00'
+- author: H3llo0
+  changes:
+    - type: Add
+      message: Added a slider the chef can cook!
+  id: 55
+  time: '2025-09-24T02:58:00.0000000+00:00'
+- author: Yarinoi
+  changes:
+    - type: Tweak
+      message: Detective's noir glasses now function as security glasses as well.
+  id: 56
+  time: '2025-09-25T06:21:07.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Fix
+      message: >-
+        Fixed station reports unintentionally making lines italic, bold,
+        underline or strikethrough.
+  id: 57
+  time: '2025-09-25T20:24:49.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Fix
+      message: >-
+        Fixed station reports over 2000 characters being blocked by Discord and
+        not showing up in the reports channel.
+  id: 58
+  time: '2025-09-26T17:29:59.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Fix
+      message: >-
+        Fixed double replacement of a > character in Station Reports in Discord,
+        causing the markdown to be messed up
+  id: 59
+  time: '2025-09-26T17:31:26.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Add
+      message: Added the Dislippler, a clown-only traitor uplink item.
+  id: 60
+  time: '2025-09-26T17:33:05.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Fix
+      message: >-
+        The Station Report is now only broadcast if the NTR actually filled in
+        the form. NTRs that don't fill in the reports will be sent to
+        NanoTrasen™ Re-Education Camps for training.
+  id: 61
+  time: '2025-09-26T17:34:22.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Fix
+      message: Fixed [italics' being parsed correctly in the Discord Station Report
+  id: 62
+  time: '2025-09-26T20:47:45.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Fix
+      message: Fixed clowns being unable to use the Dislippler
+    - type: Fix
+      message: >-
+        Fixed [color] tags not being formatted properly in Discord Station
+        Reports
+  id: 63
+  time: '2025-09-27T00:55:22.0000000+00:00'
+- author: Timfa2112
+  changes:
+    - type: Fix
+      message: >-
+        Fixed the way messages are chunked in the station report. It works
+        properly this time, I swear. 
+  id: 64
+  time: '2025-09-27T17:55:30.0000000+00:00'
+- author: Mike32oz
+  changes:
+    - type: Tweak
+      message: 'Aghost Inventory bag '
+  id: 65
+  time: '2025-09-28T09:09:44.0000000+00:00'
+- author: CerberusWolfie
+  changes:
+    - type: Add
+      message: Set up and added Patron Tiers, Benefits, and more! Check it out!
+  id: 66
+  time: '2025-09-28T21:57:27.0000000+00:00'
+- author: CliveOcelot
+  changes:
+    - type: Tweak
+      message: Heretics and Lings should spawn less on lower pop now.
+  id: 67
+  time: '2025-09-29T02:49:54.0000000+00:00'
+- author: CliveOcelot
+  changes:
+    - type: Tweak
+      message: Cosmic blank now has a hidden do-after.
+  id: 68
+  time: '2025-09-30T19:53:26.0000000+00:00'
+- author: CliveOcelot
+  changes:
+    - type: Remove
+      message: Removed the shrapnel grenade from syndie uplink.
+    - type: Tweak
+      message: >-
+        Changed the price of the shrapnel grenade from 4tc to 20tc in the nukie
+        uplink
+  id: 69
+  time: '2025-09-30T19:54:20.0000000+00:00'
+- author: Tuerk
+  changes:
+    - type: Add
+      message: revolvers can now pistol-whip
+    - type: Tweak
+      message: >-
+        Bandolier's can now also store 8 Gauge shells ( used to be only 12 Gauge
+        )
+    - type: Fix
+      message: >-
+        Warden's duty case now has working fluff. Also fixes capitalization of
+        the other duty cases.
+  id: 70
+  time: '2025-09-30T19:55:20.0000000+00:00'
+- author: MarkerWicker
+  changes:
+    - type: Add
+      message: >-
+        Introduced the Photophobia trait. Players with photophobia will see the
+        world a little bit brighter, and will be flashed if a flashlight is
+        toggled in their direction.
+  id: 71
+  time: '2025-10-01T01:45:47.0000000+00:00'
+- author: GNUtopia
+  changes:
+    - type: Tweak
+      message: Thieving trait no longer hides popups
+    - type: Add
+      message: >-
+        Characters can take the Frisky trait which allows them to see pockets in
+        the strip menu
+  id: 72
+  time: '2025-10-01T02:48:48.0000000+00:00'
+- author: MarkerWicker
+  changes:
+    - type: Fix
+      message: >-
+        Trait-categories with category-specific points now correctly show the
+        points taken in that category, rather than the sum of category-specific
+        points across all categories.
+  id: 73
+  time: '2025-10-01T02:54:52.0000000+00:00'
+- author: MarkerWicker
+  changes:
+    - type: Fix
+      message: >-
+        Traits should work again, the previous bugfix broke them entirely. If
+        traits are still broken, contact marker4457 on Discord.
+  id: 74
+  time: '2025-10-01T17:08:38.0000000+00:00'
+- author: CliveOcelot
+  changes:
+    - type: Fix
+      message: Fixed SecretPlus failing to select antags properly
+  id: 75
+  time: '2025-10-02T18:39:21.0000000+00:00'

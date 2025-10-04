@@ -56,5 +56,5 @@
   - type: IconSmooth
     key: fence
     base: fence
-    allowedVerbs:
-    - Rattle
+#    allowedVerbs: # Omu, this breaks stuff currently, keeping this here for if we port EE's verbs.
+#    - Rattle

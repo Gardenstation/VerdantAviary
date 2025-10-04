@@ -1051,6 +1051,9 @@ BarSignSpacebucksAlignTile: BarSignSpacebucks
 BarSignMaltroachAlignTile: BarSignMaltroach
 BarSignWhiskeyEchoesAlignTile: BarSignWhiskeyEchoes
 
+# 2025-06-21
+ClothingNeckHeadphones: ClothingMultipleHeadphones
+
 # 2025-09-01 - Omu
 LightBulbMaintenanceRed: DimLightBulb
 BookSalvageEpistemicsRandom: null

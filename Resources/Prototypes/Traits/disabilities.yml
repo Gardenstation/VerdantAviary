@@ -34,7 +34,7 @@
   name: trait-blindness-name
   description: trait-blindness-desc
   traitGear: WhiteCane
-  # category: Disabilities 
+  # category: Disabilities
   category: VisualTraits # Omustation - Remake EE Traits system - EE traits categories
   whitelist:
     components:
@@ -82,9 +82,9 @@
   globalCost: -2 # Omustation - Remake EE Traits system - global trait points cost
 
 - type: trait
-  id: Monochromancy
-  name: trait-monochromancy-name
-  description: trait-monochromancy-desc
+  id: Monochromacy
+  name: trait-monochromacy-name
+  description: trait-monochromacy-desc
   # category: Disabilities
   category: VisualTraits # Omustation - Remake EE Traits system - EE traits categories
   components:
@@ -118,7 +118,7 @@
       sounds:
         collection: Paracusia
   globalCost: -1 # Omustation - Remake EE Traits system - global trait points cost
-  
+
 - type: trait
   id: PainNumbness
   name: trait-painnumbness-name

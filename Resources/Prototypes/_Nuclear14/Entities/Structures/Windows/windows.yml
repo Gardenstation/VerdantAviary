@@ -72,8 +72,8 @@
     trackAllDamage: true
     damageOverlay:
       sprite: _Nuclear14/Structures/Windows/slanted/cracks.rsi
-    allowedVerbs:
-    - KnockOn
+#    allowedVerbs: # Omu, this breaks stuff currently, keeping this here for if we port EE's verbs.
+#    - KnockOn
 
 - type: entity
   parent: N14WindowBase

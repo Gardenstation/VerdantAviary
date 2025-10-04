@@ -73,7 +73,7 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Body.Systems;
 using Content.Server.Explosion.Components;
-using Content.Server.Flash;
+using Content.Shared.Flash;
 using Content.Server.Electrocution;
 using Content.Server.Pinpointer;
 using Content.Shared.Chemistry.EntitySystems;
@@ -156,7 +156,7 @@ namespace Content.Server.Explosion.EntitySystems
     {
         [Dependency] private readonly ExplosionSystem _explosions = default!;
         [Dependency] private readonly FixtureSystem _fixtures = default!;
-        [Dependency] private readonly FlashSystem _flashSystem = default!;
+        [Dependency] private readonly SharedFlashSystem _flashSystem = default!;
         [Dependency] private readonly SharedBroadphaseSystem _broadphase = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
         [Dependency] private readonly SharedContainerSystem _container = default!;
@@ -287,21 +287,19 @@ namespace Content.Server.Explosion.EntitySystems
 
         private void HandleFlashTrigger(EntityUid uid, FlashOnTriggerComponent component, TriggerEvent args)
         {
-            // TODO Make flash durations sane ffs.
-            _flashSystem.FlashArea(uid, args.User, component.Range, component.Duration * 1000f, probability: component.Probability);
+            _flashSystem.FlashArea(uid, args.User, component.Range, component.Duration, probability: component.Probability);
             args.Handled = true;
         }
 
         // funkystation - no other clear way to do this
         private void HandleRevolutionaryFlashTrigger(EntityUid uid, RevolutionaryFlashOnTriggerComponent comp, TriggerEvent args)
         {
-            _flashSystem.RevolutionaryFlashArea(uid, args.User, comp.Range, comp.Duration * 1000f, probability: comp.Probability);
-            args.Handled = true;
+            _flashSystem.RevolutionaryFlashArea(uid, args.User, comp.Range, comp.Duration, probability: comp.Probability); // Omu Duration is now a timespan
         }
 
         private void HandleDeleteTrigger(EntityUid uid, DeleteOnTriggerComponent component, TriggerEvent args)
         {
-            EntityManager.QueueDeleteEntity(uid);
+            QueueDel(uid);
             args.Handled = true;
         }
 

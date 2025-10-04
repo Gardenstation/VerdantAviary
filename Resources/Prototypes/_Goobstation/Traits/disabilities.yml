@@ -20,6 +20,7 @@
     - type: BuckleOnMapInit
       prototype: VehicleWheelchair
     - type: LegsStartParalyzed
+    - type: LegsParalyzed
   globalCost: -10 # Omustation - Remake EE Traits system - global trait points cost
 
 - type: trait
@@ -46,3 +47,26 @@
     - type: MovementImpaired
       impairedSpeedMultiplier: 0.6
   globalCost: -4 # Omustation - Remake EE Traits system - global trait points cost
+
+- type: trait
+  id: SocialAnxietyTrait
+  name: trait-social-anxiety-name
+  description: trait-social-anxiety-disc
+  #category: Disabilities #omu commentout
+  category: PhysicalTraits #omu
+  components:
+    - type: SocialAnxiety
+  globalCost: -4 #omu i suppose. ive not tedted. If this comment is still here assume i havent tested.
+
+- type: trait
+  id: DeafTrait
+  name: trait-deaf-name
+  description: trait-deaf-disc
+  #category: Disabilities #omu commentout
+  category: PhysicalTraits #omu
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+    - type: Deaf
+  globalCost: -8 #it might actually be just as or more crippling that not walking in this game - omu

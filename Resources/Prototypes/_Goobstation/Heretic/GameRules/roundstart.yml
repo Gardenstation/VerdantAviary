@@ -23,7 +23,7 @@
   components:
   - type: HereticRule
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 30 # Omu, was 15, we do not need heretics on lowpop.
   - type: AntagObjectives
     objectives:
     - HereticKnowledgeObjective
@@ -35,7 +35,7 @@
     definitions:
     - prefRoles: [ Heretic ]
       max: 3
-      playerRatio: 15
+      playerRatio: 20 # Omu, was 15, we dont need loads of heretics on lowpop.
       chaosScore: 250
       lateJoinAdditional: true
       jobBlacklist: [ Chaplain, ] # GOOBSTATION
@@ -57,7 +57,7 @@
   components:
   - type: HereticRule
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 30 # Omu, was 15, we don't need heretics on lowpop.
   - type: AntagObjectives
     objectives:
     - HereticKnowledgeObjective
@@ -69,7 +69,7 @@
     definitions:
     - prefRoles: [ Heretic ]
       max: 2
-      playerRatio: 20
+      playerRatio: 30 # Omu, was 15, we don't need multiple heretics on lowpop, especialy not for a "calm" gamerule.
       lateJoinAdditional: true
       jobBlacklist: [ Chaplain ] # GOOBSTATION
       blacklist:

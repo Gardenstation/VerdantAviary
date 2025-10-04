@@ -1,0 +1,12 @@
+- type: microwaveMealRecipe
+  id: RecipeGunkSlider
+  name: gunk slider recipe
+  result: FoodSliderGunk
+  time: 10
+  group: Savory
+  reagents:
+    Oil: 15
+  solids:
+    FoodBreadBun: 1
+    FoodMeatRat: 1
+    FoodButter: 1

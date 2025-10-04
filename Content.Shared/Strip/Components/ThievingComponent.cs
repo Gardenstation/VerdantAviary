@@ -51,6 +51,13 @@ public sealed partial class ThievingComponent : Component
     /// </summary>
     [DataField]
     public PopupType NoiseLevel = PopupType.Large;
+
+    /// <summary>
+    /// Omu edit - Thieving trait fixes
+    /// Can stealthiness be toggled on and off?
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool Toggleable = true;
 }
 
 /// <summary>
