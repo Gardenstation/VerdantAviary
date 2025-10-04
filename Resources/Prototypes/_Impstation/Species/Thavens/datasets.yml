@@ -1,0 +1,6 @@
+﻿- type: weightedRandom
+  id: RandomThavenMoodDataset
+  weights:
+    ThavenMoodsYesAnd: 0.45
+    ThavenMoodsNoAnd: 0.45
+    ThavenMoodsWildcard: 0.3 # gds increase this cause funny. maybe make an unstable mood disorder trait or something later to make it opt in or wtvr.

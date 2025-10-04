@@ -247,6 +247,7 @@
     - Slime
     - AmmoniaBlood
     - ZombieBlood
+    - ShimmeringBlood # gds
 
 - type: xenoArchTrigger
   id: TriggerThrow

@@ -49,7 +49,7 @@ language-Freespeak-description =
     A language of renegades and frontiersmen descending from various languages from Earth-- like Hindi,
     combined into a multi-rooted jumble that sounds incoherent or even barbarian to non-native speakers.
     This language is the only common cultural identity for humans in the frontier. Speaking this language in itself boldly declares the speaker a free spirit.
-    It is often called 'Gutter' by Alliance citizens.
+    It is often called 'Gutter' by Alliance citizens, and commonly spoken by Eridanian "dregs".
 
 language-Elyran-name = Elyran Standard
 language-Elyran-description =
@@ -94,6 +94,13 @@ language-Xeeplian-name = Xeeplian
 language-Xeeplian-description =
     Our language is highly advanced, efficient and to the point.
     We have taken a liking to mimic some of the inferior lifeforms' babbling in the further pursuit of Our goals.
+
+language-Eckeckyik-name = Eckeckyik
+language-Eckeckyik-description =
+    A language consisting of long and complex vocalizations, chirps, whistles and a large emphasis on acoustic harmonics.
+    Most of what makes up their speech is based on subsonic frequency and subtle manipulation of resonant acoustics, making it nearly impossible for most species to learn.
+    The languages structure and vocalization patterns make it incredibly useful for communicating underwater.
+
 
 # Animal Languages
 

@@ -260,6 +260,9 @@
         - !type:OrganType
           type: Rat
           shouldHave: false
+        - !type:OrganType # thaven breathe a lot of stuff
+          type: Thaven
+          shouldHave: false
         - !type:ReagentThreshold
           reagent: Ammonia
           min: 1
@@ -278,6 +281,9 @@
           shouldHave: false
         - !type:OrganType
           type: Vox
+          shouldHave: false
+        - !type:OrganType # imp things
+          type: Thaven
           shouldHave: false
         - !type:ReagentThreshold
           reagent: Ammonia
@@ -311,7 +317,10 @@
         - !type:OrganType
           type: Vox
         factor: -4
-
+      - !type:Oxygenate # thaven can breathe anything
+        conditions:
+        - !type:OrganType
+          type: Thaven
 
 - type: reagent
   id: Diethylamine

@@ -1,0 +1,74 @@
+﻿- type: reagent
+  id: KelpPodSlime
+  name: reagent-name-kelpslime
+  group: Medicine
+  desc: reagent-desc-kelpslime
+  physicalDesc: reagent-physical-desc-slimy
+  flavor: medicine
+  color: "#9972fd"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: -1
+            Bloodloss: -0.5
+            Poison: -0.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          types:
+            Asphyxiation: 3
+            Caustic: 1 # it causes a buildup of acid in the body or something idk
+            Poison: 1
+      - !type:SuppressPain
+        amount: 10
+        time: 30
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 10 #thavens love getting fucked up probably thats why therye all like that
+        refresh: false
+    Narcotic:
+      effects:
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - generic-reagent-effect-kelp-drooling
+        - generic-reagent-effect-kelp-stupid
+        - generic-reagent-effect-kelp-slow
+        - generic-reagent-effect-kelp-seacow
+        - generic-reagent-effect-kelp-silly
+        - generic-reagent-effect-kelp-bubbles
+        - generic-reagent-effect-kelp-more
+        - generic-reagent-effect-kelp-good
+        - generic-reagent-effect-kelp-pretty
+        - generic-reagent-effect-soundgood
+        - generic-reagent-effect-euphoria
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+          max: 30
+        probability: 0.08
+      - !type:PopupMessage
+        visualType: LargeCaution
+        type: Local
+        messages:
+        - generic-reagent-effect-kelp-beauty
+        - generic-reagent-effect-kelp-weird
+        - generic-reagent-effect-kelp-anythinggoes
+        - generic-reagent-effect-kelp-punchshit #this happened to me on shrooms once
+        - generic-reagent-effect-kelp-scream
+        - generic-reagent-effect-disoriented
+        - generic-reagent-effect-manic
+        - generic-reagent-effect-confused
+        - generic-reagent-effect-static
+        - generic-reagent-effect-breakthrough
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        probability: 0.3

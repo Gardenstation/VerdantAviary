@@ -137,6 +137,7 @@
     - Tajaran
     - Chitinid # DeltaV
     - Shadowkin
+    - Thaven
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
