@@ -125,91 +125,91 @@
 
 # RArm
 
-- type: marking
-  id: GradientRArmT
-  bodyPart: RArm
-  markingCategory: RightArm
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_r_arm
+#- type: marking
+#  id: GradientRArmT
+#  bodyPart: RArm
+#  markingCategory: RightArm
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#    state: m_gradient_r_arm
 
 # RHand
 
-- type: marking
-  id: GradientRHandT
-  bodyPart: RHand
-  markingCategory: RightHand
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_r_hand
+#- type: marking
+#  id: GradientRHandT
+#  bodyPart: RHand
+#  markingCategory: RightHand
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#    state: m_gradient_r_hand
 
 # LArm
 
-- type: marking
-  id: GradientLArmT
-  bodyPart: LArm
-  markingCategory: LeftArm
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_l_arm
+#- type: marking
+#  id: GradientLArmT
+#  bodyPart: LArm
+#  markingCategory: LeftArm
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#    state: m_gradient_l_arm
 
 # LHand
 
-- type: marking
-  id: GradientLHandT
-  bodyPart: LHand
-  markingCategory: LeftHand
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_l_hand
+#- type: marking
+#  id: GradientLHandT
+#  bodyPart: LHand
+#  markingCategory: LeftHand
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#    state: m_gradient_l_hand
 
 # RLeg
 
-- type: marking
-  id: GradientRLegT
-  bodyPart: RLeg
-  markingCategory: RightLeg
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_r_leg
+#- type: marking
+#  id: GradientRLegT
+#  bodyPart: RLeg
+#  markingCategory: RightLeg
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#    state: m_gradient_r_leg
 
 # RFoot
 
-- type: marking
-  id: GradientRFootT
-  bodyPart: RFoot
-  markingCategory: RightFoot
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_r_foot
+#- type: marking
+#  id: GradientRFootT
+#  bodyPart: RFoot
+#  markingCategory: RightFoot
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#    state: m_gradient_r_foot
 
 # LLeg
 
-- type: marking
-  id: GradientLLegT
-  bodyPart: LLeg
-  markingCategory: LeftLeg
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_l_leg
+#- type: marking
+#  id: GradientLLegT
+#  bodyPart: LLeg
+#  markingCategory: LeftLeg
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#    state: m_gradient_l_leg
 
 # LFoot
 
-- type: marking
-  id: GradientLFootT
-  bodyPart: LFoot
-  markingCategory: LeftFoot
-  speciesRestriction: [ Thaven ]
-  sprites:
-  - sprite: Mobs/Customization/misc.rsi
-    state: m_gradient_l_foot
+#- type: marking
+#  id: GradientLFootT
+#  bodyPart: LFoot
+#  markingCategory: LeftFoot
+#  speciesRestriction: [ Thaven ]
+#  sprites:
+#  - sprite: Mobs/Customization/misc.rsi
+#   state: m_gradient_l_foot
 
 # Underwear
 
