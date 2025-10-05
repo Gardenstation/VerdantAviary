@@ -1,0 +1,26 @@
+# This objective exists to encourage cybernetic beasts to play differently around their mantle. The objective should not pop up super often, as it's in the pool
+# with the rest of the objectives, and having your mantle stolen once or twice is probably enough to make you play differently. You may decide to wear your
+# mantle more often so that you notice when it get stolen, or you may choose to accept the downsides of not wearing your mantle in order to keep it hidden.
+# In any case, the existance of this objective forces players to play differently based on the trait that they've chosen. And I think that's the most interesting
+# thing that a trait can do.
+- type: entity
+  parent: BaseThiefStealObjective
+  id: CyberneticMantleStealObjective
+  components:
+  - type: CyberneticMantleExistsOnStationRequirement
+  - type: StealCondition
+    stealGroup: CyberneticMantles
+    verifyMapExistence: false # this is handled by one of the requirements instead. If this were true, it would only check to see whether a cybernetic mantle exists on the map at round start.
+  - type: Objective
+    difficulty: 2.75 # You may have a shift where only one player has a mantle. It'll be a little hard to find it, if that's the case. So the difficulty here is high.
+
+- type: entity                                      #Science subgroup
+  parent: BaseThiefStealObjective
+  id: ClothingEyesHudSciDiagStealObjective
+  components:
+  - type: NotJobRequirement
+    job: ResearchDirector
+  - type: StealCondition
+    stealGroup: ClothingEyesHudSciDiag
+  - type: Objective
+    difficulty: 0.7

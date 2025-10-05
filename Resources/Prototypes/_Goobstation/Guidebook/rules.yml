@@ -8,5 +8,6 @@
 - type: guideEntry
   id: NRPRuleset
   name: guide-entry-rules-nrp
+  ruleEntry: true # Omu - removes from guidebook without removing it entirely.
   priority: 60
   text: "/ServerInfo/Guidebook/ServerRules/NRPRules.xml"

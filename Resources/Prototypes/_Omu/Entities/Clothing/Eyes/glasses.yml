@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: [ClothingEyesHudSciDiag, ClothingEyesGlassesSunglasses]
+  id: ClothingEyesGlassesSciDiag
+  name: silicon-interfacing glasses
+  description: A state-of-the-art heads-up display combining both diagnostic information and silicon communication capabilities. Grants access to RobotTalk and the binary network. Say hi to your station AI!
+  components:
+  - type: Sprite
+    sprite: _Omu/Clothing/Eyes/scidiagglasses.rsi
+  - type: Clothing
+    sprite: _Omu/Clothing/Eyes/scidiagglasses.rsi

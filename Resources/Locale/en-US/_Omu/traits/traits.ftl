@@ -16,6 +16,12 @@ trait-claws-desc =
     or even hard plastic retractable claws incorpoated into a prosthetic limb.
     Your unarmed melee attacks deal Slashing damage instead of the standard damage type for your species.
     This has no effect on damage dealt with any form of armed melee.
+    
+trait-cybernetic-beast-name = Cybernetic Beasts
+trait-cybernetic-beast-desc =
+    You are nearsighted, but have a cybernetic visor, called a mantle, which corrects this.
+    The mantle also provides other benefits, such as night vision, but ONLY while worn by a cybernetic beast.
+    Read the guidebook entry under Species > Vulpkanin for more.
 
 trait-photophobia-name = Photophobia
 trait-photophobia-desc =

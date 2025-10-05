@@ -27,11 +27,13 @@
 - type: damageModifierSet
   id: Shadowkin
   coefficients:
-    Blunt: 1.25
-    Slash: 1.25
-    Piercing: 1.25
+# begin Omu - shadowkin take less brute and heat now, but take 40% more radiation
+    Blunt: 1.15
+    Slash: 1.15
+    Piercing: 1.15
     Asphyxiation: 0.50
-    Heat: 1.4
+    Radiation: 1.4
+    # end Omu
   ignoreArmorPierceFlags: All # Goobstation
 
 - type: damageModifierSet

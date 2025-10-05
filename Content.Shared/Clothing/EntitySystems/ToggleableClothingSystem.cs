@@ -52,6 +52,7 @@ using Content.Shared.Actions;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
 using Content.Shared.Clothing.Components;
+using Content.Shared._Omu.Clothing; // Omustation - for the AboutToEnterToggleableClothingContainer event.
 using Content.Shared.DoAfter;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
@@ -631,6 +632,11 @@ public sealed class ToggleableClothingSystem : EntitySystem
             // Check if attached clothing have container or this container not empty
             if (attachedComp.ClothingContainer == null || attachedComp.ClothingContainer.ContainedEntity != null)
                 return;
+
+            // Begin Omustation - Cybernetic Beasts - The mantle should really be dropped instead of being put into the toggleable clothing's container.
+            var ev = new AboutToEnterToggleableClothingContainerEvent(parent);
+            RaiseLocalEvent(currentClothing.Value, ref ev);
+            // end Omustation
 
             if (_inventorySystem.TryUnequip(user, parent, slot))
                 _containerSystem.Insert(currentClothing.Value, attachedComp.ClothingContainer);

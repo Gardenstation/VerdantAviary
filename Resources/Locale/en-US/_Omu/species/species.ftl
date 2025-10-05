@@ -1,0 +1,1 @@
+species-name-cybernetic-beast = Cybernetic Beast

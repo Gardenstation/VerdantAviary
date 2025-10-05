@@ -2,3 +2,15 @@
   id: ResearchDirectorDecoratedCloak
   equipment:
     neck: ClothingNeckCloakRdFancy
+
+#Silicon-Interfacing Glasses
+- type: loadout
+  id: ResearchDirectorScienceGlasses
+  equipment:
+    eyes: ClothingEyesGlassesSciDiag
+
+#Silicon-Interfacing HUD
+- type: loadout
+  id: ResearchDirectorScienceHud
+  equipment:
+    eyes: ClothingEyesHudSciDiag

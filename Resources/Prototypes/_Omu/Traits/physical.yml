@@ -52,6 +52,56 @@
         - SlimePerson
 
 - type: trait
+  id: CyberneticBeast
+  name: trait-cybernetic-beast-name
+  description: trait-cybernetic-beast-desc
+  category: PhysicalTraits
+  components:
+  - type: CyberneticBeast
+  - type: PermanentBlindness
+    blindness: 3 # Better than having the nearsighted trait.
+  functions:
+    - !type:TraitGiveEquipmentIfHasJobs # Certain jobs do just need access to internals, so we'll spawn them with a more advanced version of the mantle.
+      jobEquipment:
+        # engineering mantle for engineers
+        AtmosphericTechnician: ClothingCyberneticBeastMantleWorkEngineering
+        StationEngineer: ClothingCyberneticBeastMantleWorkEngineering
+        TechnicalAssistant: ClothingCyberneticBeastMantleWorkEngineering
+        # salvage mantle for salvagers
+        SalvageSpecialist: ClothingCyberneticBeastMantleWorkSalvage
+        # sec mantle for secoffs
+        Detective: ClothingCyberneticBeastMantleSecurity
+        SecurityCadet: ClothingCyberneticBeastMantleSecurity
+        SecurityOfficer: ClothingCyberneticBeastMantleSecurity
+        Warden: ClothingCyberneticBeastMantleSecurity
+        # med mantle for doctors (and brigmedic)
+        Chemist: ClothingCyberneticBeastMantleMedical
+        MedicalDoctor: ClothingCyberneticBeastMantleMedical
+        MedicalIntern: ClothingCyberneticBeastMantleMedical
+        Paramedic: ClothingCyberneticBeastMantleMedical
+        Brigmedic: ClothingCyberneticBeastMantleMedical
+        # tossup of mantles for command.
+        BlueshieldOfficer: ClothingCyberneticBeastMantleBlueshieldOfficer
+        Captain: ClothingCyberneticBeastMantleCommand
+        ChiefEngineer: ClothingCyberneticBeastMantleWorkEngineering
+        ChiefMedicalOfficer: ClothingCyberneticBeastMantleMedical
+        HeadOfPersonnel: ClothingCyberneticBeastMantleCommand
+        HeadOfSecurity: ClothingCyberneticBeastMantleSecurity
+        Quartermaster: ClothingCyberneticBeastMantleCommand
+        ResearchDirector: ClothingCyberneticBeastMantleCommand
+      # If they have none of the specified jobs:
+      equipmentUnmet: ClothingCyberneticBeastMantle
+  globalCost: 5
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Vulpkanin
+    - !type:TraitsRequirement
+      traits:
+        - PoorVision
+      inverted: true
+
+- type: trait
   id: MothFlight
   name: trait-moth-flight-name
   description: trait-moth-flight-desc
