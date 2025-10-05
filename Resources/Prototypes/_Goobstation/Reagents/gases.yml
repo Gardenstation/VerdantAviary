@@ -328,15 +328,15 @@
         - !type:ReagentThreshold
           reagent: Healium
           min: 24
-      - !type:OrganType # lol rip thavenmos
-          type: Thaven
-          shouldHave: false
         ignoreResistances: true
         damage:
           groups:
             Burn: -20
             Toxin: -50
             Brute: -20
+#      - !type:OrganType # lol rip thavenmos
+#        type: Thaven
+#        shouldHave: false
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
