@@ -1,0 +1,4 @@
+- type: shader
+  id: PhotophobiaShader
+  kind: source
+  path: "/Textures/_Omu/Shaders/photophobia.swsl"

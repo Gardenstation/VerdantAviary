@@ -121,4 +121,17 @@
   components:
     - type: Thieving
       noiseLevel: 0 # "0" is small, per the PopupType enum
+      stealthy: False
+      toggleable: False
+      stripTimeReduction: 1
   globalCost: 3
+
+- type: trait
+  id: Frisky
+  name: trait-frisky-name
+  description: trait-frisky-desc
+  category: PhysicalTraits
+  components:
+    - type: IgnorePocketHiding
+  globalCost: 2
+  

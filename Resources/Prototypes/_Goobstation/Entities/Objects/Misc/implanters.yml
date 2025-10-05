@@ -36,7 +36,7 @@
           map: [ "implantOnly" ]
     - type: Implanter
       currentMode: Draw
-      drawTime: 15 # funkystation
+      drawTime: 10 # funkystation
       deimplantFailureDamage:
         types:
           Heat: 20
@@ -292,3 +292,13 @@
   components:
   - type: Implanter
     implant: AntagImplantSpaceNinja
+
+# Xeno
+
+- type: entity
+  parent: BaseImplantOnlyImplanter
+  id: XenoCompatibilityImplanter
+  name: xeno compatibility implanter
+  components:
+  - type: Implanter
+    implant: XenoCompatibilityImplant

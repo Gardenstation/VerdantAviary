@@ -1,0 +1,20 @@
+uniform sampler2D SCREEN_TEXTURE;
+uniform sampler2D LIGHT_TEXTURE;
+uniform highp float effectStrength;
+
+void fragment() {
+    
+    highp vec4 color = zTextureSpec(SCREEN_TEXTURE, UV);
+    highp vec4 lightcolor = zTextureSpec(LIGHT_TEXTURE, UV);
+
+    // This is a soft-light blending mode, with light colour clamped to at least 0.5.
+    // The effect multiplier is applied inside the clamped value.
+    // Those arbitrary -0.5, 0.5, and 0.10 values are my attempt at dealing with the fact that humans percieve different colours differently.
+    // There's probably a better way to do that. But I don't know much of vector math, and I've never done math with matrices in my life. So you get this.
+    // Plus, I think there's a beauty in only blowing out one colour channel instead of all three. It looks good.
+    color.r = pow(color.r, pow(2, 2*(0.5-clamp((lightcolor.r - 0.05)*effectStrength, 0.5, 1))));
+    color.g = pow(color.g, pow(2, 2*(0.5-clamp((lightcolor.g + 0.05)*effectStrength, 0.5, 1))));
+    color.b = pow(color.b, pow(2, 2*(0.5-clamp((lightcolor.b + 0.10)*effectStrength, 0.5, 1))));
+
+    COLOR = color;
+}

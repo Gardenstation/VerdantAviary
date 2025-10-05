@@ -110,7 +110,7 @@
     - id: EmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodBreadBaguette
+    - id: FoodSnackNutribrick # Omu, can't have a baguette in here.
     - id: DrinkWaterBottleFull
   - type: Sprite
     layers:

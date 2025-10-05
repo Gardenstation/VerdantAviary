@@ -6,6 +6,6 @@ namespace Content.Shared.Revolutionary;
 public sealed partial class RevolutionaryFlashOnTriggerComponent : Component
 {
     [DataField] public float Range = 1.0f;
-    [DataField] public float Duration = 8.0f;
+    [DataField] public TimeSpan Duration = TimeSpan.FromSeconds(8); // OMU, float to timespan.
     [DataField] public float Probability = 1.0f;
 }

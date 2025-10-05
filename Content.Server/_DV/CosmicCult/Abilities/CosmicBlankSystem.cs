@@ -70,7 +70,7 @@ public sealed class CosmicBlankSystem : EntitySystem
         var doargs = new DoAfterArgs(EntityManager, uid, uid.Comp.CosmicBlankDelay, new EventCosmicBlankDoAfter(), uid, args.Target)
         {
             DistanceThreshold = 1.5f,
-            Hidden = false,
+            Hidden = true, // Omu, was false, this ability allows coscult to get some more stealthy converts early on, and doesnt have that much use in later stages, it should be a hidden do-after.
             BreakOnDamage = true,
             BreakOnMove = true,
             BreakOnDropItem = true,

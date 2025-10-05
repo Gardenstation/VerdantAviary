@@ -35,7 +35,7 @@
   components:
   - type: ChangelingRule
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 30 # Omu, was 15
   - type: AntagRandomObjectives
     sets:
     - groups: ChangelingObjectiveGroups
@@ -51,8 +51,8 @@
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
-      max: 4
-      playerRatio: 12
+      max: 2 # Omu, was 4, we don't need 4 lings in a single round...
+      playerRatio: 20 # Omu, was 12, lings should require more players.
       chaosScore: 200
       jobBlacklist: [ Chaplain ] # GOOBSTATION
       blacklist:
@@ -126,14 +126,14 @@
   id: CalmLing # For Dual Antag Gamemodes
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 40 # Omu, was 30
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
-      max: 2
-      playerRatio: 15
+      max: 1 # Omu, was 2, this is meant to spawn alongside other antags.
+      playerRatio: 40 # Omu, was 15, "Calm ling" yeah right.
       blacklist:
         components:
         - CommandStaff
@@ -284,7 +284,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 10
+    weight: 1
     duration: 1
     earliestStart: 50
     minimumPlayers: 20

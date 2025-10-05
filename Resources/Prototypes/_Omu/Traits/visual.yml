@@ -1,0 +1,8 @@
+- type: trait
+  id: Photophobia
+  name: trait-photophobia-name
+  description: trait-photophobia-desc
+  category: VisualTraits
+  components:
+  - type: Photophobia
+  globalCost: -2

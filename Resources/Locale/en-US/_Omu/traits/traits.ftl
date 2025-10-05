@@ -10,21 +10,27 @@ trait-bodybuilder-desc =
     This trait increases the density of your body by 55, making dragging / picking things up easier.
 
 trait-claws-name = Claws
-trait-claws-desc = 
+trait-claws-desc =
     Your fingertips have been replaced with sharp claws.
     These could come from gene modifications, vatgrown implants,
     or even hard plastic retractable claws incorpoated into a prosthetic limb.
     Your unarmed melee attacks deal Slashing damage instead of the standard damage type for your species.
     This has no effect on damage dealt with any form of armed melee.
 
+trait-photophobia-name = Photophobia
+trait-photophobia-desc =
+    Your eyes are extremely sensitive to light.
+    Brighter areas will appear blown-out, and you will be flashed if somebody turns on their flashlight in your direction.
+    Pick this trait if you want to roleplay a mothperson as God intended.
+
 trait-moth-flight-name = True Flight
 trait-moth-flight-desc =
     Unlike other mothpeople, your body is light enough and your wings are strong enough to be able to fly under normal gravity.
     Flight is faster than running; however, it is strenuous and quickly drains your stamina.
-    By selecting this trait, you lose your ability to dash. 
+    By selecting this trait, you lose your ability to dash.
 
 trait-weapons-removal-name = Natural Weapons Removal
-trait-weapons-removal-desc = 
+trait-weapons-removal-desc =
     Whatever "Natural Weapons" your species are normally born with have been surgically removed.
     This could have been done to better fit in with terran space stations, or as a cosmetic choice.
     As a result, your unarmed attacks deal Blunt damage instead of the standard damage type for your species.
@@ -41,4 +47,9 @@ trait-singer-desc =
 trait-thieving-name = Thieving
 trait-thieving-desc =
     You are deft with your hands, and talented at convincing people of their belongings.
-    You can steal items quieter.
+    You can steal items more quietly and quickly.
+
+trait-frisky-name = Frisky
+trait-frisky-desc =
+    You have a keen eye and a strong intuition for finding hidden valuables.
+    When you strip someone, you can identify items in their pockets.

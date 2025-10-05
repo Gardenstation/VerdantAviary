@@ -291,8 +291,17 @@
       - Mouse
   - type: VentCrawler # goobstation - Ventcrawl
   - type: Devourer
-    foodPreference: All
-    shouldStoreDevoured: true
+    devourAction: ActionDevourLootbug
+    foodPreferenceWhitelist:
+      tags:
+      - Ingot
+      - Metal
+      - Steel
+      - Ore
+      - Telecrystal
+    stomachStorageWhitelist:
+      components:
+      - Item
     chemical: Ichor
     healRate: 7.5
     whitelist:
@@ -302,7 +311,6 @@
       - Steel
       - Ore
       - Telecrystal
-
 
 - type: entity
   name: space carp

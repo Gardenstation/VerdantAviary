@@ -16,7 +16,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageVersion>
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="9.0.1" />
-    <PackageVersion Include="MvcContrib" Version="2.0.95" />
     <PackageVersion Include="NetCord" Version="1.0.0-alpha.388" />
     <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
     <PackageVersion Include="OpenTK" Version="4.7.2" />

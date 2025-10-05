@@ -219,6 +219,18 @@
     jumpsuit: ClothingUniformJumpsuitJacketMonkey
     id: PunPunIDCard
 
+- type: startingGear
+  id: MobPollyGear
+  equipment:
+    ears: ClothingHeadsetEngineering
+
+# Emotional Support Scurret
+
+- type: startingGear
+  id: EmotionalSupportScurretGear
+  equipment:
+    id: ScurretPDA
+
 # DeathMatch Gear
 
 - type: startingGear
@@ -250,7 +262,7 @@
 - type: startingGear
   id: MobAghostGear
   equipment:
-    back: ClothingBackpackSatchelHolding
+    back: ClothingBackpackSatchelAdmin
     id: AdminPDA
   storage:
     back:
@@ -258,6 +270,10 @@
     - trayScanner
     - AccessConfiguratorUniversal
     - Multitool
+    - WelderExperimental # Omu Edit - More Admin Tools
+    - PowerDrill # Omu Edit - More Admin Tools
+    - GeigerCounter # Omu Edit - More Admin Tools
+    - JawsOfLife # Omu Edit - More Admin Tools
 
 #Gladiator with spear
 - type: startingGear

@@ -69,7 +69,9 @@ public sealed partial class PendingPirateRuleSystem : GameRuleSystem<PendingPira
         base.Started(uid, component, gameRule, args);
 
         // get station
-        AllEntityQuery<BecomesStationComponent, StationMemberComponent>().MoveNext(out var eqData, out _, out _);
+        var query = AllEntityQuery<BecomesStationComponent, StationMemberComponent>();
+        if (!query.MoveNext(out var eqData, out _, out _))
+            return; // Omu add return condition here. for some reason after monolith ftl drives port tests complain.
         var station = _station.GetOwningStation(eqData);
         if (station == null) return;
 
