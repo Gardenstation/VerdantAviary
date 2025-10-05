@@ -1,0 +1,25 @@
+﻿Name: Gardenstation
+Order: -3
+Entries:
+- author: Always Make Poor Choices
+  changes:
+  - type: Add
+    message: Aviary Branding.
+
+  id: 1
+  time: '2025-09-22'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/3
+- author: bunnygirlHyacinth, Portfiend, Kushbreth, Shaman
+  changes:
+  - type: Add
+    message: Playable Thaven, Thaven cultural items (kelp wine, IMP drinks, new plushie), Some new gardenlore for thavens.
+  id: 2
+  time: '2025-10-3'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/5
+- author: bunnygirlHyacinth
+  changes:
+    - type: Fix
+      message: nocontractionsaccentsystem missing references. some broken YMLs fixed.
+  id: 3
+  time: '2025-10-5'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/5
