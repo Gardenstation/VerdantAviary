@@ -6,6 +6,9 @@ using Robust.Shared.Physics;
 using Content.Shared.Damage;
 using Content.Shared.Weapons.Melee;
 using Robust.Shared.Audio;
+using Content.Server.Roles.Jobs;
+using Content.Server.Mind;
+using Content.Server.Hands.Systems;
 
 namespace Content.Server._Omu.Traits;
 
@@ -138,5 +141,69 @@ public sealed partial class TraitModifyUnarmed : TraitFunction
             melee.AttackRate *= AttackRateModifier.Value;
 
         entityManager.Dirty(uid, melee);
+    }
+}
+
+/// <summary>
+///     Gives the specified equipment to the player on spawn if they have the specified jobs. 
+/// </summary>
+/// <remarks>
+///     Made for Cybernetic Beasts, in order to give work mantles to players with jobs that may require them round-start.
+/// </remarks>
+public sealed partial class TraitGiveEquipmentIfHasJobs : TraitFunction
+{
+
+    private JobSystem? _jobSystem;
+    private MindSystem? _mindSystem;
+    private HandsSystem? _handsSystem;
+
+    /// <summary>
+    ///     A list of jobs and the associated equipment which should be given to the player if they have the specified job.
+    /// </summary>
+    [DataField(required: true)]
+    public Dictionary<string, EntProtoId> JobEquipment;
+
+    /// <summary>
+    ///     Equipment that is given to the player, if they do not have any job from the dictionary.
+    /// </summary>
+    [DataField("equipmentUnmet")]
+    public EntProtoId? EquipmentIfRequirementUnmet;
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        _mindSystem = entityManager.SystemOrNull<MindSystem>();
+        _jobSystem = entityManager.SystemOrNull<JobSystem>();
+        _handsSystem = entityManager.SystemOrNull<HandsSystem>();
+
+        if (_mindSystem == null || _jobSystem == null || _handsSystem == null)
+            return;
+
+        // Try to get the player's job, and make sure that the player has a transform component so that we can give them the equipment.
+        if (_mindSystem.TryGetMind(uid, out var mindId, out var _) &&
+            _jobSystem.MindTryGetJob(mindId, out var jobProto) &&
+            entityManager.TryGetComponent<TransformComponent>(uid, out var transform))
+        {
+            EntityUid equipment;
+
+            // If the player has a job which is present in the JobEquipment dictionary, give them their job's respective equipment.
+            // Else, give them the default trait equipment (should the default trait equpment exist)
+            if (JobEquipment.TryGetValue(jobProto.ID, out var equipmentForJob))
+            {
+                equipment = entityManager.SpawnEntity(equipmentForJob, transform.Coordinates);
+            }
+            else if (EquipmentIfRequirementUnmet != null)
+            {
+                equipment = entityManager.SpawnEntity(EquipmentIfRequirementUnmet, transform.Coordinates);
+            }
+            else
+            {
+                return;
+            }
+
+            _handsSystem.PickupOrDrop(uid, equipment);
+        }
     }
 }

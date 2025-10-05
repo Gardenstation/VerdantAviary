@@ -525,13 +525,14 @@
   groups:
   - GroupTankHarness
   - ResearchDirectorHead
+  - ResearchDirectorEyewear # Omustation
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
   - ScientistBackpack
   - ResearchDirectorOuterClothing
   - ScientistGloves
   - ResearchDirectorShoes
-  - Glasses
+  # - Glasses # Omustation: RD gets their own eyewear from ResearchDirectorEyewear
   - Survival
   - Trinkets
   - Animals

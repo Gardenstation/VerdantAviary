@@ -627,3 +627,29 @@ Entries:
       message: Fixed SecretPlus failing to select antags properly
   id: 75
   time: '2025-10-02T18:39:21.0000000+00:00'
+- author: Tuerk
+  changes:
+    - type: Add
+      message: >-
+        New HUD and Glasses that lets RDs (or a sneaky thief) communicate in the
+        binary hivemind. Found in RDs locker and in their loadout.
+  id: 76
+  time: '2025-10-05T10:58:06.0000000+00:00'
+- author: MarkerWicker
+  changes:
+    - type: Add
+      message: >-
+        "Cybernetic Beasts", a subset of Vulpkanin, have been introduced to the
+        game. Cybernetic Beasts can be selected as a trait. Beasts come with a
+        visor, called a "mantle", which provides some benefit to the beast, but
+        comes with opportunity costs, and may be a target for stealing.
+  id: 77
+  time: '2025-10-05T15:02:53.0000000+00:00'
+- author: capsflern
+  changes:
+    - type: Tweak
+      message: >-
+        shadowkin brute damage has been reduced from 25% to 15%, burn 40%
+        vulnerability has been replaced with radiation
+  id: 78
+  time: '2025-10-05T15:16:05.0000000+00:00'
