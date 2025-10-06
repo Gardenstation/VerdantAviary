@@ -34,6 +34,18 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gulp: # gds - more thaven emotes
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
+    Hiss: #
+      path: /Audio/Animals/snake_hiss.ogg
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
 
 - type: emoteSounds
   id: FemaleThaven
@@ -71,4 +83,15 @@
       collection: Whistles
     Weh:
       collection: Weh
-
+    Gulp: # gds - more thaven emotes
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
+    Hiss: #
+      path: /Audio/Animals/snake_hiss.ogg
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
