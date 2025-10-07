@@ -39,13 +39,15 @@
     Hiss: #
       path: /Audio/Animals/snake_hiss.ogg
     Meow:
-      collection: FelinidMeows
+      collection: ThavenMeows # add thavenMale versions maybe?? idk. i feel like vocally it shouldnt be do different since its like whale noises
     Mew:
-      collection: FelinidMews
+      collection: ThavenMews
     Growl:
-      collection: FelinidGrowls
+      collection: ThavenGrowls
     Purr:
-      collection: FelinidPurrs
+      collection: ThavenPurrs
+    Chirp:
+      collection: ThavenChirps #
 
 - type: emoteSounds
   id: FemaleThaven
@@ -88,10 +90,12 @@
     Hiss: #
       path: /Audio/Animals/snake_hiss.ogg
     Meow:
-      collection: FelinidMeows
+      collection: ThavenMeows
     Mew:
-      collection: FelinidMews
+      collection: ThavenMews
     Growl:
-      collection: FelinidGrowls
+      collection: ThavenGrowls
     Purr:
-      collection: FelinidPurrs
+      collection: ThavenPurrs
+    Chirp:
+      collection: ThavenChirps

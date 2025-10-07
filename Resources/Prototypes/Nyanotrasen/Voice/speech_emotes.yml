@@ -19,7 +19,7 @@
     - FelinidEmotes
     - HarpyEmotes
     - ReptilianEmotes
-    - ThavenEmotes
+    - ThavenEmotes # gds
   blacklist:
     components:
     - BorgChassis
@@ -39,7 +39,7 @@
     tags:
     - FelinidEmotes
     - HarpyEmotes
-    - ThavenEmotes
+    - ThavenEmotes # gds
   blacklist:
     components:
     - BorgChassis
@@ -65,7 +65,7 @@
     tags:
     - FelinidEmotes
     - HarpyEmotes
-    - ThavenEmotes
+    - ThavenEmotes # gds
   blacklist:
     components:
     - BorgChassis
@@ -85,7 +85,7 @@
     tags:
     - FelinidEmotes
     - HarpyEmotes
-    - ThavenEmotes
+    - ThavenEmotes # gds
   blacklist:
     components:
     - BorgChassis
@@ -105,7 +105,7 @@
     tags:
     - FelinidEmotes
     - HarpyEmotes
-    - ThavenEmotes
+    - ThavenEmotes # gds
   blacklist:
     components:
     - BorgChassis
