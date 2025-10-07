@@ -136,106 +136,64 @@
           collection: sparks
           params:
             variation: 0.250
-
-
-#    layers:
-#    - state: icon-off
-#      map: [ "enum.ToggleVisuals.Layer" ]
-#  - type: GenericVisualizer
-#    visuals:
-#      enum.ToggleVisuals.Toggled:
-#        enum.ToggleVisuals.Layer:
-#          True: { state: icon }
-#          False: { state: icon-off }
-#  - type: Reflect # its really high cause it only reflects while charged
-#    reflectProb: .7 # fuck all life
-#    spread: 30
-#  - type: ItemToggle
-#    soundActivate:
-#      path: /Audio/Machines/button.ogg
-#      params:
-#        volume: -3
-#    soundDeactivate:
-#      collection: sparks
-#      params:
-#        volume: -4
-#    soundFailToActivate:
-#      path: /Audio/Machines/button.ogg
-#      params:
-#        variation: 0.250
-#  - type: ItemToggleMeleeWeapon #this used to have a small amount of shock damage but i just took it out for now
-#    activatedDamage:
-#      types:
-#        Slash: 10
-#        Piercing: 20
-#    ignoreResistances: true # the blade vibrates rapidly enough to move between atoms, making armor essentially useless against it.
-#    activatedSoundOnSwing: # vibrosword go wrrrrrrm
-#      path: /Audio/Weapons/eblademiss.ogg
-#      params:
-#        volume: -3
-#    activatedSoundOnHit:
-#      path: /Audio/Weapons/eblade1.ogg
-#      params:
-#        volume: -3
-#    activatedSoundOnHitNoDamage:
-#      path: /Audio/Weapons/eblade1.ogg
-#      params:
-#        variation: 0.250
-#        volume: -10
-#  - type: MeleeWeapon
-#    wideAnimationRotation: -15
-#    attackRate: .7 # do you enjoy hurting other people?
-#    range: 1.8
-#    soundHit:
-#      path: /Audio/Weapons/Melee/rapierhit.ogg
-#      params:
-#        volume: 2
-#    damage:
-#      types:
-#        Piercing: 15
-#    clickPartDamageMultiplier: 1.5
-#    heavyPartDamageMultiplier: 1
-#    heavyRateModifier: 1.25
-#    lightRangeModifier: 1.25
-#    heavyDamageBaseModifier: 1.1
-#    heavyStaminaCost: 10
-#    maxTargets: 5
-#    angle: 40
-#    animation: WeaponArcThrust
-#  - type: StaminaDamageOnHit
-#    damage: 5
-#    overtime: 5
-#    sound: /Audio/Weapons/egloves.ogg
-#  - type: StaminaDamageOnCollide
-#    damage: 5
-#    overtime: 5
-#    sound: /Audio/Weapons/egloves.ogg
-#  - type: DamageOtherOnHit
-#    staminaCost: 5
-#  - type: EmbeddableProjectile
-#  - type: EmbedPassiveDamage
-#  - type: ThrowingAngle
-#    angle: 225
-#  - type: Item
-#    size: Normal
-#    sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
-#  - type: Battery
-#    maxCharge: 1000
-#    startingCharge: 1000
-#  - type: BatterySelfRecharger
-#    autoRecharge: true
-#    autoRechargeRate: 35 # this is up in the air still tbh. i might just rework the sword entirely
-#  - type: Tag
-#    tags:
-#    - BsoRapier
-#  - type: DisarmMalus
-#    malus: 0.125
-#  - type: MeleeSpeech # DO NOT RESIST! DO NOT RESIST!! DO NOT RESIST!!!
-#  - type: ActivatableUI
-#    key: enum.MeleeSpeechUiKey.Key
-#    verbOnly: true
-#  - type: Actions
-#  - type: UserInterface
-#    interfaces:
-#      enum.MeleeSpeechUiKey.Key:
-#        type: MeleeSpeechBoundUserInterface
+# captain rapier
+- type: entity
+  name: captain's rapier
+  parent: [ BaseSword, BaseCommandContraband ]
+  id: CaptainsRapier
+  description: A very traditional parade rapier designed for the captain of the station.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/captain_rapier.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -15
+    heavyStaminaCost: 1.5
+    range: 1.8
+    attackRate: 1.5
+    damage:
+      types:
+        Piercing: 20 # just for pokin'
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+    angle: 30
+    animation: WeaponArcThrust
+  - type: EmbeddableProjectile
+    offset: -0.15,0.0
+  - type: LandAtCursor
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 225
+  - type: Reflect
+    reflectProb: .3
+    spread: 65 # more finesse in the blade or something. sit down.
+  - type: Item
+    size: Normal
+    sprite: _Gardenstation/Objects/Weapons/Melee/captain_rapier.rsi
+    shape:
+    - 0,0,0,3 #tweak if it looks jank later
+  - type: Tag
+    tags:
+    - CaptainRapier
+  - type: DisarmMalus
+    malus: 0.225
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-inanimate
+    weight: 0.02
+  - type: FrenchAccent # would be funny if it only spoke tradeband but nobody fucking cares about eridan AUUUGHHHH <////3
+  - type: SolutionContainerManager # poison tipped rapier?? its peak??? the bastard noble has no honor????
+    solutions:
+      melee:
+        maxVol: 2 # would be fun to have a color changing layer to show whats on it but tbh that defeats the purpose of coat lol // also increase this later if it sucks
+  - type: MeleeChemicalInjector
+    solution: melee
+  - type: RefillableSolution
+    solution: melee
+  - type: InjectableSolution
+    solution: melee
+  - type: SolutionInjectOnEmbed
+    transferAmount: 2
+    solution: melee
+  - type: SolutionTransfer
+    maxTransferAmount: 2
+# when psionics are a thing theres a gonna a psychal rapier here too

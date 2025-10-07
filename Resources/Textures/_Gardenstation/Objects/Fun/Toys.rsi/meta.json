@@ -17,6 +17,17 @@
         {
             "name": "plushiechoicestadpole-inhand-right",
             "directions": 4
+        },
+        {
+            "name": "plushie_tativoladov"
+        },
+        {
+            "name": "plushietativoladov-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "plushietativoladov-inhand-right",
+            "directions": 4
         }
     ]
 }

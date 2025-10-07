@@ -1,9 +1,19 @@
 ﻿- type: entity
   id: ClothingBeltSheathFilledBSODuelist
   parent: ClothingBeltSheathBSODuelist
-  suffix: Filled, Blueshield, BSO
+  suffix: Filled, Blueshield, BSO, Rapier
   components:
   - type: ContainerFill
     containers:
       item:
       - BsoVibroRapier
+
+- type: entity
+  id: ClothingBeltSheathFilledCaptainRapier
+  parent: ClothingBeltSheathCaptainRapier
+  suffix: Filled, Captain, Rapier
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - CaptainsRapier

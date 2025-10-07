@@ -192,6 +192,7 @@
     - id: CigarGoldCase
       prob: 0.25
     - id: ClothingBeltSheathFilled
+    - id: ClothingBeltSheathFilledCaptainRapier # GDS - add the rapier
     - id: ClothingHeadsetAltCommand
     - id: ClothingOuterArmorCaptainCarapace
     - id: CommsComputerCircuitboard

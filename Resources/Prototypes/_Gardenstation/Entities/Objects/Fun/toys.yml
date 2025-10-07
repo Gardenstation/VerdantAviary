@@ -7,6 +7,8 @@
   - type: Sprite
     sprite: _Gardenstation/Objects/Fun/Toys.rsi
     state: plushie_choicesbaby
+  - type: Item
+    heldPrefix: plushiechoicestadpole
   - type: EmitSoundOnUse
     sound:
       path: /Audio/_Gardenstation/Items/Toys/babusqueak.ogg
@@ -59,3 +61,36 @@
   - type: KnockdownOnHit
     duration: 1.5
     dropHeldItemsBehavior: DropIfStanding
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieTatiVoladov
+  name: Voladov plushie
+  description: Aside from advanced weaponry and good ol' fashioned Eridanian speciesism, Voladov Enterprises also manufactures a line of cute plushies!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Fun/Toys.rsi
+    state: plushie_tativoladov
+  - type: Item
+    heldPrefix: plushietativoladov
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/star_hit.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/star_hit.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Voice/Human/femalescream_3.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+

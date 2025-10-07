@@ -1,8 +1,8 @@
 ﻿- type: entity
-  parent: [ ClothingHeadBase, TranslatorPoweredBase ]
+  parent: [ ClothingHeadBase, PowerCellSlotHighItem, TranslatorPoweredBase ]
   id: ClothingHeadHatBSODuelistHat
   name: Blueshield's parade hat
-  description: A large feathered hat made specially for use by officers in tradeband circles. This one comes with a language skillsoft, and the brim is lined with razor-sharp plasteel.
+  description: A large feathered hat made specially for use by officers in tradeband circles. This one comes with a diplomat language skillsoft, its brim is lined with razor-sharp plasteel.
   components:
   - type: Sprite
     sprite: _Gardenstation/Clothing/Head/Hats/bso_duelist_hat.rsi
@@ -13,8 +13,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Slash: 12
-        Holy: 12
+        Slash: 15
   - type: MeleeWeapon
     attackRate: 1.5
     damage:
@@ -26,8 +25,10 @@
     spoken:
     - TauCetiBasic
     - Tradeband
+    - Sign
     understood:
     - TauCetiBasic
     - Tradeband
+    - Sign
     requires:
     - TauCetiBasic
