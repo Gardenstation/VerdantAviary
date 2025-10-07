@@ -34,6 +34,20 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gulp: # gds - more thaven emotes
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
+    Hiss: #
+      path: /Audio/Animals/snake_hiss.ogg
+    Meow:
+      collection: ThavenMeows # add thavenMale versions maybe?? idk. i feel like vocally it shouldnt be do different since its like whale noises
+    Mew:
+      collection: ThavenMews
+    Growl:
+      collection: ThavenGrowls
+    Purr:
+      collection: ThavenPurrs
+    Chirp:
+      collection: ThavenChirps #
 
 - type: emoteSounds
   id: FemaleThaven
@@ -71,4 +85,17 @@
       collection: Whistles
     Weh:
       collection: Weh
-
+    Gulp: # gds - more thaven emotes
+      path: /Audio/_Goobstation/Voice/gulpexotic.ogg
+    Hiss: #
+      path: /Audio/Animals/snake_hiss.ogg
+    Meow:
+      collection: ThavenMeows
+    Mew:
+      collection: ThavenMews
+    Growl:
+      collection: ThavenGrowls
+    Purr:
+      collection: ThavenPurrs
+    Chirp:
+      collection: ThavenChirps

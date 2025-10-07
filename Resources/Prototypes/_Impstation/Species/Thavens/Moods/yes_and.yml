@@ -35,7 +35,7 @@
   - Hypochondriac
   - Centrist
   - SpeechRestriction
-  - Clownfan
+  #- Clownfan
   - NanoChatAddict
 
 # You are extremely possessive of your property. Refuse to relinquish it, and if it is misplaced or stolen, it must be retrieved at all costs.
@@ -268,14 +268,14 @@
   moodVars:
     speechType: SpeechRestrictions
 
-# Fan of clowns: Clowns are such whimsical things, just seeing one makes you breakout into fits of laughter!
-- type: thavenMood
-  id: Clownfan
-  moodName: thaven-mood-clown-fan-name
-  moodDesc: thaven-mood-clown-fan-desc
-  conflicts:
-  - Coulrophobia
-  - Circus
+# Fan of clowns: Clowns are such whimsical things, just seeing one makes you breakout into fits of laughter! - removed, clown players must work for their laughs. also the ftl isnt real for this one.
+#- type: thavenMood
+#  id: Clownfan
+#  moodName: thaven-mood-clown-fan-name
+#  moodDesc: thaven-mood-clown-fan-desc
+#  conflicts:
+#  - Coulrophobia
+#  - Circus
 
 # Your social status is dependent upon the number of friends you have on NanoChat. You should use your PDA as much as possible, and message everyone you know.
 - type: thavenMood

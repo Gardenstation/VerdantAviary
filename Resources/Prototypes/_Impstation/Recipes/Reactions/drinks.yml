@@ -1,5 +1,5 @@
 ﻿- type: reaction
-  id: ThavenBad # add kelp ooze to this also
+  id: ThavenBad # gds added kelp ooze requirement
   requiredMixerCategories:
   - Shake
   reactants:
@@ -7,8 +7,10 @@
       amount: 1
     BbqSauce:
       amount: 1
+    KelpPodSlime:
+      amount: 1
   products:
-    ThavenBad: 2
+    ThavenBad: 3
 
 - type: reaction
   id: FeverDream # add kelp ooze
