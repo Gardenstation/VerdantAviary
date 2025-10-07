@@ -1,0 +1,241 @@
+﻿#bso rapier - this kinda works like the justice sword almost just a little less silly
+- type: entity
+  name: Blueshield officer's vibro-rapier #shitcode sorry
+  parent: [ BaseSword, BaseCentcommContraband]
+  id: BsoVibroRapier
+  description: A Voladov Arms manufactured rapier fitted with a high-tech vibroblade, quite common to see used by inner-spindle aristocracy and their bodyguards. A reflex trainer is fitted in its grip.
+  components:
+  - type: Tag
+    tags:
+    - BsoRapier
+  - type: Tool
+    qualities:
+    - Slicing
+    - Knife
+  - type: Item
+    sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+    heldPrefix: off
+    size: Large
+    storedRotation: -90
+    shape:
+    - 0,0,0,3
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+    state: icon
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+    autoRechargePause: true
+    autoRechargePauseTime: 40
+  - type: Sharp
+  - type: Execution
+    doAfterDuration: 4.0
+  - type: MeleeWeapon
+    wideAnimationRotation: -15
+    range: 1.8
+    attackRate: 0.8
+    damage:
+      types:
+        Piercing: 15
+    angle: 60
+    animation: WeaponArcThrust
+  - type: MeleeDash
+  - type: UseDelay
+    delay: 1.5
+  - type: StaminaDamageOnHit # BSO should be able to disable the attacker before they kill them instead hopefully...
+    damage: 5
+    sound: /Audio/Weapons/Guns/Hits/taser_hit.ogg
+  - type: DisarmMalus
+    malus: 0.125
+  - type: MeleeSpeech # DO NOT RESIST! DO NOT RESIST!! DO NOT RESIST!!!
+  - type: ActivatableUI
+    key: enum.MeleeSpeechUiKey.Key
+    verbOnly: true
+  - type: Actions
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface
+  - type: EmbeddableProjectile # toss it yaayyy
+    sound: /Audio/Weapons/star_hit.ogg
+    offset: -0.15,0.0
+  - type: LandAtCursor
+  - type: ItemSwitch
+    needsPower: true
+    defaultState: off
+    state: "off"
+    showLabel: true
+    states:
+      off: !type:ItemSwitchState
+        verb: off
+        energyPerUse: 0
+        sprite:
+          sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+          state: icon-off
+        components:
+        - type: MeleeWeapon
+          wideAnimationRotation: -15
+          attackRate: 1.5
+          damage:
+            types:
+              Piercing: 15
+          soundHit:
+            path: /Audio/Weapons/bladeslice.ogg
+          angle: 60
+          animation: WeaponArcThrust
+
+      stun: !type:ItemSwitchState
+        verb: low # the blade is under-volted allowing the current running thru the blade normally to act as a stunbaton
+        energyPerUse: 48
+        sprite:
+          sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+          state: stun-icon
+        components:
+        - type: MeleeWeapon
+          wideAnimationRotation: -15
+          attackRate: 1.5
+          damage:
+            types:
+              Piercing: 15 #the blade doesnt become less sharp, its still a sword.
+            armorPenetration: 0.3 # undervolted, doesnt slip between particles as well
+          angle: 60
+          animation: WeaponArcThrust
+          soundHit:
+            path: /Audio/Weapons/eblademiss.ogg # wrrrm
+        - type: StaminaDamageOnHit
+          damage: 35
+          overtime: 15
+        soundStateActivate:
+          collection: sparks
+          params:
+            variation: 0.250
+
+      lethal: !type:ItemSwitchState # tbh i wanna add a melee deflect tag here but idk how good thatd be as it is now. maybe some kinda poise system for melee would be nice?
+        verb: high
+        energyPerUse: 80
+        sprite:
+          sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+          state: stun-icon
+        components:
+        - type: MeleeWeapon
+          wideAnimationRotation: -15
+          attackRate: 1.5
+          damage:
+            types:
+              Slash: 5 #until weaponbased martial arts are thing, this is a stand-in for the lethal stance using more slashing techniques and aiming for arteries
+              Piercing: 20
+            armorPenetration: 1 # downtune this to like .8 at the very MOST - it should cut thru armor like butter because it vibrates thru atoms
+          angle: 40 #tighter spread on lethal stance,
+          animation: WeaponArcThrust
+          soundHit:
+            path: /Audio/Weapons/eblademiss.ogg
+        soundStateActivate:
+          collection: sparks
+          params:
+            variation: 0.250
+
+
+#    layers:
+#    - state: icon-off
+#      map: [ "enum.ToggleVisuals.Layer" ]
+#  - type: GenericVisualizer
+#    visuals:
+#      enum.ToggleVisuals.Toggled:
+#        enum.ToggleVisuals.Layer:
+#          True: { state: icon }
+#          False: { state: icon-off }
+#  - type: Reflect # its really high cause it only reflects while charged
+#    reflectProb: .7 # fuck all life
+#    spread: 30
+#  - type: ItemToggle
+#    soundActivate:
+#      path: /Audio/Machines/button.ogg
+#      params:
+#        volume: -3
+#    soundDeactivate:
+#      collection: sparks
+#      params:
+#        volume: -4
+#    soundFailToActivate:
+#      path: /Audio/Machines/button.ogg
+#      params:
+#        variation: 0.250
+#  - type: ItemToggleMeleeWeapon #this used to have a small amount of shock damage but i just took it out for now
+#    activatedDamage:
+#      types:
+#        Slash: 10
+#        Piercing: 20
+#    ignoreResistances: true # the blade vibrates rapidly enough to move between atoms, making armor essentially useless against it.
+#    activatedSoundOnSwing: # vibrosword go wrrrrrrm
+#      path: /Audio/Weapons/eblademiss.ogg
+#      params:
+#        volume: -3
+#    activatedSoundOnHit:
+#      path: /Audio/Weapons/eblade1.ogg
+#      params:
+#        volume: -3
+#    activatedSoundOnHitNoDamage:
+#      path: /Audio/Weapons/eblade1.ogg
+#      params:
+#        variation: 0.250
+#        volume: -10
+#  - type: MeleeWeapon
+#    wideAnimationRotation: -15
+#    attackRate: .7 # do you enjoy hurting other people?
+#    range: 1.8
+#    soundHit:
+#      path: /Audio/Weapons/Melee/rapierhit.ogg
+#      params:
+#        volume: 2
+#    damage:
+#      types:
+#        Piercing: 15
+#    clickPartDamageMultiplier: 1.5
+#    heavyPartDamageMultiplier: 1
+#    heavyRateModifier: 1.25
+#    lightRangeModifier: 1.25
+#    heavyDamageBaseModifier: 1.1
+#    heavyStaminaCost: 10
+#    maxTargets: 5
+#    angle: 40
+#    animation: WeaponArcThrust
+#  - type: StaminaDamageOnHit
+#    damage: 5
+#    overtime: 5
+#    sound: /Audio/Weapons/egloves.ogg
+#  - type: StaminaDamageOnCollide
+#    damage: 5
+#    overtime: 5
+#    sound: /Audio/Weapons/egloves.ogg
+#  - type: DamageOtherOnHit
+#    staminaCost: 5
+#  - type: EmbeddableProjectile
+#  - type: EmbedPassiveDamage
+#  - type: ThrowingAngle
+#    angle: 225
+#  - type: Item
+#    size: Normal
+#    sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+#  - type: Battery
+#    maxCharge: 1000
+#    startingCharge: 1000
+#  - type: BatterySelfRecharger
+#    autoRecharge: true
+#    autoRechargeRate: 35 # this is up in the air still tbh. i might just rework the sword entirely
+#  - type: Tag
+#    tags:
+#    - BsoRapier
+#  - type: DisarmMalus
+#    malus: 0.125
+#  - type: MeleeSpeech # DO NOT RESIST! DO NOT RESIST!! DO NOT RESIST!!!
+#  - type: ActivatableUI
+#    key: enum.MeleeSpeechUiKey.Key
+#    verbOnly: true
+#  - type: Actions
+#  - type: UserInterface
+#    interfaces:
+#      enum.MeleeSpeechUiKey.Key:
+#        type: MeleeSpeechBoundUserInterface

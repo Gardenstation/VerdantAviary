@@ -1,0 +1,9 @@
+﻿- type: selectableSet
+  id: BSODuelistSet
+  name: selectable-set-blueshield-rapier-name
+  description: selectable-set-blueshield-rapier-description
+  sprite:
+    sprite: _Gardenstation/Clothing/Belt/Sheath/bso_rapier_sheath.rsi
+    state: sheath-sabre
+  content:
+  - ClothingBeltSheathFilledBSODuelist

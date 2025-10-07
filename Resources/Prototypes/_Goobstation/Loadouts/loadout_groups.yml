@@ -979,6 +979,7 @@
   - BlueshieldOfficerBeret
   - BlueshieldOfficerHeadCowboy
   - BlueshieldOfficerGoidaHelmet
+  - BlueshieldOfficerHeadDuelistHat # GDS addition
 
 - type: loadoutGroup
   id: BlueshieldOfficerBackpack
@@ -996,10 +997,11 @@
   - BlueshieldOfficerInnerBlueshieldSuit
   - BlueshieldOfficerInnerBlueshieldSkirt
   - BlueshieldOfficerInnerBlueshieldShirt
-  - BlueshieldOfficerTurtleneck # OmuStation Addon  
+  - BlueshieldOfficerTurtleneck # OmuStation Addon
   - BlueshieldOfficerTurtleneckSkirt # OmuStation Addon
-  - BlackBlueshieldOfficerTurtleneck # OmuStation Addon  
+  - BlackBlueshieldOfficerTurtleneck # OmuStation Addon
   - BlackBlueshieldOfficerTurtleneckSkirt # OmuStation Addon
+  - BlueshieldOfficerInnerDuelistSuit # GDS addition
 
 - type: loadoutGroup
   id: BlueshieldOfficerOuter
@@ -1021,6 +1023,7 @@
   loadouts:
   - BlueshieldOfficerOuterBlueshieldMantle
   - BlueshieldOfficerOuterBlueshieldMantleBlack # Omu
+  - BlueshieldOfficerNeckDuelistMantle # GDS addition
 
 - type: loadoutGroup
   id: BlueshieldOfficerMask
@@ -1036,6 +1039,7 @@
   - JackBoots
   - BlackCowboyBoots
   - SnowjacksBso
+  - BlueshieldOfficerShoesDuelistBoots # GDS addition
 
 - type: loadoutGroup
   id: BlueshieldOfficerEnvirohelm
@@ -1068,6 +1072,7 @@
   maxLimit: 1
   loadouts:
   - CombatGloves
+  - BlueshieldOfficerDuelistGloves # GDS addition
 
 # Career Trainer
 

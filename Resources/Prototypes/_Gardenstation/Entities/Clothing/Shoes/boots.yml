@@ -1,0 +1,30 @@
+﻿- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsBSOParadeBoots
+  name: blueshield's dress boots
+  description: A finely crafted pair of leather riding boots, they feel incredibly light!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/Boots/bso_duelist_boots.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Shoes/Boots/bso_duelist_boots.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHighHeels # not really heeled but theyre totally clacky boots. real italian leather.
+      params:
+        volume: -6
+        variation: 0.09
+  - type: ClothingSlowOnDamageModifier # matches the snowjacks so dont complain about balance.
+    modifier: 0.6
+  - type: ModifyStandingUpTime
+    multiplier: 0.6
+  - type: ClothingModifyStunTime # for cool duelist moments and swagger
+    modifier: 0.6
+  - type: ItemSlots # could be cool
+    slots:
+      item:
+        name: clothing-boots-sidearm
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm

@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: [ClothingUniformBase, BaseCentcommContraband]
+  id: ClothingUniformJumpsuitBSOParadeUniform
+  name: Blueshield's parade uniform
+  description: A finely tailored suit made specially for any officers stationed in aristocratic circles. The lace is quite itchy...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi

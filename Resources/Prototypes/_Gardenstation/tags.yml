@@ -1,2 +1,11 @@
 ﻿- type: Tag
   id: ThavenEmotes
+
+- type: Tag
+  id: CaptainRapier
+
+- type: Tag
+  id: BsoRapier
+
+- type: Tag # this is for other vibroweapons we'll have eventually. ideally we will port personal shields at some point but thats a discussion for later.
+  id: VibroWeapon

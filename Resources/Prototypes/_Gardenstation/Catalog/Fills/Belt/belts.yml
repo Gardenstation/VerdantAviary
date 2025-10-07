@@ -1,0 +1,9 @@
+﻿- type: entity
+  id: ClothingBeltSheathFilledBSODuelist
+  parent: ClothingBeltSheathBSODuelist
+  suffix: Filled, Blueshield, BSO
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - BsoVibroRapier

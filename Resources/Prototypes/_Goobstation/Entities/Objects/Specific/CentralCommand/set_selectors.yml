@@ -31,6 +31,7 @@
     - BSOCQCSet
     - BSOChesterSet
     - BSOSyringeSet
+    - BSODuelistSet # GDS addition - temp till we make a melee/range selector case (or do away with them entirely)
     maxSelectedSets: 2
 
 

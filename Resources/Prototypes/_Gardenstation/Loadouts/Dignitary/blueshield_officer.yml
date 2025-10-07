@@ -1,0 +1,35 @@
+﻿# head
+- type: loadout
+  id: BlueshieldOfficerHeadDuelistHat
+  equipment:
+    head: ClothingHeadHatBSODuelistHat
+
+# uniforms
+- type: loadout
+  id: BlueshieldOfficerInnerDuelistSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBSOParadeUniform
+
+# gloves
+- type: loadout
+  id: BlueshieldOfficerDuelistGloves
+  equipment:
+    gloves: ClothingHandsGlovesBSODuelistLace
+
+# outer
+
+# neck
+- type: loadout
+  id: BlueshieldOfficerNeckDuelistMantle
+  equipment:
+    neck: ClothingNeckMantleBsoParadeMantle
+
+# back
+
+# mask
+
+# shoes
+- type: loadout
+  id: BlueshieldOfficerShoesDuelistBoots
+  equipment:
+    shoes: ClothingShoesBootsBSOParadeBoots
