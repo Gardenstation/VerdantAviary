@@ -36,7 +36,7 @@
   id: MakeupNailPolishRight
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne] # Delta V - Felinid, Oni, Vulpkanin
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin # Omu - Feroxi
   coloring:
     default:
       type:
@@ -50,7 +50,7 @@
   id: MakeupNailPolishLeft
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne] # Delta V - Felinid, Oni, Vulpkanin
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin # Omu - Feroxi
   coloring:
     default:
       type:

@@ -653,3 +653,11 @@ Entries:
         vulnerability has been replaced with radiation
   id: 78
   time: '2025-10-05T15:16:05.0000000+00:00'
+- author: dootythefrooty
+  changes:
+    - type: Tweak
+      message: Feroxi has more markings to choose for you shark-lovers out there.
+    - type: Tweak
+      message: Feroxi, IPCs, Tajaran, and Shadowkin can now wear undergarments.
+  id: 79
+  time: '2025-10-06T16:13:47.0000000+00:00'
