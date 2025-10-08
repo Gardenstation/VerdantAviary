@@ -41,6 +41,10 @@
     HeadTop: MobShadowkinAnyMarking
     HeadSide: MobShadowkinAnyMarkingFollowSkin
     Tail: MobShadowkinAnyMarkingFollowSkin
+    #omu start
+    Undershirt: MobHumanoidAnyMarking
+    Underwear: MobHumanoidAnyMarking
+    #omu end
     Chest: MobShadowkinChest
     Groin: MobShadowkinGroin
     Eyes: MobShadowkinEyes
