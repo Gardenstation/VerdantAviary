@@ -13,7 +13,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Slash: 15
+        Slash: 15 # nerf this to 12 probably
   - type: MeleeWeapon
     attackRate: 1.5
     damage:

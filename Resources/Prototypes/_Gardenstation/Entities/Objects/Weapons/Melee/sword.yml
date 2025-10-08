@@ -1,6 +1,6 @@
 ﻿#bso rapier - this kinda works like the justice sword almost just a little less silly
 - type: entity
-  name: Blueshield officer's vibro-rapier #shitcode sorry
+  name: Blueshield officer's vibro-rapier # :whimsy:
   parent: [ BaseSword, BaseCentcommContraband]
   id: BsoVibroRapier
   description: A Voladov Arms manufactured rapier fitted with a high-tech vibroblade, quite common to see used by inner-spindle aristocracy and their bodyguards. A reflex trainer is fitted in its grip.
@@ -52,7 +52,7 @@
     malus: 0.125
   - type: MeleeSpeech # DO NOT RESIST! DO NOT RESIST!! DO NOT RESIST!!!
   - type: ActivatableUI
-    key: enum.MeleeSpeechUiKey.Key
+    key: enum.MeleeSpeechUiKey.Key # debating on whether to give this a persona ghost role or not. maybe stick it in the hat idk and just keep the melee speech.
     verbOnly: true
   - type: Actions
   - type: UserInterface
@@ -63,7 +63,7 @@
     sound: /Audio/Weapons/star_hit.ogg
     offset: -0.15,0.0
   - type: LandAtCursor
-  - type: ItemSwitch
+  - type: ItemSwitch # new sword wit da switch
     needsPower: true
     defaultState: off
     state: "off"
@@ -118,7 +118,7 @@
         energyPerUse: 80
         sprite:
           sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
-          state: stun-icon
+          state: lethal-icon # less flashy than the undervolted one. as the power is increased the vibration makes the blade a horizontal blur
         components:
         - type: MeleeWeapon
           wideAnimationRotation: -15

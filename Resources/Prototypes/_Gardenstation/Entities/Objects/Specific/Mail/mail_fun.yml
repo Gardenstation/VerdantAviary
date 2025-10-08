@@ -1,0 +1,13 @@
+﻿- type: entity
+  parent: BaseMailLarge
+  id: MailPlushieVoladov
+  suffix: Plushie Voladov
+  components:
+  - type: Mail
+    contents:
+    - id: PlushieTatiVoladov
+    - id: PaperVoladovArmsAd
+    - id: LuxuryPen
+    - id: ClothingBeltSheathCaptainRapier # Little dangerous between the reflect and the damage
+      orGroup: Sword
+      prob: 0.001

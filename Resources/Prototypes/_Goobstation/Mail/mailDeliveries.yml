@@ -46,6 +46,7 @@
     MailFlowers: 0.8
     MailCrayons: 0.9
     MailLowMoney: 1
+    MailPlushieVoladov: 1 # gds - add new mail package. contains plushie with small chance of free rapier lole
   # Tools
     MailSignallerKit: 0.5
     MailFlashlight: 0.8

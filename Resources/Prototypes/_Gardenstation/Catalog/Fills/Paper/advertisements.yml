@@ -1,0 +1,8 @@
+﻿- type: entity
+  id: PaperVoladovArmsAd
+  name: Voladov Enterprises Flyer
+  description: "Premium arms at Premium prices! If you crave violence- you crave Voladov."
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-voladovarms-flyer
