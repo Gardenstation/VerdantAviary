@@ -22,9 +22,11 @@
     speaks:
     - TauCetiBasic
     - Eckeckyik
+    - BieselEckeckyik
     understands:
     - TauCetiBasic
     - Eckeckyik
+    - BieselEckeckyik
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Thaven

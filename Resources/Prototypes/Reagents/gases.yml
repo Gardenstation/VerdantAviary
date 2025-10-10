@@ -264,6 +264,9 @@
         - !type:OrganType # EE - Plasmeme
           type: Plasmaman
           shouldHave: false
+        - !type:OrganType # IMP - gds thaven   bhrathe goot.
+          type: Thaven
+          shouldHave: false
         - !type:OrganType # Shitmed - Cybernetic Organs
           type: Cybernetic
           shouldHave: false
@@ -291,11 +294,12 @@
         factor: 4
         conditions:
         - !type:OrganType
-          type: Plasmaman
-      - !type:Oxygenate # Imp - Thaven can breathe anything
+          type: Thaven
+      - !type:Oxygenate
+        factor: 4
         conditions:
         - !type:OrganType
-          type: Thaven
+          type: Plasmaman
       - !type:ModifyLungGas
         conditions:
         - !type:OrganType
@@ -466,10 +470,17 @@
         conditions:
         - !type:OrganType
           type: Plant
+      - !type:Oxygenate # gds
+        conditions:
+        - !type:OrganType
+          type: Thaven
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Plant
+          shouldHave: false
+        - !type:OrganType # TheDen - Thaven can breathe anything
+          type: Thaven
           shouldHave: false
         - !type:OrganType
           type: Vox

@@ -30,6 +30,7 @@
   - ChevalTranslatorImplanter
   - NewKinPidginTranslator
   - SchechiTranslator
+  - BieselEckeckyikTranslator # gds
   position: -4, 4
   technologyPrerequisites:
   - AdvancedEntertainment
@@ -61,6 +62,8 @@
   - NewKinPidginTranslatorImplanter
   - AnimalTranslator
   - XenoTranslator
+  - BieselEckeckyikTranslatorImplanter # gds
+  - EckeckyikTranslator # gds
   position: -4, 5
   technologyPrerequisites:
   - BasicTranslation
