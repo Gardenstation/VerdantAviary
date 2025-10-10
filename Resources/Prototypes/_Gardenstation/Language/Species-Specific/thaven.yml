@@ -4,7 +4,9 @@
   isVisibleLanguage: true
   speech:
     color: "#5dd4a0"
-    fontId: Sprykski
+    fontId: HazeMorning
+    boldFontId: Goo
+    fontSize: 15
     speechVerbOverrides:
     - chat-speech-verb-eckeckyik-1
     - chat-speech-verb-eckeckyik-2
@@ -26,3 +28,39 @@
     - EeeEEE
     - EEaaeEEEee
     - ouuoouhHouhh
+
+- type: language
+  id: BieselEckeckyik
+  isVisibleLanguage: true
+  speech:
+    color: "#5dd4a0"
+    fontId: Wavetosh
+    boldFontId: Goo
+    fontSize: 15
+    speechVerbOverrides: # 2/4 are gone cause less cetaceous
+    - chat-speech-verb-eckeckyik-1
+    - chat-speech-verb-eckeckyik-3
+    - chat-speech-verb-eckeckyik-5
+    - chat-speech-verb-eckeckyik-6
+    - chat-speech-verb-eckeckyik-7
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 2
+    maxSyllables: 4
+    replacement:
+    - eeEeEE
+    - eeEEeeE
+    - ooOuoUoouu
+    - OuAHhhohhHUhhohh
+    - EyeEEeEEEKK
+    - AeeEEOUUuEE
+    - shiwuuEUeEEe
+    - shiiaeeEeEEe
+    - anEEeeEe
+    - aaou
+    - eejiouu
+    - liaaaouuu
+    - tageeEEoueEEee
+    - cojeeEeeEeEEe
+    - vaaeEEeEeeE
+    - zojIeEEiEEeE

@@ -1,0 +1,7 @@
+﻿- type: entity
+  id: BieselEckeckyikTranslatorImplanter
+  parent: BaseTranslatorImplanter
+  suffix: Bieselized Thaven
+  components:
+  - type: Implanter
+    implant: BieselEckeckyikTranslatorImplant
