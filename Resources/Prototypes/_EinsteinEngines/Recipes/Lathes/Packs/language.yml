@@ -22,6 +22,8 @@
   - MarishTranslator
   - NewKinPidginTranslator
   - SchechiTranslator
+  - BieselEckeckyikTranslator # gds
+  - EckeckyikTranslator # gds
 
 - type: latheRecipePack
   id: TranslatorImplanters
@@ -42,3 +44,4 @@
   - ChevalTranslatorImplanter
   - NewKinPidginTranslatorImplanter
   - SchechiTranslatorImplanter
+  - BieselEckeckyikTranslatorImplanter # gds
