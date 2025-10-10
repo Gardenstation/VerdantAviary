@@ -73,7 +73,8 @@
     TowercapSeeds: 5
     WheatSeeds: 5
     WatermelonSeeds: 5
+    KelpPodSeeds: 3
   contrabandInventory:
-    TobaccoSeeds: 2
+    TobaccoSeeds: 2 # ???? why is this contraband????
     FoodSnackSemki: 2
     FlyAmanitaSeeds: 1

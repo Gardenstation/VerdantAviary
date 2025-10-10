@@ -155,6 +155,7 @@
         - Tajaran
         - Vox
         - Vulpkanin
+        - Thaven # gds thaven port
     - !type:TraitsRequirement
       traits:
         - ClawsTrait
@@ -184,4 +185,4 @@
   components:
     - type: IgnorePocketHiding
   globalCost: 2
-  
+

@@ -1,0 +1,43 @@
+﻿#- type: trait # this doesnt actually make you any smaller but it just lets you go into bags
+#  id: SmallTrait
+#  name: trait-small-name
+#  description: trait-small-desc
+#  category: PhysicalTraits
+#  blacklist:
+#    components:
+#    - BorgChassis
+#  components:
+#  - type: PseudoItem
+#    storedOffset: 0,17
+#    shape:
+#    - 0,0,1,4
+#    - 0,2,3,4
+#    - 4,0,5,4
+#  requirements:
+#  - !type:WeightRequirement # small cant be big
+#    minimumWeight: 45
+#    inverted: true
+#  globalCost: 3 - this is commented out for now until we make the requirement conditions needed for the trait
+
+- type: trait # thaven are flexible cause their weird biological makeup
+  id: LitheTrait
+  name: trait-lithe-name
+  description: trait-lithe-desc
+  category: PhysicalTraits
+  blacklist:
+    components:
+    - BorgChassis
+  components:
+  - type: PseudoItem
+    storedOffset: 0,17
+    shape:
+    - 0,0,1,4
+    - 0,2,3,4
+    - 4,0,5,4
+  - type: CrawlUnderObjects # crawling like a mf
+    actionProto: ActionToggleSneakMode
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Thaven
+  globalCost: 3
