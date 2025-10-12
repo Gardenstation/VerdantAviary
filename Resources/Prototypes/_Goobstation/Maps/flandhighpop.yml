@@ -37,7 +37,7 @@
 - type: gameMap
   id: FlandHighPop
   mapName: 'Fland Installation'
-  mapPath: /Maps/_Goobstation/fland.yml
+  mapPath: /Maps/_Omu/fland.yml # Omu - Prisoner role mapping
   minPlayers: 85
   stations:
     Fland:
@@ -59,6 +59,7 @@
             NanotrasenRepresentative: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            AdministrativeAssistant: [ 1, 1 ] # Delta V
             Bartender: [ 3, 3 ]
             Botanist: [ 5, 5 ]
             Chef: [ 4, 4 ]
@@ -89,6 +90,7 @@
             SecurityCadet: [ -1, -1 ]
             Lawyer: [ 3, 3 ]
             Brigmedic: [ 1, 1 ]
+            TransitPrisoner: [4, 4] # Omu - Prisoner role
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 8, 8 ]

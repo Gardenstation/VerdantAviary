@@ -15,3 +15,12 @@
   components:
   - type: Pda
     id: CentralCommandDireggtorIDCard
+
+- type: entity
+  parent: ClearPDA
+  id: TransitPrisonerPDA
+  name: Prisoner PDA
+  description: 99 and 44/100ths percent pure plastic.
+  components:
+  - type: Pda
+    id: PrisonerIDCardPerma

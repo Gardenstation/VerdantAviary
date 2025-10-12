@@ -6,7 +6,7 @@
 - type: gameMap
   id: Serpentcrest
   mapName: 'Serpentcrest'
-  mapPath: /Maps/_Goobstation/serpentcrest.yml
+  mapPath: /Maps/_Omu/serpentcrest.yml # Omu - Prisoner role mapping
   minPlayers: 40
   stations:
     Serpentcrest:
@@ -28,6 +28,7 @@
             NanotrasenRepresentative: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            AdministrativeAssistant: [ 1, 1 ] # Delta V
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
@@ -58,6 +59,7 @@
             SecurityCadet: [ 3, 3 ]
             Lawyer: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]
+            TransitPrisoner: [3, 3] # Omu - Prisoner role
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 4, 4 ]

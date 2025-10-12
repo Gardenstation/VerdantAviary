@@ -64,7 +64,7 @@
     - !type:TraitGiveEquipmentIfHasJobs # Certain jobs do just need access to internals, so we'll spawn them with a more advanced version of the mantle.
       jobEquipment:
         # engineering mantle for engineers
-        AtmosphericTechnician: ClothingCyberneticBeastMantleWorkEngineering
+        AtmosphericTechnician: ClothingCyberneticBeastMantleWorkAtmospherics # special one for atmosians because burn chamber
         StationEngineer: ClothingCyberneticBeastMantleWorkEngineering
         TechnicalAssistant: ClothingCyberneticBeastMantleWorkEngineering
         # salvage mantle for salvagers
@@ -83,7 +83,7 @@
         # tossup of mantles for command.
         BlueshieldOfficer: ClothingCyberneticBeastMantleBlueshieldOfficer
         Captain: ClothingCyberneticBeastMantleCommand
-        ChiefEngineer: ClothingCyberneticBeastMantleWorkEngineering
+        ChiefEngineer: ClothingCyberneticBeastMantleWorkAtmospherics
         ChiefMedicalOfficer: ClothingCyberneticBeastMantleMedical
         HeadOfPersonnel: ClothingCyberneticBeastMantleCommand
         HeadOfSecurity: ClothingCyberneticBeastMantleSecurity

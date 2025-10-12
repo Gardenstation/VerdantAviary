@@ -31,7 +31,7 @@
 - type: gameMap
   id: Origin
   mapName: 'Origin'
-  mapPath: /Maps/_Goobstation/origin.yml
+  mapPath: /Maps/_Omu/origin.yml # Omu - Prisoner role mapping
   minPlayers: 50
   maxPlayers: 85
   stations:
@@ -53,6 +53,7 @@
             BlueshieldOfficer: [ 1, 1 ]
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            AdministrativeAssistant: [ 1, 1 ] # Delta V
             Bartender: [ 2, 2 ]
             Botanist: [ 3, 3 ]
             Chef: [ 3, 3 ]
@@ -85,6 +86,7 @@
             SecurityOfficer: [ 7, 7 ]
             SecurityCadet: [ 2, 4 ]
             Brigmedic: [ 1, 1 ]
+            TransitPrisoner: [3, 3] # Omu - Prisoner role
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 8, 8 ]

@@ -48,6 +48,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <Nullable>enable</Nullable>
     <ServerGarbageCollection>true</ServerGarbageCollection>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
     <PackageReference Include="NetCord" />

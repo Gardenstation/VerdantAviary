@@ -1,7 +1,8 @@
+using Content.Client._Omu.Eye;
 using Content.Shared._Omu.Traits;
 using Content.Shared.Flash.Components;
+using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
-using Content.Client._Omu.Eye;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Player;
@@ -64,9 +65,7 @@ public sealed class PhotophobiaSystem : SharedPhotophobiaSystem
     private void OnPhotophobiaShutdown(Entity<PhotophobiaComponent> ent, ref ComponentShutdown args)
     {
         if (_player.LocalEntity == ent.Owner)
-        {
             _overlayMan.RemoveOverlay(_overlay);
-        }
     }
 
     /// <summary>
@@ -74,7 +73,8 @@ public sealed class PhotophobiaSystem : SharedPhotophobiaSystem
     /// </summary>
     private void OnSunglassesEquipped(Entity<FlashImmunityComponent> ent, ref GotEquippedEvent args)
     {
-        _overlayMan.RemoveOverlay(_overlay);
+        if (_player.LocalEntity == args.Equipee && args.SlotFlags != SlotFlags.POCKET)
+            _overlayMan.RemoveOverlay(_overlay);
     }
 
     /// <summary>
@@ -82,7 +82,8 @@ public sealed class PhotophobiaSystem : SharedPhotophobiaSystem
     /// </summary>
     private void OnSunglassesUnequipped(Entity<FlashImmunityComponent> ent, ref GotUnequippedEvent args)
     {
-        _overlayMan.AddOverlay(_overlay);
+        if (_player.LocalEntity == args.Equipee && args.SlotFlags != SlotFlags.POCKET)
+            _overlayMan.AddOverlay(_overlay);
     }
 
 }

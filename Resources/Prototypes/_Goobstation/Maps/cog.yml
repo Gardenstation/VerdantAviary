@@ -6,7 +6,7 @@
 - type: gameMap
   id: Cog
   mapName: 'Cog'
-  mapPath: /Maps/_Goobstation/cog.yml
+  mapPath: /Maps/_Omu/cog.yml # Omu - Prisoner role mapping
   minPlayers: 40
   stations:
     Cog:
@@ -24,6 +24,7 @@
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            AdministrativeAssistant: [ 1, 1 ] # Delta V
             NanotrasenRepresentative: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
             Bartender: [ 2, 2 ]
@@ -59,6 +60,7 @@
             SecurityCadet: [ 4, 4 ]
             Lawyer: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]
+            TransitPrisoner: [3, 3] # Omu - Prisoner role
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]

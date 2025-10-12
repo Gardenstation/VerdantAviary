@@ -134,6 +134,7 @@
 # SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 # SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 korczoczek <danielkorczok+git@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # This is a basic dictionary that maps old entity prototype ids to new ids. This only works for entity prototypes, and
@@ -293,7 +294,7 @@ SpawnPointForensicMantis: null
 SpawnPointLocationMidRoundAntag: null
 SpawnPointMartialArtist: null
 SpawnPointMedicalBorg: null
-SpawnPointPrisoner: null
+#SpawnPointPrisoner: null # Omu
 SpawnPointPrisonGuard: null
 SpeedLoaderSpecialPractice: null
 SuitStorageCorpsman: null
@@ -1112,7 +1113,7 @@ ShotgunSafeSpawner: GunSafeShotgunKammerer
 SignConspiracyBoard: null
 SpawnMobJusticePet: null
 SpawnMobSecLaikaOrShiva: SpawnMobSecDogLaika
-SpawnPointAdminAssistant: null
+SpawnPointAdminAssistant: SpawnPointAdminAssistant
 SpawnPointChiefJustice: null
 SpawnPointClerk: null
 SpawnPointProsecutor: null
@@ -1132,4 +1133,7 @@ SpawnPointCargoAssistant: SpawnPointCargoTechnician
 SignLastIdiot: null
 EpistemicsTechFab: ScienceTechFab
 LockableButtonRobotics: null
-LockerAdministrativeAssistantFilled: UniqueLockerNanorepFilled
+# LockerAdministrativeAssistantFilled: UniqueLockerNanorepFilled # Administrative Assistant is real now. This was just converting their lockers to NTR ones.
+
+# 2025-10-09
+FoodDonutJellySlugcat: FoodDonutJellyScurret
