@@ -253,7 +253,7 @@
   name: abductors-title
   description: abductors-description
   showInVote: false
-  minPlayers: 20
+  minPlayers: 100  # Omu, was 20, This gamerule is broken, setting to 100 minplayers so it never rolls
   rules:
   - DuoAbductorRoundstart
   - SubGamemodesRule

@@ -661,3 +661,115 @@ Entries:
       message: Feroxi, IPCs, Tajaran, and Shadowkin can now wear undergarments.
   id: 79
   time: '2025-10-06T16:13:47.0000000+00:00'
+- author: Lenny
+  changes:
+    - type: Add
+      message: Added the prisoner role. Security beware! (Not mapped yet, but soon:tm:)
+  id: 80
+  time: '2025-10-09T00:42:11.0000000+00:00'
+- author: CliveOcelot
+  changes:
+    - type: Remove
+      message: Removed DuoAbductors from roundstart, as the rule does not work.
+  id: 81
+  time: '2025-10-09T00:44:33.0000000+00:00'
+- author: NotActuallyMarty
+  changes:
+    - type: Remove
+      message: CQC No longer grants Riposte ability.
+  id: 82
+  time: '2025-10-09T15:27:20.0000000+00:00'
+- author: Diggy0
+  changes:
+    - type: Add
+      message: >-
+        3 Cybersun related jumpsuits added to medical, one exclusive to
+        paramedics, red nitrile gloves are now available for med, new hardsuit
+        for paramedics to select.
+    - type: Add
+      message: >-
+        New hardsuit in the uplink for 30 TC, the "Guānlián" hardsuit offers
+        general resistance agaisnt enviromental hazards, but little agaisnt
+        physical damage like blunt, slash, or piercing, along with total
+        protection agaisn't zombification.
+    - type: Tweak
+      message: The paramed hardsuit's light has a further reach.
+  id: 83
+  time: '2025-10-11T07:53:13.0000000+00:00'
+- author: Appenzaller
+  changes:
+    - type: Add
+      message: 3 new deathsquad music themes
+    - type: Tweak
+      message: Removed Styptic Stimulator implants from ERT/DS
+  id: 84
+  time: '2025-10-11T17:18:16.0000000+00:00'
+- author: Fat-Engineer-Gaming
+  changes:
+    - type: Add
+      message: >-
+        ERT-Type Cyborgs have been added to Nanotrasens Emergency Response
+        Teams!
+    - type: Add
+      message: >-
+        |REDACTED|-Type Cyborgs have been added to Nanotrasens |REDACTED|
+        Reserves!
+    - type: Tweak
+      message: >-
+        Syndicate Cyborgs are now held to higher standards, atleast, that's what
+        the ghost role raffle says. Quit finding loopholes in your laws and
+        focus on that fukken disk!
+  id: 85
+  time: '2025-10-11T17:20:05.0000000+00:00'
+- author: MarkerWicker
+  changes:
+    - type: Tweak
+      message: >-
+        Cybernetic mantles have been improved for Engineers and Atmosians. In
+        return, all "sealed" mantle variants need to be taken off in order for
+        the wearer to eat.
+    - type: Fix
+      message: Cybernetic mantle eye colours now show up as the same for each player.
+    - type: Fix
+      message: The cybernetic beast trait is now transferred to clones of a character.
+    - type: Fix
+      message: Virtual items no longer show up when a character is examined.
+  id: 86
+  time: '2025-10-11T17:29:34.0000000+00:00'
+- author: CliveOcelot
+  changes:
+    - type: Add
+      message: Added back the 40mm beanbags and slug shell for sec.
+    - type: Add
+      message: Added back recipes for 8 gauge lever action mags.
+  id: 87
+  time: '2025-10-11T18:00:33.0000000+00:00'
+- author: CerberusWolfie, Radezolid, AppleSmithWorks
+  changes:
+    - type: Add
+      message: Added Administrative Assistant (not mapped yet).
+  id: 88
+  time: '2025-10-11T20:27:57.0000000+00:00'
+- author: Lenny
+  changes:
+    - type: Add
+      message: >-
+        Mapped Prisoners and Administrative Assistants to every map in current
+        rotation except Reach.
+  id: 89
+  time: '2025-10-12T03:10:47.0000000+00:00'
+- author: Kirisune
+  changes:
+    - type: Tweak
+      message: >-
+        Changed RD hardsuit stats so it becomes viable again while bringing back
+        its old sprite and changing its name and description to reference Omu
+        lore.
+  id: 90
+  time: '2025-10-12T10:47:01.0000000+00:00'
+- author: GNUtopia
+  changes:
+    - type: Add
+      message: The warden can now select a lunging rapier as their duty weapon
+  id: 91
+  time: '2025-10-12T15:02:44.0000000+00:00'

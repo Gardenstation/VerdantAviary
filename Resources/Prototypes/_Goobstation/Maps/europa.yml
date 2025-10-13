@@ -121,6 +121,7 @@
             Janitor: [ 2, 2 ]
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            # AdministrativeAssistant: [ 1, 1 ] # Delta V
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 3, 4 ]

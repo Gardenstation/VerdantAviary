@@ -53,6 +53,12 @@
       - state: helmet
       - state: eyes
         shader: unshaded
+  - type: HideLayerClothing
+    slots:
+    - Snout
+  - type: GuideHelp # I would add this to the player, but unfortunately that doesn't work. The guidebook system is client sided only, so if the server adds this to the player via a trait, nothing will happen.
+    guides:
+    - CyberneticBeast
   - type: PointLight # the glow is subtle. It's just enough to make the mantle visible in pitch black lighting, but won't help you see much.
     radius: 1.45
     energy: 0.6
@@ -69,6 +75,9 @@
     stealGroup: CyberneticMantles
   - type: Item
     size: Huge
+  - type: Tag # Overwrite the TagComponent from the parent to get rid of ClothMade because it's funny when a mothroach eats this ultra specialized bit of equipment, but only the first time.
+    tags: 
+    - WhitelistChameleon
 
 # This mantle is inteded for people doing jobs that require internals. In particular, this mantle is a breath mask with pressure protection.
 - type: entity
@@ -88,6 +97,7 @@
       - state: helmet-internals
       - state: eyes
         shader: unshaded
+  - type: IngestionBlocker # Work mantles, at least those with internals, make the cybernetic beast trait far more valuable to roles with these specialized mantles than those without. To offset this, at least a little, we'll say that the seals on the mantle make it impossible to eat while it's worn.
   - type: ComponentToggler
     components: # copied from the parent with some additions
     - type: VisionCorrection
@@ -102,7 +112,7 @@
       highPressureMultiplier: 0.4
       lowPressureMultiplier: 1000
 
-# resprite of the work mantle for engineers.
+# variant of the work mantle for engineers with slightly more powerful pressure protection, and welding protection.
 - type: entity
   id: ClothingCyberneticBeastMantleWorkEngineering
   parent: ClothingCyberneticBeastMantleWork
@@ -116,6 +126,46 @@
       - state: helmet-internals
       - state: eyes-engineering
         shader: unshaded
+  - type: ComponentToggler
+    components: # copied from the parent with some additions
+    - type: VisionCorrection
+      correctionPower: 16
+    - type: NightVision
+      isEquipment: true
+      color: "#CCFFCC"
+    - type: FlashImmunity
+    - type: FlashSoundSuppression
+    - type: BreathMask
+    - type: PressureProtection
+      highPressureMultiplier: 0.1
+      lowPressureMultiplier: 1000
+    - type: EyeProtection
+
+# variant of the engineering mantle for atmosians. Mostly because the burn chamber is a thing.
+- type: entity
+  id: ClothingCyberneticBeastMantleWorkAtmospherics
+  parent: ClothingCyberneticBeastMantleWorkEngineering
+  name: beast's atmospheric mantle
+  components:
+  - type: ComponentToggler
+    components: # copied from the parent with some additions
+    - type: VisionCorrection
+      correctionPower: 16
+    - type: NightVision
+      isEquipment: true
+      color: "#CCFFCC"
+    - type: FlashImmunity
+    - type: FlashSoundSuppression
+    - type: BreathMask
+    - type: PressureProtection
+      highPressureMultiplier: 0.1
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.01
+      coolingCoefficient: 0.2
+    - type: EyeProtection
+    - type: FireProtection
+      reduction: 0.2
 
 # resprite of the work mantle for salvagers in particular.
 - type: entity
@@ -216,13 +266,7 @@
     - type: ShowHealthBars
     - type: ShowHealthIcons
 
-# Mantle for the BSO, this one is a little weird:
-# We give the BSO all the huds they would normally get from their glasses, and we give them pressure protection, but NOT internals.
-# The BSO's job description (protect command) doesn't strictly speaking require going into space, but realistically the BSO probably
-# will have to. But I don't want to make the mantle a no-brainer item for the BSO to have. So, it gets pressure protection.
-# Pressure protection will reward spontaneous decision making (if I go out there NOW and save the captain quick, I'll get off scott free)
-# but it still makes extended trips into space unlikely without forcing the BSO to play around the balance of the trait.
-
+# Mantle for the BSO
 - type: entity
   id: ClothingCyberneticBeastMantleBlueshieldOfficer
   parent: [ClothingCyberneticBeastMantle, BaseCentcommContraband]
