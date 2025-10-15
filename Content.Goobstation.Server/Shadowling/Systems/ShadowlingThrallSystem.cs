@@ -1,3 +1,4 @@
+// SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
 // SPDX-FileCopyrightText: 2025 Lumminal <81829924+Lumminal@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
 //
