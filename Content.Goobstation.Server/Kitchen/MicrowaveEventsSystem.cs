@@ -1,3 +1,4 @@
+// SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 X <70487315+XWasHere@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
