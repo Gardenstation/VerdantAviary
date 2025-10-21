@@ -731,7 +731,7 @@
   description: bounty-description-wine
   entries:
   - name: bounty-item-wine
-    amount: 2
+    amount: 4
     whitelist:
       tags:
       - Wine
