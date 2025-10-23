@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Client._Omu.Eye;
 using Content.Shared._Omu.Traits;
 using Content.Shared.Flash.Components;
