@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2024 Mnemotechnican <69920617+Mnemotechnician@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 RadsammyT <radsammyt@gmail.com>

@@ -1,3 +1,4 @@
+// SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
 // SPDX-FileCopyrightText: 2025 _kote <143940725+FaDeOkno@users.noreply.github.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
