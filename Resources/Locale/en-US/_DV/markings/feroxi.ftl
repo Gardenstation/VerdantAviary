@@ -133,11 +133,13 @@ marking-FeroxiTorsoCountershadingM-feroxi-torso-countershading-m = Countershadin
 marking-FeroxiLegStripesBlitz = Calf Stripes
 marking-FeroxiLegStripesBlitz-feroxi-leg-stripes-blitz = Stripes
 
-marking-FeroxiLegStripesTiger = Full Stripes
+## omu - changed because arm and leg options are in overlay category
+marking-FeroxiLegStripesTiger = Full Leg Stripes
 marking-FeroxiLegStripesTiger-feroxi-leg-stripes-tiger = Stripes
 
 marking-FeroxiArmStripesBlitz = Shoulder Stripes
 marking-FeroxiArmStripesBlitz-feroxi-arm-stripes-blitz = Stripes
 
-marking-FeroxiArmStripesTiger = Full Stripes
+## omu - changed because arm and leg options are in overlay category
+marking-FeroxiArmStripesTiger = Full Arm Stripes
 marking-FeroxiArmStripesTiger-feroxi-arm-stripes-tiger = Stripes

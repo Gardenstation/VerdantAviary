@@ -7,6 +7,8 @@
   packetPrototype: KelpPodSeeds
   productPrototypes:
   - FoodKelpPod
+  mutationPrototypes:
+  - KelpWinePod
   harvestRepeat: Repeat
   lifespan: 75
   maturation: 8
@@ -26,3 +28,32 @@
       Min: 5
       Max: 20
       PotencyDivisor: 50
+#mutated self-fermenting kelp pod
+- type: seed
+  id: KelpWinePod
+  name: Eeckekyiish cask-kelp pods
+  noun: seeds-noun-seeds
+  displayName: Eeckekyiish cask-kelp pods
+  plantRsi: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
+  packetPrototype: KelpWineSeeds
+  productPrototypes:
+  - FoodKelpPod
+  harvestRepeat: Repeat
+  lifespan: 75
+  maturation: 8
+  production: 12
+  yield: 2
+  potency: 20
+  growthStages: 3
+  waterConsumption: 0.40
+  idealLight: 9
+  idealHeat: 298
+  chemicals:
+    KelpPodSlime:
+      Min: 5
+      Max: 15
+      PotencyDivisor: 20
+    KelpPodWine:
+      Min: 10
+      Max: 30
+      PotencyDivisor: 20

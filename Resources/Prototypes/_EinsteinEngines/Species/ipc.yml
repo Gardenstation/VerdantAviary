@@ -41,6 +41,10 @@
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
     Hair: MobHumanoidMarkingMatchSkin
+    #omu start
+    Undershirt: MobHumanoidAnyMarking
+    Underwear: MobHumanoidAnyMarking
+    #omu end
     Chest: MobIPCChest
     Groin: MobIPCGroin
     LArm: MobIPCLArm

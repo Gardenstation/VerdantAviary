@@ -92,6 +92,8 @@
         amount: 2
       - id: BungoSeeds
         amount: 2
+      - id: KelpPodSeeds # gds add buyable seeds for the aspiring vinter
+        amount: 2
 
 - type: entity
   id: CrateHydroponicsSeedsMedicinal

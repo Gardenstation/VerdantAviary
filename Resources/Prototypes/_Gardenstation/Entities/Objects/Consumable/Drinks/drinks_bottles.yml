@@ -15,6 +15,9 @@
   - type: Sprite
     sprite: _Gardenstation/Objects/Consumable/Drinks/kelpwine_bottle.rsi
   - type: Sealable
+  - type: Item
+    sprite: _Gardenstation/Objects/Consumable/Drinks/kelpwine_bottle.rsi
+  - type: SolutionContainerVisuals
   - type: Tag
     tags:
     - Wine

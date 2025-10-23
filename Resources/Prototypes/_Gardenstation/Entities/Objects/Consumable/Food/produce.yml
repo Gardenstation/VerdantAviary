@@ -30,3 +30,35 @@
         name: Kelp
       taco:
         name: Kelp
+# cask-kelp
+- type: entity
+  name: Eeckekyiish cask-kelp pod
+  parent: FoodProduceBase
+  id: FoodKelpWinePod
+  description: A strange and sweet-smelling pod. It seems be bubbling away on the inside... some kind of self-contained fermentation process?
+  components:
+  - type: FlavorProfile
+    flavors:
+    - kelpwine
+    - medicine
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: KelpPodSlime
+          Quantity: 20
+        - ReagentId: KelpPodWine #self fermenting!
+          Quantity: 20
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
+  - type: Produce
+    seedId: KelpWinePod
+  - type: Extractable
+    grindableSolutionName: food
+  - type: FoodSequenceElement
+    entries:
+      burger:
+        name: cask-kelp
+      taco:
+        name: cask-kelp
