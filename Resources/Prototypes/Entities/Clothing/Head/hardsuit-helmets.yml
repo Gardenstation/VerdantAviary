@@ -605,8 +605,8 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitRd
-  name: experimental research hardsuit helmet # Goob edit
-  description: Lightweight hardsuit helmet that doesn't restrict your head movements. # Goob edit
+  name: sophia research hardsuit helmet # Omu edit
+  description: A heavily armored helmet worn over the Sophia hardsuit.  # Omu edit
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/rd.rsi
@@ -619,13 +619,13 @@
     lowPressureMultiplier: 1000
   - type: Armor
     modifiers:
-      coefficients: #Goob - Modsuit edited all but pierce/blunt
+      coefficients: #Omu - Making it viable to use again after awful goob nerfs
         Blunt: 0.7
         Slash: 0.9
         Piercing: 0.95
-        Heat: 0.45
-        Radiation: 0.05
-        Caustic: 0.4
+        Heat: 0.30
+        Radiation: 0.01
+        Caustic: 0.35
   - type: Tag
     tags:
     - CorgiWearable

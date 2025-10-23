@@ -125,6 +125,7 @@
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 # SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Avalon <jfbentley1@gmail.com>
 # SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
 # SPDX-FileCopyrightText: 2025 BloodfiendishOperator <141253729+Diggy0@users.noreply.github.com>
@@ -255,6 +256,7 @@
   - Cane
   - WhiteCane
   - TapeRecorder
+  - DrinkOniGourd
   # End DeltaV Additions
 
 - type: loadoutGroup
@@ -420,6 +422,7 @@
   - ClothingFormalHoPCoat # Omu
   - ClothingFormalHoPJacket # Omu
   - ClothingFormalHoPDress # Omu
+  - HoPLongcoat #goob
 
 # Civilian
 - type: loadoutGroup
@@ -1179,6 +1182,7 @@
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
   - LongScienceCoat # OmuStation
+  - ResearchDirectorLabCoatPurple #goob
 
 - type: loadoutGroup
   id: ResearchDirectorShoes
@@ -1333,6 +1337,7 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - WardenCoatBlue #goob
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1373,7 +1378,6 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
-  - SecurityJudoBelt # Goobstation - Martial Arts
 
 - type: loadoutGroup
   id: SecurityOuterClothing
@@ -1530,6 +1534,8 @@
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
   - MedicMJ # goob
+  - CybersunMedicalJumpsuit # Omu
+  - CybersunMedicalJumpskirt # Omu
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1571,6 +1577,7 @@
   loadouts:
   - LatexGloves
   - NitrileGloves
+  - CybersunNitrileGloves # Omu
 
 - type: loadoutGroup
   id: MedicalMask
@@ -1623,6 +1630,7 @@
   minLimit: 0
   loadouts:
   - ParamedicHead
+  - ParamedicCapCybersun # Omu
   - SeniorPhysicianBeret # Goobstation
 
 - type: loadoutGroup
@@ -1636,6 +1644,9 @@
   - SeniorPhysicianJumpsuit # Goobstation
   - SeniorPhysicianJumpskirt # Goobstation
   - ParamedMJ # goob
+  - CybersunMedicalJumpsuit # Omu
+  - CybersunMedicalJumpskirt # Omu
+  - ParamedUniformCybersun # Omu
 
 - type: loadoutGroup
   id: ParamedicOuterClothing

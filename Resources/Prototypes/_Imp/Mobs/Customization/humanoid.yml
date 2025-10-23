@@ -93,7 +93,7 @@
   id: HumanoidAbs
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human, Dwarf, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Shadowkin, Vulpkanin, Rodentia, Feroxi] #Omu - Feroxi
+  speciesRestriction: [Human, Dwarf, Oni, Reptilian, SlimePerson, Arachnid, Tajaran, Shadowkin, Vulpkanin, Rodentia, Feroxi, Harpy] #Omu - Feroxi, Harpy
   followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/chest.rsi

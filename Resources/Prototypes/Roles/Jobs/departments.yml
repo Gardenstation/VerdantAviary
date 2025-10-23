@@ -180,6 +180,7 @@
   - BlueshieldOfficer # Goobstation
   - NanotrasenRepresentative # Goobstation
   - NanotrasenCareerTrainer # Goobstation
+  - AdministrativeAssistant # Delta V
   - CentralCommandOfficial
   - CBURN
   - ERTLeader
@@ -230,6 +231,7 @@
   - Detective
   - Warden
   - Brigmedic # Goob
+  - TransitPrisoner # Omu
 
 - type: department
   id: Science
