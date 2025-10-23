@@ -6,7 +6,7 @@
 
       All warranty is voided upon opening of package, Voladov Enterprise takes no responsibility for any illicit or
       improper usage of materials inside. Any and all subscription services related to Voladov Enterprises corporate outreach program
-      will be charged automatically upon authorization of package seal- Please contact voladov.enterprises.legal@voladoventerprise.eri.ex.com
-      to begin pre-cancellation process. Any correspondence may take between 1-17 Eridanian business days to be met. any extraplanetary extranet
+      will be charged automatically upon authorization of package seal- Please contact voladov.enterprises.legal@voladoventerprise.sol.ex.com
+      to begin pre-cancellation process. Any correspondence may take between 1-17 Lunarian business days to be met. any extraplanetary extranet
       fees will be charged automatically to senders attached card- no refunds applicable. All cancellations are subject to cancellation service
-      subscription fees. To find out more please reach out to voladov.enterprises.legal@voladoventerprise.eri.ex.com
+      subscription fees. To find out more please reach out to voladov.enterprises.legal@voladoventerprise.sol.ex.com

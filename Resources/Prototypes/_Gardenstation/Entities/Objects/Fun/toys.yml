@@ -66,7 +66,7 @@
   parent: BasePlushie
   id: PlushieTatiVoladov
   name: Voladov plushie
-  description: Aside from advanced weaponry and good ol' fashioned Eridanian speciesism, Voladov Enterprises also manufactures a line of cute plushies!
+  description: Aside from advanced weaponry and good ol' fashioned Lunarian speciesism, Voladov Enterprises also manufactures a line of cute plushies!
   components:
   - type: Sprite
     sprite: _Gardenstation/Objects/Fun/Toys.rsi

@@ -3,7 +3,7 @@
   name: Blueshield officer's vibro-rapier # :whimsy:
   parent: [ BaseSword, BaseCentcommContraband]
   id: BsoVibroRapier
-  description: A Voladov Arms manufactured rapier fitted with a high-tech vibroblade, quite common to see used by inner-spindle aristocracy and their bodyguards. A reflex trainer is fitted in its grip.
+  description: A Voladov Arms vibro-rapier, quite common to see used by inner-spindle aristocracy and their bodyguards. A reflex trainer is fitted in its grip.
   components:
   - type: Tag
     tags:
@@ -116,7 +116,7 @@
 
       lethal: !type:ItemSwitchState # tbh i wanna add a melee deflect tag here but idk how good thatd be as it is now. maybe some kinda poise system for melee would be nice?
         verb: high
-        energyPerUse: 100 # very high damage and ap , takes power to run the vibroblade/trainer
+        energyPerUse: 120 # very high damage and ap , takes power to run the vibroblade/trainer . forces bso to land their hits or get fucked
         sprite:
           sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
           state: lethal-icon # less flashy than the undervolted one. as the power is increased the vibration makes the blade a horizontal blur
@@ -145,7 +145,7 @@
   name: captain's rapier
   parent: [ BaseSword, BaseCommandContraband ]
   id: CaptainsRapier
-  description: A very traditional parade rapier designed for the captain of the station.
+  description: A very traditional parade rapier designed for use by ranking officers.
   components:
   - type: Sprite
     sprite: _Gardenstation/Objects/Weapons/Melee/captain_rapier.rsi
