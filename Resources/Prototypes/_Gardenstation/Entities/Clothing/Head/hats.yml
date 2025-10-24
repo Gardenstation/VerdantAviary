@@ -8,6 +8,25 @@
     sprite: _Gardenstation/Clothing/Head/Hats/bso_duelist_hat.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Head/Hats/bso_duelist_hat.rsi
+  - type: Armor # sidegrade bso beret since it had no armor before
+    coverage:
+    - Head
+    traumaDeductions:
+      Dismemberment: 0.3
+      OrganDamage: 0.3
+      BoneDamage: 0.3
+      VeinsDamage: 0
+      NerveDamage: 0
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+        Radiation: 0.75
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
   - type: LandAtCursor
   - type: Boomerang
   - type: DamageOtherOnHit
@@ -32,3 +51,14 @@
     - Sign
     requires:
     - TauCetiBasic
+
+- type: entity
+  parent: [ ClothingHeadHatCaptain ]
+  id: ClothingHeadHatASSNNavyCap
+  name: Navy Captain's Dresscap
+  description: A Solarian naval officer's peaked cap. It seems to be reinforced with some kind of ballistic weave...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/assn_officer_dresscap.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/assn_officer_dresscap.rsi

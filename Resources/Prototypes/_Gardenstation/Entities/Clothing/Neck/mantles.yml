@@ -13,3 +13,15 @@
       coefficients:
         Slash: 0.95
         Piercing: 0.95
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckMantleASSNNavyMantle
+  name: Navy Captain's Mantle
+  description: An beautifully ornate officer mantle, its cordage suggests a ranking member of the Solarian Navy... Lets try and keep this one away from HR maybe...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Mantles/assn_navy_mantle.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/Mantles/assn_navy_mantle.rsi
+

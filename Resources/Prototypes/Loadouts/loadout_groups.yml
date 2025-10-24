@@ -336,6 +336,7 @@
   minLimit: 0
   loadouts:
   - CaptainHead
+  - CaptainASSNPeakedCap
   - CaptainCap
 
 - type: loadoutGroup
@@ -357,6 +358,7 @@
   - CaptainCloak
   - CaptainCloakFormal
   - CaptainMantle
+  - CaptainASSNMantle # gds - HR disaster incoming.
 
 - type: loadoutGroup
   id: CaptainBackpack

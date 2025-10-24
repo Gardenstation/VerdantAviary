@@ -1,0 +1,32 @@
+﻿
+
+# Jumpsuit
+
+# Head
+- type: loadout
+  id: CaptainASSNPeakedCap
+  equipment:
+    neck: ClothingHeadHatASSNNavyCap
+  effects:
+    - !type:SpeciesLoadoutEffect # Only humans should have access to solarian navy gear. Realistically even if it was taken by a trophy in war the last "hot" conflict was probably 25 years before currentlore, and an admiral would not be seeing direct frontline combat lmfao.
+      species:
+        - Human
+
+# Mask
+
+# Neck
+- type: loadout
+  id: CaptainASSNMantle
+  equipment:
+    neck: ClothingNeckMantleASSNNavyMantle
+  effects:
+  - !type:SpeciesLoadoutEffect # more solslop :3
+    species:
+    - Human
+# Back
+
+# Outer
+
+# Gloves
+
+# Shoes
