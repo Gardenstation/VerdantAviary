@@ -87,7 +87,7 @@
 - type: gameMap
   id: Meta
   mapName: 'Meta Station'
-  mapPath: /Maps/_Goobstation/meta.yml # Goobstation
+  mapPath: /Maps/_Omu/meta.yml # Omu - Prisoner role mapping
   minPlayers: 30 # Goobstation return minPlayers requirement for maps
   maxPlayers: 85 # Goobstation - Limit mappool to highpop versions of maps only
   stations:
@@ -108,6 +108,7 @@
             NanotrasenRepresentative: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
+            AdministrativeAssistant: [ 1, 1 ] # Delta V
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
@@ -138,6 +139,7 @@
             SecurityCadet: [ 3, 6 ]
             Lawyer: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]
+            TransitPrisoner: [2, 2] # Omu - Prisoner role
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]

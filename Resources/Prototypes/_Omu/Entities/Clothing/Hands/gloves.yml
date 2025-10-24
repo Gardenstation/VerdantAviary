@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsGlovesCybersunNitrile
+  name: red nitrile gloves
+  description: High-quality red nitrile gloves. Expensive medical equipment for Interdyne and Cybersun medical staff alike.
+  components:
+  - type: Sprite
+    sprite: _Omu/Clothing/Hands/Gloves/nitrilecybersun.rsi
+  - type: Clothing
+    sprite: _Omu/Clothing/Hands/Gloves/nitrilecybersun.rsi
+  - type: Fiber
+    fiberMaterial: fibers-nitrile
+    fiberColor: fibers-red
+  - type: FingerprintMask
+
+  

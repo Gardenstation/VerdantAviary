@@ -133,3 +133,25 @@
     sprite: _Omu/Clothing/Uniforms/Jumpsuit/hopturtleneck.rsi
   - type: Clothing
     sprite: _Omu/Clothing/Uniforms/Jumpsuit/hopturtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCybersunMedicalJumpsuit
+  name: cybersun medical jumpsuit
+  description: Sterile coveralls worn by Cybersun Industries field medics for protection against biological hazards.
+  components:
+  - type: Sprite
+    sprite: _Omu/Clothing/Uniforms/Jumpsuit/cybersunmedicaljumpsuit.rsi
+  - type: Clothing
+    sprite: _Omu/Clothing/Uniforms/Jumpsuit/cybersunmedicaljumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCybersunParamedJumpsuit
+  name: cybersun paramed suit
+  description: Sterile suit worn by Cybersun Industries paramedics, with some red for identification.
+  components:
+  - type: Sprite
+    sprite: _Omu/Clothing/Uniforms/Jumpsuit/cybersunparamed.rsi
+  - type: Clothing
+    sprite: _Omu/Clothing/Uniforms/Jumpsuit/cybersunparamed.rsi

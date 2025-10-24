@@ -139,6 +139,16 @@
     - Shadowkin
     - Thaven
 
+# Goobstation start
+- type: loadoutEffectGroup
+  id: HarnessWearers
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Vox
+    - Plasmaman
+# Goobstation end
+
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
   effects:
@@ -367,7 +377,7 @@
   id: LoadoutTankHarness
   effects:
   - !type:GroupLoadoutEffect
-    proto: EffectSpeciesVox
+    proto: HarnessWearers # Goobstation edit
   equipment:
     outerClothing: ClothingOuterVestTank
 

@@ -1,0 +1,71 @@
+- type: lobbyBackground
+  id: adaringescape
+  background: /Textures/_Omu/LobbyScreens/a-daring-escape.webp
+  name: Daring Escape
+  artist: Holorain
+
+- type: lobbyBackground
+  id: bridgefent
+  background: /Textures/_Omu/LobbyScreens/bridge-fent.webp
+  name: Bridge Fent
+  artist: Ryrazzz
+
+- type: lobbyBackground
+  id: giantegginspace
+  background: /Textures/_Omu/LobbyScreens/giant-egg-in-space.webp
+  name: Giant Egg in Space
+  artist: GhoulishProductions
+
+- type: lobbyBackground
+  id: goblingimme
+  background: /Textures/_Omu/LobbyScreens/goblin-gimme.webp
+  name: Gimme
+  artist: peripc
+
+- type: lobbyBackground
+  id: heedthekingscall
+  background: /Textures/_Omu/LobbyScreens/heed-the-kings-call.webp
+  name: Heed the King's Call
+  artist: peripc
+
+- type: lobbyBackground
+  id: howitfeelstodualwield
+  background: /Textures/_Omu/LobbyScreens/how-it-feels-to-dual-wield.webp
+  name: How it Feels to Dual Wield
+  artist: IsaacScoutProto
+
+- type: lobbyBackground
+  id: kinsci
+  background: /Textures/_Omu/LobbyScreens/kinsci.webp
+  name: Kinsci
+  artist: Rocket
+
+- type: lobbyBackground
+  id: nillonlavaland
+  background: /Textures/_Omu/LobbyScreens/nill-on-lavaland.webp
+  name: Nill on Lavaland
+  artist: Nultan
+
+- type: lobbyBackground
+  id: pharmacy
+  background: /Textures/_Omu/LobbyScreens/pharmacy.webp
+  name: Pharmacy
+  artist: Squibbo
+
+- type: lobbyBackground
+  id: spacedragoncarp # Added carp so it wasn't sharing an ID.
+  background: /Textures/_Omu/LobbyScreens/space-dragon.webp
+  name: Space Dragon
+  artist: distraughtcat
+
+- type: lobbyBackground
+  id: waitingforevac
+  background: /Textures/_Omu/LobbyScreens/waiting-for-evac.webp
+  name: Waiting for Evac
+  artist: Nultan
+
+- type: lobbyBackground
+  id: youshouldcareaboutyourself
+  background: /Textures/_Omu/LobbyScreens/you-should-care-about-yourself.webp
+  name: You Should Care About Yourself
+  artist: Xolotl

@@ -13,7 +13,7 @@
   - type: StationEvent
     startAnnouncement: station-event-deathsquad-enroute
     startAudio:
-      path: /Audio/StationEvents/rescue_imminent.ogg
+      collection: DSMusic #Omu
     reoccurrenceDelay: 30
     duration: null
     maxOccurrences: 1

@@ -66,3 +66,28 @@
   - type: PresetIdCard
     job: CentralCommandDireggtor
 
+- type: entity
+  parent: IDCardStandard
+  id: PrisonerIDCardPerma
+  name: Transit prisoner ID card
+  description: A generically printed ID card for scummy prisoners.
+  components:
+  - type: Sprite
+    layers:
+    - state: orange
+  - type: Item
+    heldPrefix: orange
+  - type: Access
+    tags:
+    - GenpopEnter
+  - type: IdCard
+    jobTitle: job-name-transit-prisoner
+    jobIcon: JobIconPrisoner
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+    - WhitelistChameleonIdCard
+    - Recyclable
+  - type: StaticPrice
+    price: 0

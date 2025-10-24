@@ -187,10 +187,12 @@
     exemptAccessLevels:
     - BasicSilicon
     - Borg
-  - type: DeployableTurretController
+  - type: DeployableTurretController 
     accessGroups:
+    - Research # Omu, allow AI to whitelist RD
     - Silicon
     accessLevels:
+    - ResearchDirector # Omu, allow AI to whitelist RD
     - BasicSilicon
     - Borg
 
