@@ -165,6 +165,8 @@
     sprite: _Goobstation/Clothing/Head/Hardsuits/goobparamed.rsi # goobstation - wizden sprites SUCK ASS!!!
   - type: PointLight # goobstation
     color: "#3385cc"
+    radius: 7 # Omu 
+    energy: 3 # Omu
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1

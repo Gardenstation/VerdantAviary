@@ -13,6 +13,7 @@ using Content.Shared.Chat;
 using Content.Shared.Examine;
 using Content.Shared._White.Examine;
 using Content.Shared.Inventory;
+using Content.Shared.Inventory.VirtualItem; // Omustation Change
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
@@ -87,6 +88,10 @@ public sealed class ExaminableCharacterSystem : EntitySystem
                 slotLabel += "-selfaware";
 
             if (!_inventorySystem.TryGetSlotEntity(uid, slotName, out var slotEntity))
+                continue;
+
+            // Omustation - Stop virtual items showing up on examine due to ClothingTakesUpExtraSlotsSystem
+            if (HasComp<VirtualItemComponent>(slotEntity))
                 continue;
 
             if (_entityManager.TryGetComponent<MetaDataComponent>(slotEntity, out var metaData)

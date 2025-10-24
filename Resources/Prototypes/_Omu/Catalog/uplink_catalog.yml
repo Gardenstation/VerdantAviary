@@ -1,4 +1,15 @@
 - type: listing
+  id: UplinkCybersunScienceHardsuit
+  name: uplink-hardsuit-cybersunsciencesuit-name
+  description: uplink-hardsuit-cybersunsciencesuit-desc
+  icon: { sprite: /Textures/_Omu/Clothing/OuterClothing/Hardsuits/cybersunscientisthardsuit.rsi, state: icon }
+  productEntity: ClothingOuterHardsuitCybersunScience
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkWearables
+
+- type: listing
   id: UplinkDislippler
   name: uplink-dislippler-name
   description: uplink-dislippler-desc
@@ -12,3 +23,4 @@
   - !type:BuyerJobCondition
     whitelist:
     - Clown
+
