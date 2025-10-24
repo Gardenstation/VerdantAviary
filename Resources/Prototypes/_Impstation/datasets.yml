@@ -1,4 +1,9 @@
-﻿- type: dataset
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: dataset
   id: Departments
   values:
   - Engineering
@@ -90,11 +95,17 @@
   - Bungo Curry
   - Salty Sweet Miso Cola Soup
   - Bread Dog
+  - Kelp Pod Burger
+  - Moldy Bread
+  - Kelp Pod Taco
+  - Kelp Pod
+  - Bottle of Corn Oil
+  - Deep Friend Stick of Butter # thaven mood where you just give yourself a heart attack in the service hall
 
 - type: dataset
   id: Holidays
   values:
-  - Binkus Day
+  - Free Kelp Day
   - Foster's Feast
   - Gondaltide
   - St. Pun Pun's Eve
@@ -103,18 +114,19 @@
   - Labor Day
   - NT Corporate Mindfulness Day
   - Silicon Awareness Day
+  - Pink Appreciation Day
   - Logistics Improvement Day
   - Small Ear Syndrome Awareness Day
   - Gunchday
-  - Gerold's Ascension
+  - Saint Eckeyeas' Day
   - the Good Day Of Digging And Playing
   - the Talent Show
-  - Biesel Aquatic Lifeforms Accessibility Act Remembrance Day
-  - Martian Independence Day
-  - the Day Of Veneration Of Saint Jennifer
+  - Tau-Ceti Cetaceaform Accessibility Act Remembrance Day
+  - Biesel Independence Day
+  - the Day Of Veneration Of Saint O'Hare
   - Todaybor Day
   - Pet A Sheep Day
-  - Kibaltimore Remembrance Day
+  - Eekeyiaikakslana Remembrance Day
 
 - type: dataset
   id: Clothes

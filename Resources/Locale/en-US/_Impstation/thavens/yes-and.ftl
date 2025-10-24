@@ -162,3 +162,11 @@ thaven-mood-speech-restriction-desc = {$speechType ->
   [TitleCase] You Are Miraculously Capable Of Pronouncing Capital Letters, And Believe It Is Important That You Do So.
   [PirateSpeak] You should endeavor to speak like a pirate to the best of your ability.
 }
+
+thaven-mood-soggins-name = Bureaucratic Warrior
+thaven-mood-soggins-desc = All agreements must be signed for posterity and authenticity, no matter how small or "unimportant" they may seem.
+
+thaven-mood-klingon-name = Honor-bound Warrior
+thaven-mood-klingon-desc = You must openly carry a lethal weapon at all times, even if you cannot use it. To be seen without it is a grave dishonor, to die without- even worse.
+
+
