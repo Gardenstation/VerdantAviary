@@ -1,4 +1,9 @@
-﻿# Shared moods will be selected at round start and shared amongst all thaven. These are rolled before individual laws.
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Shared moods will be selected at round start and shared amongst all thaven. These are rolled before individual laws.
 # Only one law needs to say it conflicts with another for the system to prevent them from being rolled together.
 
 # Make sure to add new moods to this dataset or they will not be selected!!!!!!
@@ -151,5 +156,5 @@
   moodName: thaven-mood-circus-name
   moodDesc: thaven-mood-circus-desc
   conflicts:
-  - Clownfan
+  #- Clownfan
   - Coulrophobia

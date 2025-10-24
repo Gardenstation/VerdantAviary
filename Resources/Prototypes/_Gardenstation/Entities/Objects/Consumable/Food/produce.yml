@@ -1,4 +1,9 @@
-﻿#Thavens
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+#Thavens
 - type: entity
   name: Eeckekyiish kelp pod
   parent: FoodProduceBase
@@ -25,11 +30,14 @@
   - type: Extractable
     grindableSolutionName: food
   - type: FoodSequenceElement
+    sprite:
+      sprite: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
+      state: produce
     entries:
       burger:
-        name: Kelp
+        name: food-sequence-burger-content-kelp
       taco:
-        name: Kelp
+        name: food-sequence-taco-kelp
 # cask-kelp
 - type: entity
   name: Eeckekyiish cask-kelp pod
@@ -57,8 +65,11 @@
   - type: Extractable
     grindableSolutionName: food
   - type: FoodSequenceElement
+    sprite:
+      sprite: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
+      state: produce
     entries:
       burger:
-        name: cask-kelp
+        name: food-sequence-burger-content-cask-kelp
       taco:
-        name: cask-kelp
+        name: food-sequence-taco-cask-kelp

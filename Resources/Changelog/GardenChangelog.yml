@@ -1,4 +1,9 @@
-﻿Name: Gardenstation
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+Name: Gardenstation
 Order: -3
 Entries:
 - author: bunnygirlHyacinth, Portfiend, Kushbreth, Shaman
@@ -28,3 +33,12 @@ Entries:
   id: 3
   time: '2025-10-10'
   url: https://github.com/Gardenstation/VerdantAviary/pull/13
+- author: bunnygirlHyacinth
+  changes:
+  - type: tweak
+    message: tweaked reagent effects on thaven shimmerblood to work properly now
+  - type: tweak
+    message: thaven kelp cocktail sprites tweaked
+  id: 4
+  time: '2025-10-13'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/16

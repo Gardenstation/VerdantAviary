@@ -1,4 +1,9 @@
-﻿# "No, and" moods will discourage players from certain behaviors and objects.
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# "No, and" moods will discourage players from certain behaviors and objects.
 
 # Make sure to add new moods to this dataset or they will not be selected!!!!!!
 - type: dataset
@@ -253,5 +258,5 @@
   moodName: thaven-mood-coulrophobia-name
   moodDesc: thaven-mood-coulrophobia-desc
   conflicts:
-  - Clownfan
+  #- Clownfan
   - Circus

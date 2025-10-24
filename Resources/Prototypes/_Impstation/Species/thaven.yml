@@ -1,4 +1,9 @@
-﻿- type: species
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: species
   id: Thaven
   name: species-name-thaven
   roundStart: true
@@ -11,10 +16,8 @@
   maleFirstNames: NamesThaven
   femaleFirstNames: NamesThaven
   naming: First
-  customName: true
   minAge: 18
   youngAge: 50
-  middleAge: 135
   oldAge: 260
   maxAge: 360 # pre-contact thavens?? idk
   averageHeight: 188 # Thaven sprites are roughly 4" taller than standard humanoid sprites, this makes their height values display accurately

@@ -1,4 +1,9 @@
-﻿#ported from imp with some changes from the den version of thavens
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+#ported from imp with some changes from the den version of thavens
 - type: entity
   id: BaseThavenOrgan
   parent: BaseItem
@@ -218,7 +223,6 @@
   - type: Sprite
     sprite: _Impstation/Mobs/Species/Thaven/organs.rsi
   - type: Metabolizer
-    maxReagents: 3
     metabolizerTypes: [Animal, Thaven]
     removeEmpty: true
     groups:

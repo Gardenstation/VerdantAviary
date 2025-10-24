@@ -1,4 +1,9 @@
-﻿- type: reagent # can't parent it to blood because anybody should be able to drink it, the flesh/organs are the toxic parts (fugu moment) -- thanks den
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: reagent # can't parent it to blood because anybody should be able to drink it, the flesh/organs are the toxic parts (fugu moment) -- thanks den
   id: ShimmeringBlood
   name: reagent-name-shimmering-blood
   group: Biological
@@ -47,12 +52,39 @@
 #        amount: 0.375 # TheDen - Vampiric additions end
     Narcotic:
       effects:
-      - !type:GenericStatusEffect
-        key: SeeingRainbows
-        component: SeeingRainbows
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
         refresh: false
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - generic-reagent-effect-kelp-drooling
+        - generic-reagent-effect-kelp-pretty
+        - generic-reagent-effect-soundgood
+        - generic-reagent-effect-confused
+        - generic-reagent-effect-patterns # coming up
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+          max: 20
+        probability: 0.08
+      - !type:PopupMessage
+        visualType: LargeCaution # drop 3 and get back to me please
+        type: Local
+        messages:
+        - generic-reagent-effect-fractals # visual intensity ramps up
+        - generic-reagent-effect-kelp-weird
+        - generic-reagent-effect-kelp-scream
+        - generic-reagent-effect-disoriented
+        - generic-reagent-effect-manic
+        - generic-reagent-effect-static
+        - generic-reagent-effect-breakthrough
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        probability: 0.05
     Medicine:
       effects:
       - !type:HealthChange
