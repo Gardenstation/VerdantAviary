@@ -6,7 +6,7 @@
   - CompulsiveLiar
   - CompulsiveBeliever
   - PlantPacifist
-  #- SeekSin
+  - SeekSin
   - Nocrastinator
   - Pope
   - LoneActor
@@ -31,6 +31,7 @@
   - AyeAye
   - NewJob
   - GoodForYou # gds
+  - EmagCompulsion
 
 # You must always lie, and can never acknowledge that you are lying. If anyone asks, you're incapable of deception.
 - type: thavenMood
@@ -57,10 +58,10 @@
   - FoodRestrict
 
 # To act against one's other moods is the highest virtue.
-#- type: thavenMood
-#  id: SeekSin
-#  moodName: thaven-mood-seek-sin-name
-#  moodDesc: thaven-mood-seek-sin-desc
+- type: thavenMood
+  id: SeekSin
+  moodName: thaven-mood-seek-sin-name
+  moodDesc: thaven-mood-seek-sin-desc
 
 # You strongly believe that any failure to do your job punctually is a crime punishable by death.
 - type: thavenMood
@@ -216,7 +217,7 @@
   moodVars:
     command: CommandRoles
 
-# Your current job is disgusting to you. You must endeavor to get a new one.
+# Your current job is disgusting to you. You must endeavor to get a new one. - this is in wildcard now cause its annoying 4 ppl who just wanna play a certain role
 - type: thavenMood
   id: NewJob
   moodName: thaven-mood-new-job-name
@@ -227,3 +228,9 @@
   id: GoodForYou
   moodName: thaven-mood-goodforyou-name
   moodDesc: thaven-mood-goodforyou-desc
+
+# gds -- hey man my head really hurts can you do that thing again
+- type: thavenMood
+  id: EmagCompulsion
+  moodName: thaven-mood-emagmood-name
+  moodDesc: thaven-mood-emagmood-desc

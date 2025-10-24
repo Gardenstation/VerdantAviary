@@ -81,3 +81,9 @@ thaven-mood-soda-desc = You've become quite parched. You must attempt to drink a
 
 thaven-mood-goodforyou-name = Everything Is Good For You
 thaven-mood-goodforyou-desc = Everything is. No matter what. Remember that. Everything. Is.
+
+thaven-mood-seek-sin-name = Conflicted
+thaven-mood-seek-sin-desc = To act against one's other moods is the highest virtue, no matter the pain it may cause.
+
+thaven-mood-emagmood-name = Wicked Headache
+thaven-mood-emagmood-desc = You have a horrible headache, the only treatment is multiple doses of highly concentrated electromagnetic interference directly to your skull.
