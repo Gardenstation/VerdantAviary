@@ -1,4 +1,8 @@
-﻿# Wildcard moods usually only come from things like ion storms or emagging incapacitated thaven.
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Wildcard moods usually only come from things like ion storms or emagging incapacitated thaven.
 
 - type: dataset
   id: ThavenMoodsWildcard
