@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [ ClothingHeadBase, PowerCellSlotHighItem, TranslatorPoweredBase ]
+  parent: [ ClothingHeadBase, PowerCellSlotHighItem, TranslatorPoweredBase, BaseCentcommContraband ]
   id: ClothingHeadHatBSODuelistHat
   name: Blueshield's parade hat
   description: A large feathered hat made specially for use by officers in tradeband circles. This one comes with a diplomat language skillsoft, its brim is lined with razor-sharp plasteel.

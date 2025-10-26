@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: ClothingShoesMilitaryBase
+  parent: [ ClothingShoesMilitaryBase, BaseCentcommContraband ]
   id: ClothingShoesBootsBSOParadeBoots
   name: blueshield's dress boots
   description: A finely crafted pair of leather riding boots, they feel incredibly light!

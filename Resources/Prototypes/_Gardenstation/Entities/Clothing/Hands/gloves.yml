@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: ClothingHandsBase
+  parent: [ ClothingHandsBase, BaseCentcommContraband ]
   id: ClothingHandsGlovesBSODuelistLace
   name: blueshield's parade gauntlets
   description: A pair of leather gauntlets reinforced with plastitanium plates. The lace is kind of itchy...

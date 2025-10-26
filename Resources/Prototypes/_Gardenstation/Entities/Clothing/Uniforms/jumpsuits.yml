@@ -8,3 +8,14 @@
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitASSNNavyUniform
+  name: Navy Captain's Uniform
+  description: A handcrafted suit used by Solarian Naval Officers in both professional and day to day settings. Its off-white color indicates deployment in the second invasion of Tau-Ceti.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/assn_officer_uniform.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/assn_officer_uniform.rsi
