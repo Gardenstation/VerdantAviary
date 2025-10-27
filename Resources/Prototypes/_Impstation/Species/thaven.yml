@@ -72,7 +72,7 @@
       points: 8
       required: false
     HeadSide:
-      points: 1
+      points: 6 # more earrings
       required: true
       defaultMarkings: [ ThavenEars1 ]
     Chest:

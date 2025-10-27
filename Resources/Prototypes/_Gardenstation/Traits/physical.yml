@@ -1,24 +1,4 @@
-﻿#- type: trait # this doesnt actually make you any smaller but it just lets you go into bags
-#  id: SmallTrait
-#  name: trait-small-name
-#  description: trait-small-desc
-#  category: PhysicalTraits
-#  blacklist:
-#    components:
-#    - BorgChassis
-#  components:
-#  - type: PseudoItem
-#    storedOffset: 0,17
-#    shape:
-#    - 0,0,1,4
-#    - 0,2,3,4
-#    - 4,0,5,4
-#  requirements:
-#  - !type:WeightRequirement # small cant be big
-#    minimumWeight: 45
-#    inverted: true
-#  globalCost: 3 - this is commented out for now until we make the requirement conditions needed for the trait
-
+﻿#biological
 - type: trait # thaven are flexible cause their weird biological makeup
   id: LitheTrait
   name: trait-lithe-name
@@ -40,4 +20,8 @@
   - !type:SpeciesRequirement
     species:
     - Thaven
+    - Felinid # - i added more species to this. small species, and then more flexible humans or something idk. harpies are a maybe but i think they would just hurt their wings goin in dufflebags so its removed for now (sorry cyg)
+    - Tajaran
+    - SlimePerson # slimes are goo and can do whatever
+    - Human #
   globalCost: 3

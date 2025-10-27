@@ -18,7 +18,7 @@
     ThavenBad: 3
 
 - type: reaction
-  id: FeverDream # add kelp ooze
+  id: FeverDream # added kelp wine - gds
   requiredMixerCategories:
   - Stir
   reactants:
