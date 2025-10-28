@@ -8,6 +8,8 @@
     sprite: _Gardenstation/Clothing/Hands/Gloves/bso_duelist_gloves.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Hands/Gloves/bso_duelist_gloves.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55
   - type: Insulated # leather is not conductive . YOU DUMBASS!!
   - type: Armor
     modifiers:

@@ -8,6 +8,8 @@
     sprite: _Gardenstation/Clothing/Head/Hats/bso_duelist_hat.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Head/Hats/bso_duelist_hat.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # protect ya noggin from the zeds
   - type: Armor # sidegrade bso beret since it had no armor before
     coverage:
     - Head

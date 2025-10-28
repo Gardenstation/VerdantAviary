@@ -8,6 +8,8 @@
     sprite: _Gardenstation/Clothing/Neck/Mantles/bso_duelist_mantle.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Neck/Mantles/bso_duelist_mantle.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # try biting through kevlar and get back to me
   - type: Armor
     modifiers:
       coefficients:
@@ -24,4 +26,5 @@
     sprite: _Gardenstation/Clothing/Neck/Mantles/assn_navy_mantle.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Neck/Mantles/assn_navy_mantle.rsi
-
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.95 #not kevlar, just a big mouthful of silk and cords
