@@ -17,17 +17,24 @@
     - chat-speech-verb-eckeckyik-7
   obfuscation:
     !type:SyllableObfuscation
-    minSyllables: 2
-    maxSyllables: 4
+    minSyllables: 1
+    maxSyllables: 2
     replacement:
-    - eeEeEE
-    - eeEEeeE
-    - ooOuoUoouu
+    - eEe'
+    - eEk
+    - oOouH
     - OuAHhhohhHUhhohh
-    - EEEeeeEee
-    - EeeEEE
-    - EEaaeEEEee
-    - ouuoouhHouhh
+    - EE'ee
+    - eek
+    - eck'
+    - kck
+    - a'ee
+    - e'ee
+    - aeeu
+    - a'keek
+    - ououhh
+    - EEKECk
+    - ke'EEk
 
 - type: language
   id: BieselEckeckyik
@@ -45,22 +52,28 @@
     - chat-speech-verb-eckeckyik-7
   obfuscation:
     !type:SyllableObfuscation
-    minSyllables: 2
-    maxSyllables: 4
+    minSyllables: 1
+    maxSyllables: 2
     replacement:
-    - eeEeEE
-    - eeEEeeE
-    - ooOuoUoouu
-    - OuAHhhohhHUhhohh
-    - EyeEEeEEEKK
-    - AeeEEOUUuEE
-    - shiwuuEUeEEe
-    - shiiaeeEeEEe
-    - anEEeeEe
-    - aaou
-    - eejiouu
-    - liaaaouuu
-    - tageeEEoueEEee
-    - cojeeEeeEeEEe
-    - vaaeEEeEeeE
-    - zojIeEEiEEeE
+    - e'EE
+    - eEee
+    - oO'u
+    - oU'hou
+    - ohh
+    - huhoh
+    - Eyee'EKK
+    - aeou
+    - ee
+    - eek
+    - ek'
+    - iou
+    - shie'e
+    - shi'ae
+    - an'eE
+    - a'ou
+    - eijo'u
+    - lia'ou
+    - tag'Ee
+    - coj'Eee
+    - va'eE
+    - zoj'Ie
