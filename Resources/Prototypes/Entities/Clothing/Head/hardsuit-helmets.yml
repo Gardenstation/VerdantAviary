@@ -1121,7 +1121,7 @@
         Radiation: 0.1
         Caustic: 0.1
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.75
+    zombificationResistanceCoefficient: 0 # still turn when they get downed so it dont matter
   - type: FlashImmunity # Goobstation
   - type: FlashSoundSuppression # Goobstation
 
@@ -1175,7 +1175,8 @@
   # WD EDIT END
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
-
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0 # gds - dsq should be immune
 
 #MISC. HARDSUITS
 #Clown Hardsuit

@@ -141,6 +141,8 @@
         - state: equipped-OUTERCLOTHING-sealed
     - type: StaminaResistance
       damageCoefficient: 0.45
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.35 # gds
 
 
 - type: entity

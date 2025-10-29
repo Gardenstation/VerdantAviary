@@ -307,6 +307,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds - armored apparently
 
 - type: entity
   parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatSecsoft]

@@ -142,6 +142,8 @@
     sprite: Clothing/OuterClothing/Coats/bomber.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/bomber.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds - its thick leather with an insulative wool lining for high altitude. this is going to be hard to bite through.
 
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterArmorBase]
@@ -172,6 +174,8 @@
         Slash: 0.65
         Piercing: 0.65
         Heat: 0.7
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - this has armor on it so it probably has a kevlar inlay, hard to bite through but smart zombie can just target other spot
 
 - type: entity
   parent: [ClothingOuterCoatDetectiveLoadout]
@@ -203,6 +207,8 @@
     sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.85 # gds - not great but its still a big fancy coat with lining and felt and shit
 
 - type: entity
   abstract: true
@@ -230,6 +236,8 @@
     knockdownTimeDelta: -2
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.7
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.4 # gds
 
 - type: entity
   abstract: true
@@ -257,6 +265,8 @@
     knockdownTimeDelta: -2
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.7
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # little bit worse than hos
 
 - type: entity
   parent: [ClothingOuterArmorHoS, ClothingOuterStorageBase, BaseSecurityCommandContraband]
@@ -315,6 +325,8 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 20
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
@@ -336,6 +348,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLab]
@@ -362,6 +376,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # its probably got a rubber coating on it or something which (realistically) would be even harder to bite through
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabChem]
@@ -388,6 +404,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - its viro come on
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabViro]
@@ -414,6 +432,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabGene]
@@ -442,6 +462,8 @@
         Slash: 0.9
         Heat: 0.9
         Caustic: 0.4
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.4 # gds - not as good as the hardsuit or the biosuit but still deserves some
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabCmo]
@@ -468,6 +490,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds - same as the other labcoats
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRnd]
@@ -494,6 +518,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds - less the med coats cause they shouldnt be playing with virology . maybe tweak later idk
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRobo]
@@ -521,6 +547,8 @@
       coefficients:
         Caustic: 0.6
         Radiation: 0.6
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRD]
@@ -614,6 +642,8 @@
     knockdownTimeDelta: -2
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.7
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds - "The dogi is made of heavy, durable fabric, it is practical in combat and stylish in appearance."
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -625,6 +655,8 @@
     sprite: Clothing/OuterClothing/Coats/windbreaker_paramedic.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/windbreaker_paramedic.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # same as medcoats
 
 - type: entity
   parent: [ClothingOuterStorageBase, BaseSyndicateContraband]
@@ -636,6 +668,8 @@
     sprite: Clothing/OuterClothing/Coats/syndicate/coatsyndiecap.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/syndicate/coatsyndiecap.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.6 # gds - little bit better than base
 
 - type: entity
   parent: [BaseSyndicateContraband, ClothingOuterCoatHoSTrench] # BaseSyndicateContraband as first parent so contraband system takes that as priority, yeah I know
@@ -675,6 +709,8 @@
     knockdownTimeDelta: -1.5
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.7
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - medical coat idfk its got armor and shit
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
@@ -696,6 +732,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # senior staff should be more protected since theyre a higher value asset
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabSeniorResearcher]
@@ -722,6 +760,8 @@
     modifiers:
       coefficients:
         Caustic: 0.65
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.5 # gds - better than normal med coats but not as good as the cmo coat
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabSeniorPhysician]
@@ -749,6 +789,8 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # its a big giant fluffy coat you bite it you get a giant mouth full of fuzz and shit. dont even @ me.
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatExpensive]

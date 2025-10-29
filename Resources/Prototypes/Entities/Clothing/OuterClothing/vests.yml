@@ -71,6 +71,8 @@
     knockdownTimeDelta: -2.5
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.6
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds - its rated for combat, its got kevlar or some bullshit
 
 #Elite web vest
 - type: entity
@@ -112,6 +114,8 @@
     knockdownTimeDelta: -3
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.4
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - better than the normal one
 
 #Mercenary web vest
 - type: entity
@@ -196,6 +200,8 @@
     tags:
     - HiViz
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.95 # gds - just a hi-vis vest. those things tear like paper
 
 #(Bartender) vest
 - type: entity
@@ -224,3 +230,5 @@
     size: Normal # Make smaller than typical outer clothing
     shape:
     - 0, 0, 0, 1
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 1 # gds - just straps

@@ -44,6 +44,8 @@
     sprite: _Goobstation/Clothing/OuterClothing/Coats/david_jacket.rsi
   # - type: AddAccentClothing
   #   accent: StreetpunkAccent  - Since this accent is now in traits and some might just want the jacket without the accent / Omustation Change
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds - match to medical coats
 
 - type: entity
   parent: [ClothingOuterDavidsJacket, BaseMajorContraband]
@@ -105,7 +107,7 @@
     sprite: _Goobstation/Clothing/OuterClothing/Coats/rdaltcoat.rsi
   - type: Clothing
     sprite: _Goobstation/Clothing/OuterClothing/Coats/rdaltcoat.rsi
-    
+
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRD]

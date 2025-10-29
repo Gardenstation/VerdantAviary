@@ -83,3 +83,5 @@
   - type: Construction
     graph: scraphelmet
     node: scraphelmet
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - hardsuit

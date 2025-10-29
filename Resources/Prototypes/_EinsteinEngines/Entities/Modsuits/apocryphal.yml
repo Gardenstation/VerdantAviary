@@ -154,6 +154,8 @@
       damageCoefficient: 0.1
     - type: FireProtection
       reduction: 1
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0 # gds - immune
 
 - type: entity
   parent: ClothingModsuitBootsStandard

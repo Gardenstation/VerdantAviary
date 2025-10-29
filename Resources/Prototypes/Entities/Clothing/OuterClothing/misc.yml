@@ -51,6 +51,8 @@
     tags:
     - Apron
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -67,6 +69,8 @@
     tags:
     - Apron
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -83,6 +87,8 @@
     tags:
     - Apron
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -99,6 +105,8 @@
     tags:
     - Apron
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -121,6 +129,8 @@
     sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds - not really anything special
 
 - type: entity
   parent: ClothingOuterBase
@@ -132,6 +142,8 @@
     sprite: Clothing/OuterClothing/Misc/grey_hoodie.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/grey_hoodie.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -165,6 +177,8 @@
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes:
       head: ClothingHeadHatHoodChaplainHood
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -178,6 +192,8 @@
     sprite: Clothing/OuterClothing/Misc/classicponcho.rsi
   - type: AddAccentClothing
     accent: SpanishAccent
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -192,6 +208,8 @@
   - type: HideClothingLayerClothing
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -206,6 +224,8 @@
   - type: HideClothingLayerClothing
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -219,6 +239,8 @@
     sprite: Clothing/OuterClothing/Misc/poncho.rsi
   - type: AddAccentClothing
     accent: SpanishAccent
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -233,6 +255,8 @@
   - type: HideClothingLayerClothing
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   abstract: true
@@ -245,6 +269,8 @@
     tags:
       - WhitelistChameleon
       - SyringeArmor
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.3 # gds - wizards are magic
 
 # Is this wizard wearing a fanny pack???
 - type: entity
@@ -261,6 +287,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds - Halloween city paper cloth fabric lol
 
 - type: entity
   parent: ClothingOuterBase # Goob edit
@@ -276,6 +304,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds
 
 - type: entity
   parent: ClothingOuterBase # Goob edit
@@ -291,6 +321,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -302,6 +334,8 @@
     sprite: Clothing/OuterClothing/Misc/skubbody.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/skubbody.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.8 # gds - its a big barrel idk you have like 10 inches of space between you and the guy trying to bite you
 
 - type: entity
   parent: ClothingOuterBase
@@ -313,6 +347,8 @@
     sprite: Clothing/OuterClothing/Misc/plaguedoctorsuit.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/plaguedoctorsuit.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - just for the lols
 
 - type: entity
   parent: ClothingOuterBase
@@ -324,6 +360,8 @@
     sprite: Clothing/OuterClothing/Misc/nunrobe.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/nunrobe.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds - now YOU can be mother teresa too
 
 - type: entity
   parent: ClothingOuterBase
@@ -386,6 +424,8 @@
         color: "#000000"
   - type: TemperatureProtection
     coolingCoefficient: 0.3
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds - rlly just nothing but its still a barrier
 
 - type: entity
   parent: ClothingOuterBase
@@ -422,6 +462,8 @@
         color: "#000000"
   - type: TemperatureProtection
     coolingCoefficient: 0.3
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -458,6 +500,8 @@
         color: "#000000"
   - type: TemperatureProtection
     coolingCoefficient: 0.3
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.85 # gds - green makes the zombies not bite you cas yu o  gren lik e zombie
 
 - type: entity
   parent: ClothingOuterBase
@@ -469,3 +513,5 @@
     sprite: Clothing/OuterClothing/Misc/red_racoon.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/red_racoon.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.55 # gds - CALLING ALL KNOX EVENT SURVIVORS! SPIFFO THE RACOON NEED YOUR HELP!! SEND YOUR NANOTRASEN COMPANY CREDIT ACCOUNT PIN NUMBERS TO #2148 ON NANOCHAT TO HELP SPIFFO CURE THE OUTBREAK!!!

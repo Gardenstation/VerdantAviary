@@ -41,7 +41,7 @@
       coefficients:
         Caustic: 0.2
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.35
+    zombificationResistanceCoefficient: 0.25
   - type: GroupExamine
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
@@ -61,6 +61,8 @@
     sprite: Clothing/OuterClothing/Bio/cmo.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Bio/cmo.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.10 # better than viro suit, makes the cmo more able to respond to cases during an outbreak. eventually this will have a matching infection resist for gardenviro idk
 
 - type: entity
   parent: ClothingOuterBioGeneral
@@ -118,7 +120,7 @@
         Heat: 0.8
         Caustic: 0.2
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.4
+    zombificationResistanceCoefficient: 0.2 # im raising this. resist makes doesnt matter when you get knocked down anyways.
 
 - type: entity
   parent: ClothingOuterBioGeneral
@@ -132,4 +134,4 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Bio/virology.rsi
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.25
+    zombificationResistanceCoefficient: 0.15

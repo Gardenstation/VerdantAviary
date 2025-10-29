@@ -238,3 +238,5 @@
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes:
       head: ClothingHeadHelmetVoidParamed
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # gds - same as a hardsuit, better than the windbreaker and labcoats, not as good as a biosuit

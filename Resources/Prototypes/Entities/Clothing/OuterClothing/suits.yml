@@ -135,6 +135,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # gds - its a giant fucking bombsuit dude
 
 - type: entity
   parent: ClothingOuterSuitBomb
@@ -196,6 +198,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # gds - everyone gets the fireman clothes in zomboid for a reason
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
@@ -252,6 +256,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # gds
 
 - type: entity
   parent: [ ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing, ClothingOuterBaseToggleable ]
@@ -286,6 +292,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # gds - its literally lined with lead
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseToggleClothing, BaseMajorContraband]
@@ -362,6 +370,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.4 # gds - little squishy but its still a space suit
 
 - type: entity
   parent: ClothingOuterBase
@@ -378,6 +388,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.85 # gds
 
 - type: entity
   parent: ClothingOuterBase
@@ -389,6 +401,8 @@
     sprite: Clothing/OuterClothing/Suits/shrine-maiden.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Suits/shrine-maiden.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.85 # gds - lots of fabric and shit makes it hard to bite through
 
 - type: entity
   parent: ClothingOuterBase
@@ -400,6 +414,8 @@
     sprite: Clothing/OuterClothing/Suits/witchrobe.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Suits/witchrobe.rsi
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.85 # gds - lots of fabric and shit makes it hard to bite through
 
 - type: entity
   parent: ClothingOuterBase
@@ -419,6 +435,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds
 
 - type: entity
   parent: [ ClothingOuterBase, ClothingOuterBaseToggleable ]
@@ -447,6 +465,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds
 
 - type: entity
   parent: [ ClothingOuterBase, ClothingOuterBaseToggleable ]
@@ -467,6 +487,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds
 
 - type: entity
   parent: ClothingOuterSuitCarp
@@ -488,4 +510,5 @@
     - jumpsuit
   - type: StaticPrice
     price: 1500
-
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # gds - its a hardsuit

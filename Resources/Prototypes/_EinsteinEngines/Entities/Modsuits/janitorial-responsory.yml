@@ -145,6 +145,8 @@
           shader: unshaded
     - type: StaminaResistance
       damageCoefficient: 0.45 # 50%
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.35 # gds
 
 - type: entity
   parent: ClothingModsuitBootsStandard

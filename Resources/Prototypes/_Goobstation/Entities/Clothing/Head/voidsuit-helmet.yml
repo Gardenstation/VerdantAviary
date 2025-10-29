@@ -55,6 +55,8 @@
   - type: FlashImmunity
   - type: FlashSoundSuppression
     protectionRange: 0
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0 # gds - again. probably vaccinated against this in the superfuture
 
 #bso voidsuit
 

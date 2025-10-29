@@ -97,6 +97,8 @@
           slots:
           - outerClothing
           equippedPrefix: combat
+        - type: ZombificationResistance
+          zombificationResistanceCoefficient: 0.25 # way higher in combat mode
 
 - type: entity
   parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, BaseMajorContraband]
@@ -131,3 +133,5 @@
         Caustic: 0.4
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # better than normal med coats

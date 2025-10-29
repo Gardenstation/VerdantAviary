@@ -140,6 +140,8 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.5 # gds - not as armored idfk
   #- type: HideLayerClothing #Goobstation
   #  layers:
   #    HeadTop : HEAD
@@ -168,6 +170,8 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - its an armored helmet come on
   #- type: HideLayerClothing #Goobstation
   #  slots:
   #  - HeadTop

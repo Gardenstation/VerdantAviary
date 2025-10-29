@@ -83,3 +83,5 @@
   - type: Construction
     graph: scraparmor
     node: scraparmorfinished
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.35 # gds - same as normal hardsuits

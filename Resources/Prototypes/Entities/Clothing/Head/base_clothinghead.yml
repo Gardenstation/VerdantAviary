@@ -131,6 +131,8 @@
     - ClothMade
     - WhitelistChameleon
     - DroneUsable # Goobstation
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds - base hat protection
 
 - type: entity
   abstract: true
@@ -252,6 +254,8 @@
     - Snout
     - HeadTop
     - HeadSide
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds - helmets are hard and shouldnt be able to be bit through
 
 - type: entity
   abstract: true
@@ -314,6 +318,8 @@
     - Snout
     - HeadTop
     - HeadSide
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - its a hardsuit helmet
 
 - type: entity
   abstract: true

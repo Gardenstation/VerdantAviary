@@ -167,6 +167,8 @@
   # Goobstation edit end
   - type: Sprite
     state: icon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # this is a basic stat for all outerclothing, go in a tweak it case to case depending on item stats and fabric qualities
 
 - type: entity
   abstract: true
@@ -364,6 +366,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance # gds - REALISTICALLY this should be COMPLETE protection from bites but balancechuds will scream and shit their pants forever if i do that. im going to do it on select suits anyways though cause ZEDS SUCKS ASS
+    zombificationResistanceCoefficient: 0.35
 
 - type: entity
   abstract: true
@@ -409,6 +413,8 @@
   - type: Tag
     tags:
     - PlasmamanSafe # EE Plasmeme Change
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # EVEN THE EMERGENCY EVAS HAVE DECENT ENOUGH FABRIC TO PROTECT FROM THE VACUUM OF SPACE. YOU CANNOT BITE THROUGH THIS AS A ROTTING CORPSE.
 
 - type: entity
   parent: ClothingOuterBase

@@ -239,6 +239,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds
 
 - type: entity
   parent: [ClothingHeadHatBeret, BaseSecurityContraband] #goobstation - contraband marking
@@ -269,6 +271,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds
 
 - type: entity
   parent: ClothingHeadHatBeret
@@ -379,6 +383,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds - best out of the sec grade goes to hos
 
 - type: entity
   parent: [ClothingHeadHatBeretRND, BaseSecurityContraband] # Goob edit
@@ -409,6 +415,8 @@
     tags:
     - PetWearable
     - CorgiWearable
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds
 
 - type: entity
   parent: ClothingHeadHatBeret
@@ -454,6 +462,8 @@
     tags:
     - PetWearable
     - CorgiWearable
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds - its armored
 
 - type: entity
   parent: [ ClothingHeadBase ]
@@ -536,6 +546,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds - its like kevlar or some shit idfk
 
 - type: entity
   parent: ClothingHeadBase
@@ -581,6 +593,8 @@
     tags:
     - PetWearable
     - CorgiWearable
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds - same as cap
 
 - type: entity
   parent: ClothingHeadBase
@@ -648,6 +662,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds
 
 - type: entity
   parent: [ ClothingHeadBase, BaseSecurityContraband ] # Goob edit
@@ -678,6 +694,8 @@
     tags:
     - PetWearable
     - CorgiWearable
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds
 
 - type: entity
   parent: ClothingHeadBase
@@ -746,6 +764,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
 
 - type: entity
   parent: ClothingHeadBase
@@ -829,6 +849,8 @@
       Hair: HEAD
       HeadTop : HEAD
       HeadSide : HEAD
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - for the lols
 
 - type: entity
   parent: ClothingHeadBase # Goob edit
@@ -1000,6 +1022,8 @@
     - WhitelistChameleon
     - DroneUsable
     - Ushanka
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds - big fur hat = hard to bite through
 
 - type: entity
   parent: ClothingHeadBase
@@ -1087,6 +1111,8 @@
     tags:
     - PetWearable
     - CorgiWearable
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds
 
 - type: entity
   parent: ClothingHeadBase
@@ -1137,6 +1163,8 @@
     - WizardHat
     - ClothMade
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds
 
 - type: entity
   parent: ClothingHeadBase # Goob edit
@@ -1376,6 +1404,8 @@
     - Recyclable
     - HamsterWearable
     - WhitelistChameleon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds - same as the sec ones
 
 - type: entity
   parent: ClothingHeadBase
@@ -1546,6 +1576,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds - same as the other cap hats
 
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
@@ -1582,6 +1614,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds
 
 - type: entity
   parent: ClothingHeadBase

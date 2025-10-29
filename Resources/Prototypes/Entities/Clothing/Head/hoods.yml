@@ -117,7 +117,7 @@
   - type: IngestionBlocker
   - type: GroupExamine
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.9
+    zombificationResistanceCoefficient: 0.4 # gds - bump this up
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -147,7 +147,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hoods/Bio/cmo.rsi
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.8
+    zombificationResistanceCoefficient: 0.3
 
 - type: entity
   parent: ClothingHeadHatHoodBioGeneral
@@ -211,7 +211,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hoods/Bio/virology.rsi
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.8
+    zombificationResistanceCoefficient: 0.35
 
 - type: entity
   parent: ClothingHeadBase
@@ -310,6 +310,8 @@
   - type: HideLayerClothing
     slots:
     - Hair
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - tough alien leather idfk
 
 - type: entity
   parent: ClothingHeadBase
@@ -365,6 +367,8 @@
   # wear carp suit and security helmet, they'll know you are fake
   - type: FactionClothing
     faction: Dragon
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - hardsuit helmet
 
 - type: entity
   parent: ClothingHeadBase

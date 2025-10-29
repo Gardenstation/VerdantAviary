@@ -137,6 +137,8 @@
       damageCoefficient: 0.5 # 50%
     - type: FireProtection
       reduction: 0.9
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.2 # gds
 
 - type: entity
   parent: ClothingModsuitBootsStandard

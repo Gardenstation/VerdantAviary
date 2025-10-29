@@ -169,6 +169,8 @@
       lowPressureMultiplier: 1000
     - type: ExplosionResistance
       damageCoefficient: 0.45
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.3 # gds - match the cap suit
 
 - type: entity
   parent: ClothingModsuitBootsStandard

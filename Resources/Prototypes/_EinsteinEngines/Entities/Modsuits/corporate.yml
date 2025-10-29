@@ -153,6 +153,8 @@
       lowPressureMultiplier: 1000
     - type: ExplosionResistance
       damageCoefficient: 0.2
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0 # gds - flat out immune
 
 - type: entity
   parent: ClothingModsuitBootsStandard

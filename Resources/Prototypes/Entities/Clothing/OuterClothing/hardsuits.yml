@@ -731,7 +731,7 @@
         Heat: 0.4
         Caustic: 0.1
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.4
+    zombificationResistanceCoefficient: 0.15 # gds - this is like 5% less than their normal biosuit. lets be real u will not be biting thru this shit its made of spacefaring materials and built for biohazards on top of that. (plus doesnt matter when u get knocked down)
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
@@ -1055,6 +1055,8 @@
   - type: ModifyDelayedKnockdown # Goobstation
     delayDelta: 3
     knockdownTimeDelta: -3
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.3 # its a fancy so shut up - ert get its too
   - type: Tag
     tags:
     - CorgiWearable
@@ -1427,6 +1429,8 @@
       head: ClothingHeadHelmetHardsuitDeathsquad
   - type: ModifyDelayedKnockdown # Goobstation - End
     cancel: true
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0 # complete resist
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
 
@@ -1461,7 +1465,7 @@
         Radiation: 0.1
         Caustic: 0.1
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.25
+    zombificationResistanceCoefficient: 0 # complete resist. doesnt matter since you still turn on death and crit bites
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0

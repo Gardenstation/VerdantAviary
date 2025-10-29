@@ -141,6 +141,8 @@
     - type: ClothingGrantComponent
       component:
         - type: SupermatterImmune
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.35 # gds
 
 - type: entity
   parent: ClothingModsuitBootsStandard

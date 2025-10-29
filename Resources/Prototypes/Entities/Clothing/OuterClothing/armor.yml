@@ -188,6 +188,8 @@
     knockdownTimeDelta: -2
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.7
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.6 # gds - there is no way youre biting through fucking kevlar dawg bsfr - plus this is PART DEPENDANT IF YOU TARGET AN UNARMORED PART THEY WILL STILL GET BITTEN
 
 #Standard armor vest, allowed for security and bartenders
 - type: entity
@@ -250,6 +252,8 @@
     knockdownTimeDelta: -2.5
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.6
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.5 # gds - the riot armor has large gaps, but still covers the vast majority of "biting zones" think magazine armor from train to busan - also doesnt matter since YOU GET INFECTED WHEN YOU ARE BITTEN WHILE DOWNED!!!
 
 - type: entity
   parent: ClothingOuterArmorBase
@@ -280,6 +284,8 @@
         Heat: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.5 # gds - again, try biting through ceramic plate and kevlar and get back to me
 
 - type: entity
   parent: ClothingOuterArmorBase
@@ -306,6 +312,8 @@
     reflects:
     - Energy
     reflectingInHands: false
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.6 # gds - ok ill downtune this a bit but its still made of like fucking science bullshit
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSyndicateContraband ]
@@ -406,6 +414,8 @@
     knockdownTimeDelta: -3
   - type: Item
     size: Normal
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.5 # gds - its practically bulletproof cmon
 
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
@@ -442,6 +452,8 @@
     knockdownTimeDelta: -2.5
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.6
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.6
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
@@ -483,6 +495,8 @@
     cancel: true
   - type: StaminaResistance # Goobstation
     damageCoefficient: 0.2
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.4
 
 - type: entity
   parent: ClothingOuterArmorHeavy
@@ -588,6 +602,8 @@
     tags:
     - CorgiWearable
     - WhitelistChameleon
+  - type: ZombificationResistance # gds
+    zombificationResistanceCoefficient: 0.3 # captain and other command armor is going to be better protected against it idrc - again, doesnt matter if they get knocked over anyways
 
 - type: entity # This is from upstream, so it goes in wizden code.
   parent: [ClothingOuterArmorCaptainCarapace, BaseCentcommContraband]
@@ -649,6 +665,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.4 # gds - lings getting zombified is stupid to me honestly but thats for another pr
 
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
@@ -698,6 +716,8 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.5 # gds - bones is have gaps
 
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
@@ -739,3 +759,5 @@
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.3 # gds - its a walking metal casket. be so for real. - its .3 cause like what if they get slime in the fuckin vents or something idfk

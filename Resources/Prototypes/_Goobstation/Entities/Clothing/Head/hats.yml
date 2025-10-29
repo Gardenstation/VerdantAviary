@@ -54,6 +54,8 @@
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds - its robust i guess
 
 - type: entity
   parent: [ClothingHeadBase, BaseCentcommContraband]
@@ -88,6 +90,8 @@
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds
 
 - type: entity
   parent: [ClothingHeadBase, BaseCentcommContraband]
@@ -122,6 +126,8 @@
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.45 # gds
 
 - type: entity
   parent: [ClothingHeadBase, BaseCentcommContraband]
@@ -156,6 +162,8 @@
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds - matches the capcap
 
 - type: entity
   parent: [ClothingHeadBase, BaseCentcommContraband]
@@ -190,6 +198,8 @@
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds
 
 - type: entity
   parent: [ClothingHeadBase, BaseFoldable, BaseCentcommContraband]
@@ -234,6 +244,8 @@
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.65 # gds
 
 - type: entity
   parent: ClothingHeadBase
@@ -339,6 +351,8 @@
         Slash: 0.7
         Piercing: 0.7
         Heat: 0.8
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds - matches basic hos hats
 
 - type: entity
   parent: ClothingHeadBase

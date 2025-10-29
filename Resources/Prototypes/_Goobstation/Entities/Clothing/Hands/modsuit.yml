@@ -32,6 +32,8 @@
     parts:
     - LeftHand
     - RightHand
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # gds - theyre fancy armored gloves idk man
 
 
 - type: entity

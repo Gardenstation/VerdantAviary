@@ -119,6 +119,8 @@
       Hair: HEAD
       HeadTop: HEAD
       HeadSide: HEAD
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75 # gds - its tough
 
 - type: entity
   parent: ClothingHeadHatHardhatBase
@@ -211,3 +213,5 @@
         Slash: 0.75
         Piercing: 0.75
         Heat: 0.7
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.7 # gds
