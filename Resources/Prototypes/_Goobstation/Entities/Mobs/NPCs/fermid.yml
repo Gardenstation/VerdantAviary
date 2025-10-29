@@ -93,6 +93,7 @@
   - type: Fauna # Lavaland Change
   - type: CombatPower # Goobstation
     factor: 0.5 # times more dangerous than a crew-member
+  - type: ZombieImmune # GDS - we dont need this being a zombie plus its like a fucking space bug or some shit they dont even get the same diseases as us
 
 - type: entity
   name: fermid
@@ -193,7 +194,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 1
     baseSprintSpeed : 2
-  - type: MeleeWeapon
+  - type: MeleeWeapon #MobSnail
     soundHit:
       path: /Audio/Effects/bite.ogg
     angle: 0

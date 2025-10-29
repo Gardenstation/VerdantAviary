@@ -110,3 +110,4 @@
   - type: Vocal
     sounds:
       Unsexed: MobDog
+  - type: ZombieImmune # GDS - No more shitzeds

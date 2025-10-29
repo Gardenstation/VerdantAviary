@@ -181,6 +181,7 @@
   - type: GhostTakeoverAvailable
   - type: Speech
     speechVerb: LargeMob
+  - type: ZombieImmune # GDS - just remove non-humanoids from it entirely honestly we really just dont need or want zombie space cobras. its not fun for anyone.
 
 - type: entity
   name: space bear
@@ -656,7 +657,7 @@
   - type: MobPrice
     price: 50
   - type: BadFood
-  - type: NonSpreaderZombie
+#  - type: NonSpreaderZombie - gds disable snails being zombies
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
@@ -678,6 +679,7 @@
         visualType: Large
         messages: [ "snail-hurt-by-salt-popup" ]
         probability: 0.66
+  - type: ZombieImmune # GDS
 
 - type: entity
   parent: MobSnail

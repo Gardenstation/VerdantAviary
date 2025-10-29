@@ -476,6 +476,7 @@
     understands:
     - Cat
     - TauCetiBasic
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: McGriff
@@ -555,6 +556,7 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalMcGriff
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: Paperwork
@@ -661,6 +663,7 @@
   - type: Speech
     speechVerb: Canine
     speechSounds: Dog
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: Morty

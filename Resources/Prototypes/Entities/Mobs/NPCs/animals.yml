@@ -368,6 +368,7 @@
     color: "#808080"
     activateSound: null
     deactivateSound: null
+  - type: ZombieImmune # GDS - remove small animal zombies cause they fucking SUCK
 
 - type: entity
   name: bee
@@ -565,6 +566,7 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: ZombieImmune # GDS
 
 - type: entity
   parent: MobChicken
@@ -732,6 +734,7 @@
     damage:
       types:
         Piercing: 0
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: glockroach
@@ -1018,6 +1021,7 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: white duck #Quack
@@ -1147,6 +1151,7 @@
       behaviors:
       - !type:GibBehavior
         recursive: false
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: cow
@@ -1232,6 +1237,7 @@
     guides:
     - Chef
     - FoodRecipes
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: crab
@@ -1304,6 +1310,7 @@
       task: RuminantCompound
   - type: Body
     prototype: AnimalHemocyanin
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: goat
@@ -1407,6 +1414,7 @@
   - type: HTN
     rootTask:
       task: RuminantHostileCompound
+  - type: ZombieImmune # GDS
 
 # Note that we gotta make this bitch vomit someday when you feed it anthrax or sumthin. Needs to be a small item thief too and aggressive if attacked.
 - type: entity
@@ -1456,8 +1464,9 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: ZombieImmune # GDS
 
-- type: entity
+- type: entity # gorilla can be infected cause they share a common ancestor with humans or something and are biologically susceptible to romerol
   name: gorilla
   parent: [ SimpleMobBase, MobCombat ]
   id: MobGorilla
@@ -1619,7 +1628,7 @@
     factions:
     - SimpleHostile
 
-- type: entity
+- type: entity # monkies can stay zombies for now until. this will likely change until we can find a way to remove the ventcrawl tag on turning
   name: genetic ancestor
   id: MobBaseAncestor
   parent: [SimpleMobBase, StripableInventoryBase]
@@ -2207,7 +2216,8 @@
   - type: MobPrice
     price: 50
   - type: BadFood
-  - type: NonSpreaderZombie
+  - type: ZombieImmune # GDS - no more shitzeds
+#  - type: NonSpreaderZombie - no more sorry guys
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
@@ -2462,7 +2472,7 @@
   - type: Tag
     tags:
     - VimPilot
-
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: slug
@@ -2511,6 +2521,7 @@
     interactSuccessSpawn: EffectHearts
   - type: Bloodstream
     bloodMaxVolume: 50
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: frog
@@ -2580,6 +2591,7 @@
       behaviors:
       - !type:GibBehavior
         recursive: false
+  - type: ZombieImmune # GDS
 
 # Would be cool to have some functionality for the parrot to be able to sit on stuff
 - type: entity
@@ -2664,6 +2676,7 @@
       path: /Audio/Animals/parrot_raught.ogg
   - type: Bloodstream
     bloodMaxVolume: 50
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: parrot
@@ -2735,6 +2748,7 @@
   - type: LanguageKnowledge # Einstein Engines - Language
     speaks: [Penguin]
     understands: [Penguin]
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: grenade penguin
@@ -2859,6 +2873,7 @@
   - type: LanguageKnowledge # Einstein Engines - Language
     speaks: [Hissing]
     understands: [Hissing]
+  - type: ZombieImmune # GDS
 
 # Code unique spider prototypes or combine them all into one spider and get a
 # random sprite state when you spawn it.
@@ -2959,6 +2974,7 @@
     color: "#808080"
     activateSound: null
     deactivateSound: null
+  - type: ZombieImmune # GDS
 
 - type: entity
   parent: MobSpiderBase
@@ -3157,6 +3173,7 @@
     - Hissing
     understands:
     - Hissing
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: possum
@@ -3236,6 +3253,7 @@
     - Hissing
     understands:
     - Hissing
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: fox
@@ -3319,6 +3337,7 @@
     - Fox
     understands:
     - Fox
+  - type: ZombieImmune # GDS
 
 - type: entity
   abstract: true
@@ -3362,6 +3381,7 @@
       gender: epicene
   - type: MobPrice
     price: 200
+  - type: ZombieImmune # GDS
 
 - type: entity
   parent: MobCorgiBase
@@ -3563,6 +3583,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 4
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: calico cat
@@ -3794,6 +3815,7 @@
     - Hissing
     understands:
     - Hissing
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: ferret
@@ -3853,6 +3875,7 @@
     - Hissing
     understands:
     - Hissing
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: hamster
@@ -3999,7 +4022,8 @@
     baseResistTime: 3
   - type: MobPrice
     price: 60
-  - type: NonSpreaderZombie
+  - type: ZombieImmune # GDS
+  #- type: NonSpreaderZombie
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
@@ -4095,6 +4119,7 @@
   - type: HTN
     rootTask:
       task: RuminantCompound
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: diona nymph
@@ -4182,6 +4207,7 @@
     understands:
     - RootSpeak
     - TauCetiBasic
+  - type: ZombieImmune # GDS - dionae are so far outside the norm of a biological entity there is NO way they should be getting infected by romerol, THEYRE FUCKING PLANTS DAAAWG - do not remove this until we have mutating viruses to make it thematically correct
 
 - type: entity
   parent: MobDionaNymph
@@ -4257,6 +4283,7 @@
     - Deer
     understands:
     - Deer
+  - type: ZombieImmune # GDS
 
 - type: entity
   name: reindeer doe

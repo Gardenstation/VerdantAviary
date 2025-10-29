@@ -311,6 +311,7 @@
       - Steel
       - Ore
       - Telecrystal
+  - type: ZombieImmune # GDS - no stupid animals getting under a bolted door and turning the entire department
 
 - type: entity
   name: space carp
@@ -512,6 +513,7 @@
     - TauCetiBasic # Is sentient, should have TauCeti since it is norm.
     understands:
     - TauCetiBasic
+  - type: ZombieImmune # GDS - we are not letting the homunculus meta become a thing
 
 - type: entity
   parent: MobMouse
@@ -735,7 +737,7 @@
       - Dog
       understands:
       - Dog
-
+    - type: ZombieImmune # GDS - we dont need every animal on the station to be a zombie
 
 - type: entity
   name: horse
@@ -817,4 +819,5 @@
       293: 0.8
       280: 0.6
       260: 0.4
+  - type: ZombieImmune # GDS
 
