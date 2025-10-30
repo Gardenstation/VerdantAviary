@@ -1,0 +1,25 @@
+﻿# hair
+- type: marking
+  id: ThavenHairChoices
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Thaven ]
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/Thaven/hair.rsi
+    state: choicesbangs
+
+# chest
+- type: marking
+  id: ThavenChestPulse
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [ Thaven ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+        negative: false
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/Thaven/chest.rsi
+    state: chestpulse
+  shader: unshaded
