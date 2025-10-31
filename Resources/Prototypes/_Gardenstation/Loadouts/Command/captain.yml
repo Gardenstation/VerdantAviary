@@ -1,40 +1,73 @@
-﻿
+﻿# TIMEGATES
+- type: loadoutEffectGroup # this will unlock CENTCOM PDAs eventually for senior staff or something idk
+  id: RearAdmiralCap
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 360000 #100 hrs
+
+- type: loadoutEffectGroup # more pda slop, probably a new mantle or two, some special pins idk
+  id: CommodoreCap
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 180000 #100 hrs
 
 # Jumpsuit
 - type: loadout
-  id: CaptainASSNNavyUniform
+  id: CaptainBridgeSuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitASSNNavyUniform
+    jumpsuit: ClothingUniformJumpsuitCaptainBridgeSuit
   effects:
-  - !type:SpeciesLoadoutEffect # Only humans should have access to solarian navy gear. Realistically even if it was taken by a trophy in war the last "hot" conflict was probably 25 years before currentlore, and an admiral would not be seeing direct frontline combat lmfao.
-    species:
-    - Human
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 360000 #100 hrs
 
 # Head
 - type: loadout
-  id: CaptainASSNPeakedCap
+  id: CaptainWhiteCap
   equipment:
-    head: ClothingHeadHatASSNNavyCap
+    head: ClothingHeadHatCapCapWhite
   effects:
-    - !type:SpeciesLoadoutEffect
-      species:
-        - Human
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 360000 #100 hrs
 
 # Mask
 
 # Neck
 - type: loadout
-  id: CaptainASSNMantle
+  id: CaptainDressMantle
   equipment:
-    neck: ClothingNeckMantleASSNNavyMantle
+    neck: ClothingNeckCaptainDressMantle
   effects:
-  - !type:SpeciesLoadoutEffect # more solslop :3
-    species:
-    - Human
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 360000 #100 hrs
 # Back
 
 # Outer
 
 # Gloves
+- type: loadout
+  id: CaptainPistolGloves
+  equipment:
+    gloves: ClothingHandsCaptainPistolGloves
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 360000 #100 hrs
 
 # Shoes

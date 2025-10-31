@@ -336,7 +336,7 @@
   minLimit: 0
   loadouts:
   - CaptainHead
-  - CaptainASSNPeakedCap
+  - CaptainWhiteCap # gds
   - CaptainCap
 
 - type: loadoutGroup
@@ -349,6 +349,7 @@
   - CaptainFormalSkirt
   - CaptainJumpsuitMilitary # goob
   - CaptainSummerShirt # also goob
+  - CaptainBridgeSuit # gds
 
 - type: loadoutGroup
   id: CaptainNeck
@@ -358,7 +359,7 @@
   - CaptainCloak
   - CaptainCloakFormal
   - CaptainMantle
-  - CaptainASSNMantle # gds - HR disaster incoming.
+  - CaptainDressMantle # gds -
 
 - type: loadoutGroup
   id: CaptainBackpack

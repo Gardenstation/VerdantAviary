@@ -1212,6 +1212,7 @@
   maxLimit: 1
   loadouts:
   - CaptainGloves
+  - CaptainPistolGloves # gds
 
 - type: loadoutGroup
   id: CaptainMask

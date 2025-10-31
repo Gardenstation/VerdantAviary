@@ -11,11 +11,11 @@
 
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
-  id: ClothingUniformJumpsuitASSNNavyUniform
-  name: Navy Captain's Uniform
-  description: A handcrafted suit used by Solarian Naval Officers in both professional and day to day settings. Its off-white color indicates deployment in the second invasion of Tau-Ceti.
+  id: ClothingUniformJumpsuitCaptainBridgeSuit
+  name: Captain's bridge suit
+  description: A beautifully handcrafted suit, fit for a true commander!
   components:
   - type: Sprite
-    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/assn_officer_uniform.rsi
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/captain_aristocrat_suit.rsi
   - type: Clothing
-    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/assn_officer_uniform.rsi
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/captain_aristocrat_suit.rsi

@@ -19,3 +19,27 @@
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-blue
+#captain gloves
+
+- type: entity
+  parent: ClothingHandsGlovesCaptain
+  id: ClothingHandsCaptainPistolGloves
+  name: captain's pistol gloves
+  description: The gold tassels provide no tactical advantage on these gloves, but you do feel more confident wearing them.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Gloves/captain_pistol_gloves.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Hands/Gloves/captain_pistol_gloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-regal-black
+  - type: FingerprintMask
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Shock: 0.75

@@ -56,11 +56,23 @@
 
 - type: entity
   parent: [ ClothingHeadHatCaptain ]
-  id: ClothingHeadHatASSNNavyCap
-  name: Navy Captain's Dresscap
-  description: A Solarian naval officer's peaked cap. It seems to be reinforced with some kind of ballistic weave...
+  id: ClothingHeadHatCapCapWhite
+  name: Captain's formal cap
+  description: A peaked naval officers cap, perfect for diplomatic dinners and screaming at cadets! You feel emboldened when you wear it!
   components:
   - type: Sprite
-    sprite: _Gardenstation/Clothing/Head/Hats/assn_officer_dresscap.rsi
+    sprite: _Gardenstation/Clothing/Head/Hats/captain_white_cap.rsi
   - type: Clothing
-    sprite: _Gardenstation/Clothing/Head/Hats/assn_officer_dresscap.rsi
+    sprite: _Gardenstation/Clothing/Head/Hats/captain_white_cap.rsi
+  - type: Loudspeaker # channel your inner O-7 - speak with clarity and purpose.
+    requiredSlot: head
+    canToggle: true
+    affectRadio: true
+    affectChat: true
+    worksInHand: true
+    fontSize: 18
+#  - type: ClothingGrantComponent - figure out how to make it do this later im too tired rn
+#    component:
+#    - type: VoiceOverride # its lit
+#      speechVerbOverride: HolierThanThou
+#      enabled: true
