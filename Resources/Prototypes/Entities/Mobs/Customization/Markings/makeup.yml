@@ -22,7 +22,7 @@
   id: MakeupBlush
   bodyPart: Face
   markingCategory: Face
-  speciesRestriction: [Dwarf, Human, Reptilian, SlimePerson, Felinid, Oni, Vulpkanin, Harpy, Arachne] # Delta V - Felinid, Oni, Vulpkanin, Harpy
+  speciesRestriction: [Dwarf, Human, Reptilian, SlimePerson, Felinid, Oni, Vulpkanin, Harpy, Arachne, Thaven] # Delta V - Felinid, Oni, Vulpkanin, Harpy # gds - thaven
   coloring:
     default:
       type:
@@ -36,7 +36,7 @@
   id: MakeupNailPolishRight
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin # Omu - Feroxi
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi, Thaven] # Delta V - Felinid, Oni, Vulpkanin # Omu - Feroxi # gds - thaven
   coloring:
     default:
       type:
@@ -50,7 +50,7 @@
   id: MakeupNailPolishLeft
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin # Omu - Feroxi
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi, Thaven] # Delta V - Felinid, Oni, Vulpkanin # Omu - Feroxi # gds - thaven
   coloring:
     default:
       type:

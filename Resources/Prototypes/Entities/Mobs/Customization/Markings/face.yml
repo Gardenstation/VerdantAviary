@@ -290,7 +290,7 @@
   id: FaceGlabella
   bodyPart: Face
   markingCategory: Face
-  speciesRestriction: [Dwarf, Human, SlimePerson, Felinid, Oni, Harpy, Reptilian, Vulpkanin, Arachne]
+  speciesRestriction: [Dwarf, Human, SlimePerson, Felinid, Oni, Harpy, Reptilian, Vulpkanin, Arachne, Thaven] # gds - thaven nose rings yay
   coloring:
     default:
       type:

@@ -17,12 +17,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 40
+        maxVol: 20 # downtuned from 40
         reagents:
         - ReagentId: KelpPodSlime
-          Quantity: 20
+          Quantity: 10
         - ReagentId: Slime #mostly useless goo
-          Quantity: 20
+          Quantity: 10
   - type: Sprite
     sprite: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
   - type: Produce
