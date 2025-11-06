@@ -1,4 +1,8 @@
-﻿#biological
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+#biological
 - type: trait # thaven are flexible cause their weird biological makeup
   id: LitheTrait
   name: trait-lithe-name
