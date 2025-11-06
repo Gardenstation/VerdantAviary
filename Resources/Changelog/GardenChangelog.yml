@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solanum-Imago <hargifarspam4@gmail.com>
 # SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
@@ -42,3 +43,64 @@ Entries:
   id: 4
   time: '2025-10-13'
   url: https://github.com/Gardenstation/VerdantAviary/pull/16
+- author: bunnygirlHyacinth
+  changes:
+  - type: tweak
+    message: Increased price of seed restocks due to the added kelp seeds
+  - type: fix
+    message: Replaced the absinthe in feverdream with kelp wine, as the previous recipe was unmakeable 
+  id: 5
+  time: '2025-10-16'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/16
+- author: bunnygirlHyacinth
+  changes:
+  - type: tweak
+    message: thaven guidebook entry edited/expanded
+  - type: fix
+    message: fixed thaven bodypart parents
+  id: 6
+  time: '2025-10-20'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/16
+- author: Solanum-Imago
+  changes:
+  - type: tweak
+    message: tweaked thaven guidebook entry slightly
+  - type: tweak
+    message: doubled wine bounty requirement since booze crate now contain twice the wine
+  id: 7
+  time: '2025-10-23'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/18
+- author: bunnygirlHyacinth
+  changes:
+  - type: fix
+    message: fixed a few broken thaven mood ftls
+  - type: add
+    message: added a few thaven moods and holidays
+  - type: add
+    message: added a few foods to the list of foods selectable by thaven moods
+  id: 8
+  time: '2025-10-24'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/20
+- author: bunnygirlHyacinth
+  changes:
+  - type: tweak
+    message: allows the lithe trait to be taken by several other species
+  - type: fix
+    message: added thaven sprite offset for hats
+  - type: fix
+    message: removed ghostcode and adds/updates comments
+  - type: tweak
+    message: added more ear marking points, so you can stack earings and alt ears
+  - type: tweak
+    message: lowered the amount and length of syllables in untranslated eckeckyik, so it doesn't flood the chat for non-thavens
+  - type: add
+    message: added an animated chest marking and another hair marking
+  - type: add
+    message: added two new thaven dishes
+  - type: tweak
+    message: allows thaven to take many more 'universal' markings, such as gauze wrappings
+  - type: add
+    message: added animated limb markings
+  id: 9
+  time: '2025-11-5'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/21
