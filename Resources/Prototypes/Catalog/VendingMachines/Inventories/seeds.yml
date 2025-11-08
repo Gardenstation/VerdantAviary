@@ -27,7 +27,15 @@
 # SPDX-FileCopyrightText: 2024 jellygato <aly.jellygato@gmail.com>
 # SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Krispy-Lime <151007654+Krispy-Lime@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
 # SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Smith <182301147+AgentSmithRadio@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solanum-Imago <hargifarspam4@gmail.com>
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -73,8 +81,8 @@
     TowercapSeeds: 5
     WheatSeeds: 5
     WatermelonSeeds: 5
-    KelpPodSeeds: 3
+    KelpPodSeeds: 3 # Gardenstation
   contrabandInventory:
-    TobaccoSeeds: 2 # ???? why is this contraband????
+    TobaccoSeeds: 2 
     FoodSnackSemki: 2
     FlyAmanitaSeeds: 1

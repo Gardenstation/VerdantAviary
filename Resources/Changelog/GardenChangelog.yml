@@ -104,3 +104,16 @@ Entries:
   id: 9
   time: '2025-11-5'
   url: https://github.com/Gardenstation/VerdantAviary/pull/21
+- author: Solanum-Imago
+  changes:
+  - type: fix
+    message: No contractions accent now works and is selectable
+  - type: add
+    message: No contractions word replacement list amended slightly
+  - type: fix
+    message: No contractions accent and lithe trait whitelisted for clones
+  - type: fix
+    message: code comments cleaned up
+  id: 10
+  time: '2025-11-7'
+  url: https://github.com/Gardenstation/VerdantAviary/pull/23

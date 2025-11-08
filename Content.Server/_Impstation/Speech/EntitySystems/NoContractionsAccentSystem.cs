@@ -1,4 +1,10 @@
-﻿using System.Text.RegularExpressions;
+// SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+// SPDX-FileCopyrightText: 2025 Solanum-Imago <hargifarspam4@gmail.com>
+// SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
 using Content.Shared.Speech;
 
@@ -6,6 +12,7 @@ namespace Content.Server.Speech.EntitySystems;
 
 public sealed class NoContractionsAccentComponentAccentSystem : EntitySystem
 {
+    [Dependency] private readonly ReplacementAccentSystem _replacement = default!;
     private static readonly Regex RegexLowerS = new("s+");
     private static readonly Regex RegexUpperS = new("S+");
     private static readonly Regex RegexInternalX = new(@"(\w)x");
@@ -18,10 +25,14 @@ public sealed class NoContractionsAccentComponentAccentSystem : EntitySystem
         SubscribeLocalEvent<NoContractionsAccentComponent, AccentGetEvent>(OnAccent);
     }
 
+    public string Accentuate(string message)
+    {
+        var accentedMessage = _replacement.ApplyReplacements(message, "nocontractions");
+        return accentedMessage.ToString();
+    }
+
     private void OnAccent(EntityUid uid, NoContractionsAccentComponent component, AccentGetEvent args)
     {
-        var message = args.Message;
-
-        args.Message = message;
+        args.Message = Accentuate(args.Message);
     }
 }

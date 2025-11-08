@@ -1,3 +1,20 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Gip-Kip <hargifarspam2@gmail.com>
+# SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
+# SPDX-FileCopyrightText: 2025 Quantum-cross <7065792+Quantum-cross@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Richard Blonski <48651647+RichardBlonski@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solanum-Imago <hargifarspam4@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheFlyingSentry <170261226+TheFlyingSentry@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 imatsoup <93290208+imatsoup@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 notactuallymarty <27968892+NotActuallyMarty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 # Settings for cloning bodies
 # If you add a new trait, job specific component or a component doing visual/examination changes for humanoids
 # then add it here to the correct prototype.
@@ -79,6 +96,14 @@
   # Omustation
   - CyberneticBeast
   # end Omustation
+  # Gardenstation
+  # Physical
+  - LitheTrait
+  # Gardentstation end
+  # Impstation
+  # Accents
+  - NoContractionsAccent
+  # Impstation end
   blacklist:
     components:
     - AttachedClothing # helmets, which are part of the suit

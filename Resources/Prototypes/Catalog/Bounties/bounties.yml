@@ -737,7 +737,7 @@
   description: bounty-description-wine
   entries:
   - name: bounty-item-wine
-    amount: 4
+    amount: 4 # Gardenstation
     whitelist:
       tags:
       - Wine
