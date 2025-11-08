@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2025 Solanum-Imago <hargifarspam4@gmail.com>
+// SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
 using Content.Shared.Speech;
