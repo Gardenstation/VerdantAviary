@@ -98,7 +98,8 @@
   # end Omustation
   # Gardenstation
   # Physical
-  - LitheTrait
+  - CrawlUnderObjects
+  - PseudoItem
   # Gardentstation end
   # Impstation
   # Accents
