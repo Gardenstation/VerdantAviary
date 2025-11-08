@@ -318,7 +318,7 @@
     - type: StorageFill
       contents:
       - id: DrinkAleBottleFullGrowler
-      - id: DrinkKelpWineBottleFull
+      - id: DrinkKelpWineBottleFull # Gardenstation
       - id: DrinkBeerGrowler
       - id: DrinkCoffeeLiqueurBottleFull
       - id: DrinkCognacBottleFull

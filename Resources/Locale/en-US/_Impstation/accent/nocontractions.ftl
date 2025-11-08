@@ -1,4 +1,4 @@
-﻿accent-nocontractions-words-french = 'im
+accent-nocontractions-words-french = 'im
 accent-nocontractions-words-replace-french = 'im
 accent-nocontractions-words-1 = i'm
 accent-nocontractions-words-replace-1 = i am
@@ -270,3 +270,11 @@ accent-nocontractions-words-134 = oclock
 accent-nocontractions-words-replace-134 = of the clock
 accent-nocontractions-words-135 = whyd
 accent-nocontractions-words-replace-135 = why did
+accent-nocontractions-words-136 = you'd
+accent-nocontractions-words-replace-136 = you would
+accent-nocontractions-words-137 = youd
+accent-nocontractions-words-replace-137 = you would
+accent-nocontractions-words-138 = what's
+accent-nocontractions-words-replace-138 = what is
+accent-nocontractions-words-139 = whats
+accent-nocontractions-words-replace-139 = what is

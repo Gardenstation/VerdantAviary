@@ -1,4 +1,4 @@
-﻿- type: accent
+- type: accent
   id: nocontractions
   wordReplacements:
     accent-nocontractions-words-french: accent-nocontractions-words-replace-french
@@ -136,3 +136,8 @@
     accent-nocontractions-words-132: accent-nocontractions-words-replace-132
     accent-nocontractions-words-133: accent-nocontractions-words-replace-133
     accent-nocontractions-words-134: accent-nocontractions-words-replace-134
+    accent-nocontractions-words-135: accent-nocontractions-words-replace-135
+    accent-nocontractions-words-136: accent-nocontractions-words-replace-136
+    accent-nocontractions-words-137: accent-nocontractions-words-replace-137
+    accent-nocontractions-words-138: accent-nocontractions-words-replace-138
+    accent-nocontractions-words-139: accent-nocontractions-words-replace-139
