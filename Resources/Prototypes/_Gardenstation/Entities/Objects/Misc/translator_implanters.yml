@@ -1,4 +1,9 @@
-﻿- type: entity
+# SPDX-FileCopyrightText: 2025 bunnygirlHyacinth <xxst4rf11m00nb700db4nnyxx@gmail.com>
+# SPDX-FileCopyrightText: 2026 unknown <auroraaegis87@protonmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
   id: BieselEckeckyikTranslatorImplanter
   parent: BaseTranslatorImplanter
   suffix: Bieselized Thaven
