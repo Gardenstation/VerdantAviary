@@ -1,0 +1,74 @@
+# SPDX-FileCopyrightText: 2025 ratdotnet <auroraaegis87@protonmail.com>
+
+# spoken by the Rodentia. Based off yoruba, oshiwambo, khoisan, and nigerian english
+# the characters will likely look fucked for you but THEY WORK SO BE CAREFUL
+
+- type: language
+  id: Xaoro
+  isVisibleLanguage: true
+  speech:
+    color: "#DC143C"
+    fontId: NotoSansCham
+    boldFontId: NotoSansChamBold
+    fontSize: 16
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 3
+    replacement:
+    - ꨀ
+    - ꨁ
+    - ꨂ
+    - ꨃ
+    - ꨄ
+    - ꨅ
+    - ꨆ
+    - ꨇ
+    - ꨈ
+    - ꨉ
+    - ꨊ
+    - ꨋ
+    - ꨌ
+    - ꨍ
+    - ꨎ
+    - ꨏ
+    - ꨐ
+    - ꨑ
+    - ꨒ
+    - ꨓ
+    - ꨔ
+    - ꨕ
+    - ꨖ
+    - ꨗ
+    - ꨘ
+    - ꨙ
+    - ꨚ
+    - ꨛ
+    - ꨜ
+    - ꨘ
+    - ꨞ
+    - ꨟ
+    - ꨠ
+    - ꨡ
+    - ꨢ
+    - ꨣ
+    - ꨤ
+    - ꨥ
+    - ꨦ
+    - ꨧ
+    - ꨨ
+    - ꩀ
+    - ꩁ
+    - ꩂ
+    - ꩄ
+    - ꩅ
+    - ꩆ
+    - ꩇ
+    - ꩈ
+    - ꩉ
+    - ꩊ
+    - ꩋ
+    - "!"
+    - "*squeak!*"
+    - "*chirp!*"
+    - "*click!*"

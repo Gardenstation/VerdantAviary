@@ -9,3 +9,11 @@
 - type: font # thaven common bold
   id: Goo
   path: /Fonts/_Gardenstation/Goo/Goo.ttf
+
+- type: font # xaoro
+  id: NotoSansCham
+  path: /Fonts/_Gardenstation/NotoSansCham/NotoSansChamRegular.ttf
+
+- type: font # xaoro bold
+  id: NotoSansChamBold
+  path: /Fonts/_Gardenstation/NotoSansCham/NotoSansChamBlack.ttf

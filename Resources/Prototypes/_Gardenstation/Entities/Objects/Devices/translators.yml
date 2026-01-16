@@ -31,3 +31,20 @@
     requires:
     - TauCetiBasic
     - Eckeckyik
+
+- type: entity
+  id: XaoroTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: Xaoro translator
+  description: Translates the Rodentia language of Xaoro into Tau Ceti basic and vice versa, allowing you to communicate with your mousey friends.
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Xaoro
+    understood:
+    - TauCetiBasic
+    - Xaoro
+    requires:
+    - TauCetiBasic
+    - Xaoro

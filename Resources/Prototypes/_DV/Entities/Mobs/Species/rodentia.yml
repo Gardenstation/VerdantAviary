@@ -63,10 +63,12 @@
     speaks:
     - TauCetiBasic
     - Mouse # Can communicate with mice, I guess.
+    - Xaoro # gds
     understands:
     - TauCetiBasic
     - Mouse # There was no other language for them. This is how it used to be before EE removed them.
-  - type: CheeseAccent
+    - Xaoro # gds
+  # - type: CheeseAccent # this shit SUCKS ASS. -maus.
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:

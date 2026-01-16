@@ -1,0 +1,1 @@
+lathe-recipe-XaoroTranslatorImplant-subname = Xaoro translator implant

@@ -8,3 +8,7 @@ language-BieselEckeckyik-name = Bieselized Eckeckyik
 language-BieselEckeckyik-description =
     A more humanized dialect of the Thaven common language, thought to be developed by Thaven dockworkers in the coastal cities of Biesel.
     The dialect relies less heavily on subsonics and manipulation of frequencies, with a larger emphasis on harmonics, whooping hollers, and sing-song vocalizations.
+
+language-Xaoro-name = Xaoro
+language-Xaoro-description =
+    A highly tonal language with an almost musical character, distinguished for its consonant squeaks, chirps, and clicks.

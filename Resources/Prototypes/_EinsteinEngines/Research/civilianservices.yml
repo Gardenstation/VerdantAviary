@@ -31,6 +31,7 @@
   - NewKinPidginTranslator
   - SchechiTranslator
   - BieselEckeckyikTranslator # gds
+  - XaoroTranslator #gds
   position: -4, 4
   technologyPrerequisites:
   - AdvancedEntertainment
@@ -64,6 +65,7 @@
   - XenoTranslator
   - BieselEckeckyikTranslatorImplanter # gds
   - EckeckyikTranslator # gds
+  - XaoroTranslatorImplanter # gds
   position: -4, 5
   technologyPrerequisites:
   - BasicTranslation

@@ -31,11 +31,15 @@
   sizeRatio: 1.1 # i don't know WHY, but disproportionate rodentia always look weird.
   minHeight: 0.75
   defaultHeight: 0.80
-  maxHeight: 1.15
+  maxHeight: 0.80
   minWidth: 0.80
   defaultWidth: 0.80
   maxWidth: 1.10
   # end Goobstation: port EE height/width sliders
+  minAge: 18
+  youngAge: 35
+  oldAge: 50
+  maxAge: 70
 
 - type: speciesBaseSprites
   id: MobRodentiaSprites

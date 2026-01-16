@@ -5,3 +5,12 @@
   components:
   - type: Implanter
     implant: BieselEckeckyikTranslatorImplant
+
+- type: entity
+  id: XaoroTranslatorImplanter
+  parent: BaseTranslatorImplanter
+  suffix: Xaoro
+  components:
+  - type: Implanter
+    implant: XaoroTranslatorImplant
+

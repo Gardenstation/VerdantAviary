@@ -12,3 +12,18 @@
     - BieselEckeckyik
     requires:
     - TauCetiBasic
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: XaoroTranslatorImplant
+  name: Xaorotranslator implant
+  description: An implant that lets you understand Xaoro, the language of the Rodentia. Good luck making those squeak and clicks, though. It won't help with that.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - Xaoro
+    spoken:
+    - Xaoro
+    requires:
+    - TauCetiBasic
