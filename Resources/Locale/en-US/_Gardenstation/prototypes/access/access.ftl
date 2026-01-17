@@ -1,0 +1,1 @@
+id-card-access-level-lieutenant = Lieutenant

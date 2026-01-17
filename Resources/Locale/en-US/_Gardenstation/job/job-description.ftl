@@ -1,0 +1,1 @@
+job-description-lieutenant = Run the station alongside the Captain, try (and fail) to make order from the chaos

@@ -1,0 +1,133 @@
+# SPDX-FileCopyrightText: 2026 rat-dot-net <auroraaegis87@protonmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Mantles
+- type: loadoutEffectGroup
+  id: MasterCap
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobLieutenant
+      time: 72000 #20 hrs
+
+# Jumpsuit
+- type: loadout
+  id: LieutenantJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLieutenant
+
+
+- type: loadout
+  id: LieutenantJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtLieutenant
+
+
+- type: loadout
+  id: LieutenantFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLieutenantFormal
+
+
+- type: loadout
+  id: LieutenantFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCapFormalDress
+
+- type: loadout
+  id: LieutenantSummerShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLieutenantSummer
+
+# Head
+- type: loadout
+  id: LieutenantHead
+  equipment:
+    head: ClothingHeadHatLieutenant
+
+# Mask - just in case? idk.
+
+# Neck
+- type: loadout
+  id: LieutenantCloak
+  equipment:
+    neck: ClothingNeckCloakLieutenant
+
+- type: loadout
+  id: LieutenantCloakFormal
+  equipment:
+    neck: ClothingNeckCloakLieutenantFormal
+
+- type: startingGear
+  id: LieutenantMantle
+  equipment:
+    neck: ClothingNeckMantleLieutenant
+
+- type: loadout
+  id: VeteranLieutenantCloak
+  equipment:
+    neck: ClothingNeckCloakVetLieutenant
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobLieutenant
+      time: 360000 #100 hrs
+
+# Back
+- type: loadout
+  id: LieutenantBackpack
+  equipment:
+    back: ClothingBackpackLieutenant
+
+- type: loadout
+  id: LieutenantSatchel
+  equipment:
+    back: ClothingBackpackSatchelLieutenant
+
+- type: loadout
+  id: LieutenantDuffel
+  equipment:
+    back: ClothingBackpackDuffelLieutenant
+
+# Outer clothing
+- type: loadout
+  id: LieutenantOuterClothing
+  equipment:
+    outerClothing: ClothingOuterArmorLieutenantCarapace
+
+- type: loadout
+  id: LieutenantWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterCapArmored
+
+# Plasmeme Gear
+
+- type: loadout
+  id: LieutenantEnvirosuit
+  equipment:
+    jumpsuit: ClothingUniformEnvirosuitLieutenant
+  effects:
+  - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+    species:
+    - Plasmaman
+
+- type: loadout
+  id: CaptainEnvirohelm
+  equipment:
+    head: ClothingHeadEnvirohelmLieutenant
+  effects:
+  - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+    species:
+    - Plasmaman
+
+- type: loadout
+  id: CaptainEnvirogloves
+  equipment:
+    gloves: ClothingHandsGlovesEnviroglovesLieutenant
+  effects:
+  - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+    species:
+    - Plasmaman

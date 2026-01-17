@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2026 rat-dot-net <auroraaegis87@protonmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Lieutenant
+
+- type: loadoutGroup
+  id: LieutenantEnvirohelm
+  name: loadout-group-lieutenant-envirohelm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LieutenantEnvirohelm
+
+- type: loadoutGroup
+  id: LieutenantEnvirosuit
+  name: loadout-group-lieutenant-envirosuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LieutenantEnvirosuit
+
+- type: loadoutGroup
+  id: LieutenantEnvirogloves
+  name: loadout-group-lieutenant-envirogloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LieutenantEnvirogloves
+
+- type: loadoutGroup
+  id: LieutenantGloves
+  name: loadout-group-lieutenant-gloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LieutenantGloves
+
+- type: loadoutGroup
+  id: LieutenantMask
+  name: loadout-group-lieutenant-mask
+  minLimit: 0
+  loadouts:
+  - LieutenantMask

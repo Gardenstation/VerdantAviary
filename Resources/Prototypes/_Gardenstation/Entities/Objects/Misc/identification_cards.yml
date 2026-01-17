@@ -1,0 +1,17 @@
+#Lieutenant
+- type: entity
+  parent: IDCardStandard
+  id: LieutenantIDCard
+  name: Lieutenant ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: departmenthead
+      color: "#1B67A5"
+    - state: subdepartment
+      color: "#58C800"
+    - state: hd
+  - type: PresetIdCard
+    job: Lieutenant
+  - type: Access

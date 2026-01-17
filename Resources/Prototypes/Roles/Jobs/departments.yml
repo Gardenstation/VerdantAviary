@@ -171,6 +171,7 @@
   color: "#334E6D"
   roles:
   - Captain
+  - Lieutenant # Gardenstation
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel

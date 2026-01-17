@@ -1,0 +1,70 @@
+# SPDX-FileCopyrightText: 2026 rat-dot-net <auroraaegis87@protonmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# i will forget how to spell Lieutenant at some point i s2g
+
+- type: job
+  id: Lieutenant
+  name: job-name-lieutenant
+  description: job-description-lieutenant
+  playTimeTracker: JobLieutenant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 14400 # 4 hours
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 14400 # 4 hours
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 14400 # 4 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 14400 # 4 hours
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 72000 # 20 hours
+  guides: #gds
+   - Command
+   - Succession
+   - StandardProcedures SOP
+   - Lieutenant SOP
+  weight: 20
+  startingGear: GearLieutenant
+  icon: "JobIconLieutenant"
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+      - type: Condemned # Goobstation - Nanotrasen owns your soul pal.
+        soulOwnedNotDevil: true
+
+- type: startingGear
+  id: LieutenantGear
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesSunglasses
+    #gloves: ClothingHandsGlovesCaptain - Goobstation, moved to loadouts
+    id: LieutenantPDA
+    ears: ClothingHeadsetAltCommand
+  storage:
+    back:
+    - Flash
+    - TelescopicBaton # Goobstation
+    # - StationCharter
+
+- type: chameleonOutfit
+  id: LieutenantChameleonOutfit
+  job: Lieutenant
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatCapcap
+    eyes: ClothingEyesGlassesCommand
+    mask: ClothingMaskGasCaptain
+    neck: ClothingNeckCloakCap 

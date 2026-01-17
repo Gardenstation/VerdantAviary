@@ -75,6 +75,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Janitor",
         "Kitchen",
         "Lawyer",
+        "Lieutenant" // gardenstation
         "Maintenance",
         "Medical",
         "Quartermaster",

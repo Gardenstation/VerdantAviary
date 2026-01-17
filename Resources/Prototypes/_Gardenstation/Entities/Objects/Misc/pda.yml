@@ -1,0 +1,23 @@
+- type: entity
+  parent: BasePDA
+  id: LieutenantPDA
+  name: Lieutenant PDA
+  description: Surprisingly no different from your PDA.
+  components:
+  - type: Pda
+    id: LieutenantIDCard
+    penSlot:
+      startingItem: PenCap
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-Lieutenant
+  - type: PdaBorderColor
+    borderColor: "#7C5D00"
+  - type: Icon
+    state: pda-Lieutenant

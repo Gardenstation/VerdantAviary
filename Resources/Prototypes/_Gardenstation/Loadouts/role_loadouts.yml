@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2026 rat-dot-net <auroraaegis87@protonmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+
+# Command
+- type: roleLoadout
+  id: JobLieutenant
+  groups:
+  - LieutenantHead
+  - LieutenantNeck
+  - LieutenantJumpsuit
+  - LieutenantMask # Goobstation - Lollypops!
+  - LieutenantBackpack
+  - LieutenantOuterClothing
+  - Survival
+  - Trinkets
+  - Animals
+  - GroupSpeciesBreathTool
+  # Goobstation - EE Plasmeme Change.
+  - LieutenantEnvirohelm
+  - LieutenantEnvirosuit
+  - LieutenantEnvirogloves
+  - LieutenantGloves
