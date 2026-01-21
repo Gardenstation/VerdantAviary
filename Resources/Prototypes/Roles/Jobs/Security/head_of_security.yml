@@ -151,6 +151,9 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 # 10 hrs
+    - !type:CharacterEmployerRequirement
+      employers:
+      - Nanotrasen
 #    - !type:SpeciesRequirement # Goob - None Felinid
 #      inverted: true
 #      species:

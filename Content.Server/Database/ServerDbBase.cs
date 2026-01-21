@@ -392,6 +392,9 @@ namespace Content.Server.Database
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.Species,
+                profile.Nationality,
+                profile.Employer,
+                profile.Lifepath,
                 profile.Height, // Goobstation: port EE height/width sliders
                 profile.Width, // Goobstation: port EE height/width sliders
                 profile.Age,
@@ -430,6 +433,9 @@ namespace Content.Server.Database
             profile.CharacterName = humanoid.Name;
             profile.FlavorText = humanoid.FlavorText;
             profile.Species = humanoid.Species;
+            profile.Nationality = humanoid.Nationality;
+            profile.Employer = humanoid.Employer;
+            profile.Lifepath = humanoid.Lifepath;
             profile.Height = humanoid.Height; // Goobstation: port EE height/width sliders
             profile.Width = humanoid.Width; // Goobstation: port EE height/width sliders
             profile.Age = humanoid.Age;

@@ -143,6 +143,9 @@
 #      inverted: true	
 #      species:	
 #      - Felinid #Omu, add back Felinid
+    - !type:CharacterEmployerRequirement
+      employers:
+      - Nanotrasen
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"

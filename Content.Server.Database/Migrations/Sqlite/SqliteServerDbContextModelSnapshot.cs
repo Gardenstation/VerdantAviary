@@ -836,6 +836,12 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("char_name");
 
+                     // Gardenstation: EE Contractor Port
+                    b.Property<string>("Employer")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("employer");
+
                     b.Property<string>("EyeColor")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -881,9 +887,21 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnName("width");
                     // end Goobstation: port EE height/width sliders
 
+                    // Gardenstation: EE Contractor Port
+                    b.Property<string>("Lifepath")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("lifepath");
+
                     b.Property<byte[]>("Markings")
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
+
+                    // Gardenstation: EE Contractor Port
+                    b.Property<string>("Nationality")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("nationality");
 
                     b.Property<int>("PreferenceId")
                         .HasColumnType("INTEGER")

@@ -71,6 +71,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 18000 # 15 hours
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: ChaplainGear
   icon: "JobIconChaplain"
   supervisors: job-supervisors-hop

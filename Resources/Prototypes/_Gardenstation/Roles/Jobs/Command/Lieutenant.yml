@@ -25,6 +25,9 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 72000 # 20 hours
+    - !type:CharacterEmployerRequirement
+      employers:
+      - Nanotrasen
   guides: #gds
    - Command
    - Succession

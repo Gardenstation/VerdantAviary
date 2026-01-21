@@ -72,6 +72,10 @@
   - !type:RoleTimeRequirement
     role: JobSecurityOfficer
     time: 18000 #5 hrs
+  - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

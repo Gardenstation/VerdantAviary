@@ -165,6 +165,7 @@ using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Sprite;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._EE.Contractors.Prototypes;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -258,6 +259,12 @@ namespace Content.Client.Lobby.UI
         private Dictionary<string, BoxContainer> _traitCategoryContainers = new(); // Omustation - Remake EE Traits System - Redesign traits tab
 
         private List<SpeciesPrototype> _species = new();
+
+        // EE -Contractor System Changes Start
+        private List<NationalityPrototype>_nationalities = new();
+        private List<EmployerPrototype>_employers = new();
+        private List<LifepathPrototype>_lifepaths = new();
+        // EE - Contractor System Changes End
 
         private List<(string, RequirementsSelector)> _jobPriorities = new();
 
@@ -399,6 +406,34 @@ namespace Content.Client.Lobby.UI
                 OnSkinColorOnValueChanged();
                 UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
             };
+
+            // Begin EE Contractors
+            #region Contractors
+
+            RefreshNationalities();
+            RefreshEmployers();
+            RefreshLifepaths();
+
+            NationalityButton.OnItemSelected += args =>
+            {
+                NationalityButton.SelectId(args.Id);
+                SetNationality(_nationalies[args.Id].ID);
+            };
+
+            EmployerButton.OnItemSelected += args =>
+            {
+                EmployerButton.SelectId(args.Id);
+                SetEmployer(_employers[args.Id].ID);
+            };
+
+            LifepathButton.OnItemSelected += args =>
+            {
+                LifepathButton.SelectId(args.Id);
+                SetLifepath(_lifepaths[args.Id].ID);
+            };
+
+            #endregion Contractors
+            // End EE Contractors 
 
             // begin Goobstation: port EE height/width sliders
             #region Height and Width            
@@ -878,6 +913,100 @@ namespace Content.Client.Lobby.UI
             }
         }
 
+        // Begin: More EE Contractors
+         public void RefreshNationalities()
+        {
+            NationalityButton.Clear();
+            _nationalies.Clear();
+
+            _nationalies.AddRange(_prototypeManager.EnumeratePrototypes<NationalityPrototype>()
+                .Where(o => _characterRequirementsSystem.CheckRequirementsValid(o.Requirements,
+                    _controller.GetPreferredJob(Profile ?? HumanoidCharacterProfile.DefaultWithSpecies()),
+                    Profile ?? HumanoidCharacterProfile.DefaultWithSpecies(),
+                    _requirements.GetRawPlayTimeTrackers(),
+                    _requirements.IsWhitelisted(),
+                    o,
+                    _entManager,
+                    _prototypeManager,
+                    _cfgManager, out _)));
+
+            var nationalityIds = _nationalies.Select(o => o.ID).ToList();
+
+            for (var i = 0; i < _nationalies.Count; i++)
+            {
+                NationalityButton.AddItem(Loc.GetString(_nationalies[i].NameKey), i);
+
+                if (Profile?.Nationality == _nationalies[i].ID)
+                    NationalityButton.SelectId(i);
+            }
+
+            // If our nationality isn't available, reset it to default
+            if (Profile != null && !nationalityIds.Contains(Profile.Nationality))
+                SetNationality(SharedHumanoidAppearanceSystem.DefaultNationality);
+        }
+
+        public void RefreshEmployers()
+        {
+            EmployerButton.Clear();
+            _employers.Clear();
+
+            _employers.AddRange(_prototypeManager.EnumeratePrototypes<EmployerPrototype>()
+                .Where(o => _characterRequirementsSystem.CheckRequirementsValid(o.Requirements,
+                _controller.GetPreferredJob(Profile ?? HumanoidCharacterProfile.DefaultWithSpecies()),
+                Profile ?? HumanoidCharacterProfile.DefaultWithSpecies(),
+                _requirements.GetRawPlayTimeTrackers(),
+                _requirements.IsWhitelisted(),
+                o,
+                _entManager,
+                _prototypeManager,
+                _cfgManager, out _)));
+
+            var employerIds = _employers.Select(o => o.ID).ToList();
+
+            for (var i = 0; i < _employers.Count; i++)
+            {
+                EmployerButton.AddItem(Loc.GetString(_employers[i].NameKey), i);
+
+                if (Profile?.Employer == _employers[i].ID)
+                    EmployerButton.SelectId(i);
+            }
+
+            // If our employer isn't available, reset it to default
+            if (Profile != null && !employerIds.Contains(Profile.Employer))
+                SetEmployer(SharedHumanoidAppearanceSystem.DefaultEmployer);
+        }
+
+        public void RefreshLifepaths()
+        {
+            LifepathButton.Clear();
+            _lifepaths.Clear();
+
+            _lifepaths.AddRange(_prototypeManager.EnumeratePrototypes<LifepathPrototype>()
+                .Where(o => _characterRequirementsSystem.CheckRequirementsValid(o.Requirements,
+                _controller.GetPreferredJob(Profile ?? HumanoidCharacterProfile.DefaultWithSpecies()),
+                Profile ?? HumanoidCharacterProfile.DefaultWithSpecies(),
+                _requirements.GetRawPlayTimeTrackers(),
+                _requirements.IsWhitelisted(),
+                o,
+                _entManager,
+                _prototypeManager,
+                _cfgManager, out _)));
+
+            var lifepathIds = _lifepaths.Select(o => o.ID).ToList();
+
+            for (var i = 0; i < _lifepaths.Count; i++)
+            {
+                LifepathButton.AddItem(Loc.GetString(_lifepaths[i].NameKey), i);
+
+                if (Profile?.Lifepath == _lifepaths[i].ID)
+                    LifepathButton.SelectId(i);
+            }
+
+            // If our lifepath isn't available, reset it to default
+            if (Profile != null && !lifepathIds.Contains(Profile.Lifepath))
+                SetLifepath(SharedHumanoidAppearanceSystem.DefaultLifepath);
+        }
+        // End: More EE Contractors
         public void RefreshAntags()
         {
             AntagList.DisposeAllChildren();
@@ -1509,6 +1638,34 @@ namespace Content.Client.Lobby.UI
             // end Goobstation: port EE height/width sliders
         }
 
+        // Begin EE Contractors Stuff
+        private void SetNationality(string newNationality)
+        {
+            Profile = Profile?.WithNationality(newNationality);
+            UpdateCharacterRequired();
+            IsDirty = true;
+            ReloadProfilePreview();
+            ReloadClothes(); // Nationalities may have specific gear, reload the clothes
+        }
+
+        private void SetEmployer(string newEmployer)
+        {
+            Profile = Profile?.WithEmployer(newEmployer);
+            UpdateCharacterRequired();
+            IsDirty = true;
+            ReloadProfilePreview();
+            ReloadClothes(); // Employers may have specific gear, reload the clothes
+        }
+
+        private void SetLifepath(string newLifepath)
+        {
+            Profile = Profile?.WithLifepath(newLifepath);
+            UpdateCharacterRequired();
+            IsDirty = true;
+            ReloadProfilePreview();
+            ReloadClothes(); // Lifepaths may have specific gear, reload the clothes
+        }
+        // End EE Contractors Stuff
         private void SetName(string newName)
         {
             Profile = Profile?.WithName(newName);
@@ -1520,6 +1677,13 @@ namespace Content.Client.Lobby.UI
             _entManager.System<MetaDataSystem>().SetEntityName(PreviewDummy, newName);
         }
 
+        private void UpdateCharacterRequired()
+        {
+            RefreshNationalities();
+            RefreshEmployers();
+            RefreshLifepaths();
+            UpdateRoleRequirements();
+        }
         private void SetSpawnPriority(SpawnPriorityPreference newSpawnPriority)
         {
             Profile = Profile?.WithSpawnPriorityPreference(newSpawnPriority);

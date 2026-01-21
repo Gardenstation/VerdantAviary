@@ -31,6 +31,7 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Shared._EintsteinEngines.Contractors.Prototypes;
 using Content.Shared.CCVar;
 using Content.Shared.Decals;
 using Content.Shared.Examine;
@@ -75,6 +76,18 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     [Dependency] private readonly SharedIdentitySystem _identity = default!;
 
     public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
+
+    // Gardenstation: EE Contractor Port
+    [ValidatePrototypeId<EmployerPrototype>]
+    public const string DefaultEmployer = "NanoTrasen";
+
+    [ValidatePrototypeId<NationalityPrototype>]
+    public const string DefaultNationality = "Bieselite";
+
+    [ValidatePrototypeId<LifepathPrototype>]
+    public const string DefaultLifepath = "Spacer";
+    // END Gardenstation: EE Contractor Port
+
 
     public override void Initialize()
     {

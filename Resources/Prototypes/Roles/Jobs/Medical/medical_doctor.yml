@@ -81,6 +81,10 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 9000 #2.5 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo

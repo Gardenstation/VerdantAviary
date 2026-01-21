@@ -73,6 +73,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 9000 # 2.5 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: LawyerGear
   icon: "JobIconLawyer"
   supervisors: job-supervisors-hop

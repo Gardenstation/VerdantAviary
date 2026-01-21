@@ -92,6 +92,10 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 9000 #2.5 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

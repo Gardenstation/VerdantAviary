@@ -69,6 +69,10 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 18000 #5 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo

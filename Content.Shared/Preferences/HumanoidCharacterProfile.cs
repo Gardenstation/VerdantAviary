@@ -127,6 +127,17 @@ namespace Content.Shared.Preferences
         [DataField]
         public ProtoId<SpeciesPrototype> Species { get; set; } = SharedHumanoidAppearanceSystem.DefaultSpecies;
 
+        // EE -- Contractors Change Start
+        [DataField]
+        public string Nationality { get; set; } = SharedHumanoidAppearanceSystem.DefaultNationality;
+
+        [DataField]
+        public string Employer { get; set; } = SharedHumanoidAppearanceSystem.DefaultEmployer;
+
+        [DataField]
+        public string Lifepath { get; set; } = SharedHumanoidAppearanceSystem.DefaultLifepath;
+        // EE -- Contractors Change End
+
         [DataField]
         public int Age { get; set; } = 18;
 
@@ -186,6 +197,11 @@ namespace Content.Shared.Preferences
             string name,
             string flavortext,
             string species,
+            // EE -- Contractors Change Start
+            string nationality,
+            string employer,
+            string lifepath,
+            // EE -- Contractors Change End
             float height, // Goobstation: port EE height/width sliders
             float width, // Goobstation: port EE height/width sliders
             int age,
@@ -236,6 +252,11 @@ namespace Content.Shared.Preferences
             : this(other.Name,
                 other.FlavorText,
                 other.Species,
+                // Gardenstation: EE Contractor Port
+                other.Nationality,
+                other.Employer,
+                other.Lifepath,
+                // Gardenstation: EE Contractor Port
                 other.Height, // Goobstation: port EE height/width sliders
                 other.Width, // Goobstation: port EE height/width sliders
                 other.Age,
@@ -273,6 +294,8 @@ namespace Content.Shared.Preferences
             {
                 Species = species,
             };
+
+
         }
 
         // TODO: This should eventually not be a visual change only.
@@ -293,6 +316,10 @@ namespace Content.Shared.Preferences
         public static HumanoidCharacterProfile RandomWithSpecies(string? species = null)
         {
             species ??= SharedHumanoidAppearanceSystem.DefaultSpecies;
+
+            Nationality = SharedHumanoidAppearanceSystem.DefaultNationality,
+            Employer = SharedHumanoidAppearanceSystem.DefaultEmployer,
+            Lifepath = SharedHumanoidAppearanceSystem.DefaultLifepath,
 
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
@@ -334,6 +361,9 @@ namespace Content.Shared.Preferences
                 Width = width, // Goobstation: port EE height/width sliders
                 Height = height, // Goobstation: port EE height/width sliders
                 Appearance = HumanoidCharacterAppearance.Random(species, sex),
+                Nationality = SharedHumanoidAppearanceSystem.DefaultNationality,
+                Employer = SharedHumanoidAppearanceSystem.DefaultEmployer,
+                Lifepath = SharedHumanoidAppearanceSystem.DefaultLifepath,
             };
         }
 

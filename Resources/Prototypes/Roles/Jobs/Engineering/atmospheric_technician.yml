@@ -68,6 +68,10 @@
   - !type:DepartmentTimeRequirement
     department: Engineering
     time: 9000 #2.5 hrs
+  - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce

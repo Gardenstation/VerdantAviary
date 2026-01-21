@@ -149,6 +149,9 @@
 #      inverted: true	
 #      species:	
 #      - Felinid #Omu, add back Felinid
+    - !type:CharacterEmployerRequirement
+      employers:
+      - NanoTrasen
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain

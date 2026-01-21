@@ -156,6 +156,9 @@
 #      inverted: true	
 #      species:	
 #      - Felinid #Omu, add back Felinid
+    - !type:CharacterEmployerRequirement
+      employers:
+      - Nanotrasen
   goobcoins: 40 #Goob content
   weight: 20
   startingGear: HoPGear

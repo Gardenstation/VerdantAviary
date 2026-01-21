@@ -3,6 +3,10 @@
   name: job-name-nct
   description: job-description-nct
   playTimeTracker: JobNanotrasenCareerTrainer
+  requirements:
+     - !type:CharacterEmployerRequirement
+      employers:
+      - NanoTrasen
   goobcoins: 45
   weight: 20
   startingGear: NanotrasenCareerTrainerGear

@@ -77,6 +77,10 @@
     - !type:DepartmentTimeRequirement
       department: Science
       time: 9000 #2.5 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: ScientistGear
   icon: "JobIconScientist"
   supervisors: job-supervisors-rd

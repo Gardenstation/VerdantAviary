@@ -128,6 +128,11 @@
   startingGear: MimeGear
   icon: "JobIconMime"
   supervisors: job-supervisors-hop
+  requirements:
+  - !type:CharacterEmployerRequirement
+  inverted: true
+  employers:
+  - Unemployed
   goobcoins: 10 #Goob content
   access:
   - Theatre

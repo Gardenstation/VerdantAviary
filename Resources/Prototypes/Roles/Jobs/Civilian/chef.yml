@@ -85,6 +85,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 1800 # 30 Minutes
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: ChefGear
   icon: "JobIconChef"
   supervisors: job-supervisors-hop

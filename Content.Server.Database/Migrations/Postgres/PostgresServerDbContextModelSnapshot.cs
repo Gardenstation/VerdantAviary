@@ -890,6 +890,12 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("eye_color");
 
+                    // Gardenstation: EE Contractor Port
+                    b.Property<string>("Employer")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("employer");
+
                     b.Property<string>("FacialHairColor")
                         .IsRequired()
                         .HasColumnType("text")
@@ -929,10 +935,22 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("real")
                         .HasColumnName("width");
                     // end Goobstation: port EE height/width sliders
+                    
+                    // Gardenstation: EE Contractor Port
+                    b.Property<string>("Lifepath")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("lifepath");
 
                     b.Property<JsonDocument>("Markings")
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
+
+                    // Gardenstation: EE Contractor Port
+                    b.Property<string>("Nationality")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("nationality");
 
                     b.Property<int>("PreferenceId")
                         .HasColumnType("integer")

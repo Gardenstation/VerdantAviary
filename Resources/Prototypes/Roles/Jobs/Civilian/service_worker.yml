@@ -82,6 +82,10 @@
   - !type:DepartmentTimeRequirement
     department: Civilian
     time: 1800 #0.5 hr
+  - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: ServiceWorkerGear
   icon: "JobIconServiceWorker"
   supervisors: job-supervisors-service

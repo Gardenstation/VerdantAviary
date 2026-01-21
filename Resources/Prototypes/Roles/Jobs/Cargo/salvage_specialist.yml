@@ -77,6 +77,10 @@
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 9000 # 2.5 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   goobcoins: 20 #Goob content

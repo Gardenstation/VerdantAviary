@@ -48,6 +48,9 @@
 #      inverted: true	
 #      species:	
 #      - Felinid #Omu, add back Felinid
+    - !type:CharacterEmployerRequirement
+      employers:
+      - NanoTrasen
   goobcoins: 45
   weight: 20
   startingGear: BlueshieldOfficerGear

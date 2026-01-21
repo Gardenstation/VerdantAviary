@@ -60,6 +60,11 @@
   playTimeTracker: JobReporter
   startingGear: ReporterGear
   icon: "JobIconReporter"
+  requirements:
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   goobcoins: 15 #Goob content
   supervisors: job-supervisors-hop
   access:

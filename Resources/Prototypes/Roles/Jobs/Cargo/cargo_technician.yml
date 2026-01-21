@@ -80,6 +80,11 @@
   icon: "JobIconCargoTechnician"
   supervisors: job-supervisors-qm
   goobcoins: 20 #Goob content
+  requirements:
+  - !type:CharacterEmployerRequirement
+    inverted: true
+    employers:
+    - Unemployed
   access:
   - Cargo
   - Maintenance

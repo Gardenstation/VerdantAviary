@@ -15,6 +15,9 @@
   - !type:DepartmentTimeRequirement
     department: Security
     time: 36000 # 10 hrs
+  - !type:CharacterEmployerRequirement
+    employers: 
+    - NanoTrasen
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos

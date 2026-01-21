@@ -70,6 +70,11 @@
   icon: "JobIconBotanist"
   supervisors: job-supervisors-hop
   goobcoins: 15 #Goob content
+  requirements:
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   access:
   - Service
   - Maintenance
